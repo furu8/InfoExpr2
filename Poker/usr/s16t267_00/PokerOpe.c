@@ -5,7 +5,7 @@
 //  Poker  usr/s13t200_00/  PokerOpe.c
 //  Linux CentOS 6.7  GCC 4.4.7
 //--------------------------------------------------------------------
-//  喜田研究室 furuhama 古濵尚樹
+//  喜田研究室 furuhama Naoki 古濵尚樹
 //  2018.11.27
 //====================================================================
 
@@ -40,6 +40,12 @@
 //  関数宣言
 //--------------------------------------------------------------------
 
+void init(int count[5][13]);                        // Countの初期化
+void count_sum(int count[5][13], int sum[13]);      // Countの合計値
+void two_pair(int sum[13], int the);        // ツーペアの実装
+void straight(int shdcCount[5][13], int the);        // ストレートの実装
+void arr_order(int arr[5]);                         // 配列の順番を降順にする
+
 
 
 //====================================================================
@@ -61,20 +67,161 @@ us : 捨札数
 
 --------------------------------------------------------------------*/
 
-int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us)
-{
-  int myhd[HNUM];
-  int the;
-  int k;
-  for ( k = 0; k < HNUM; k++) { myhd[k] = hd[k]; }
+int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
+    int myhd[HNUM];
+    int the;
+    int k, i;
+    int sum[13] = {0};
+    int shdc;               // スペード、ハート、ダイヤ、クラブ のどれか判断
+    int num;                // 手札の数字を判断
+    int shdcCount[5][13];    // 手札の種類の枚数
+    int numCount[5][13];    // 手札の数字の枚数
+   
 
-  card_show(myhd, HNUM);
-  printf(" ?  "); scanf("%d", &the);
-  if ( the < 0 || the > 4 ) { the = -1; }
-  return the;
+    for ( k = 0; k < HNUM; k++ ) { myhd[k] = hd[k]; }
+    init(shdcCount);
+    init(numCount);
+    
+    // card_show(myhd, HNUM);
+    // printf(" ?  ");  scanf("%d", &the);
+
+    /*  カードの種類    カードの数字
+          s h d c     A 2 3 4 5 6 7 8 9 T J Q K
+        0           0
+        1           1
+        2           2
+        3           3
+        4           4
+
+        tmp[k] : 0 1 2 3 4
+                 4 3 6 7 2
+                 1 2 3 4 6
+    */
+
+    // -- 手札の判定
+    for ( k = 0; k < HNUM; k++ ) { 
+        shdc = hd[k] / 13;
+        num = hd[k] % 13;
+        shdcCount[k][shdc]++;
+        numCount[k][num]++;
+    }
+    // for ( k = 0; k < HNUM; k++ ) {
+    //     for ( i = 0; i < 13; i++ ) {
+    //         printf("%d ", numCount[k][i]);
+    //     }
+    //     puts("");
+    // }
+    // puts("---------------------------");
+
+    // count_sum(shdcCount, sum);
+    // for ( i = 0; i < 13; i++ ) {
+    //     printf("%d ", sum[i]);
+    // }
+    // puts("\n-----------------------");
+    count_sum(numCount, sum);
+    // for ( i = 0; i < 13; i++ ) {
+    //     printf("%d ", sum[i]);
+    // }
+    // puts("");
+
+    for ( k = 0; k < 13; k++ ) {
+        if ( sum[k] == 4 ) {                        // フォーカード
+            the = -1;
+        } else if ( sum[k] == 3 ) {                 // スリーカード
+            the = -1;
+        } else if ( sum[k] == 2 ) {                 // ワンペア 
+            //the = 1;
+            for ( i = k; i < 13; i++ ) {
+                if ( sum[i] == 2 ) {                // ツーペア
+                    two_pair(sum, the);   
+                }
+            }
+        } else if ( sum[k] == 1 || sum[k] == 0 ) {  // ノーペア
+            the = -1;
+        } 
+    }
+    
+
+    /*
+    for ( k = 0; k < HNUM; k++) { printf("my %d hd %d\n", myhd[k], hd[k]); }
+    printf("cg %d us %d\n", cg, us);
+    for ( k = 0; k < HNUM; k++) { printf("fd %d ud %d\n", fd[k], ud[k]); }
+    */
+
+    // if ( the < 0 || the > 4 ) { the = -1; }
+    return the;
 }
 
 
 //====================================================================
 //  補助関数
 //====================================================================
+
+void init(int count[5][13]) {
+    int i, j;
+    for ( i = 0; i < HNUM; i++ ) {
+        for ( j = 0; j < 13; j++ ) {
+            count[i][j] = 0;
+        }
+    }
+}
+
+void count_sum(int count[5][13], int sum[13]) {
+    int i, j; 
+    for ( i = 0; i < HNUM; i++ ) {
+        for ( j = 0; j < 13; j++ ) {
+            sum[j] += count[i][j];
+        }
+    }
+}
+
+void two_pair(int sum[13], int the) {
+    int k;
+    for ( k = 0; k < 13; k++ ) { 
+        if ( sum[k] == 1 ) {
+            the = k;
+        }
+    }
+}
+
+// void straight(int shdcCount[5][13], int the) {
+//     int k, i;
+//     int tmp[5];
+
+//     for ( k = 0; k < HNUM; k++ ) {
+//         for ( i = 0; i < 13; i++ ) {
+//             if ( numCount[i][k] == 1 ) {
+//                 tmp[k] = i;
+//             } else {
+//                 break;
+//             }
+//         }
+//     }
+
+//     for ( k = 0; k < HNUM; k++ ) {
+//         for ( i = k+1; i < 5; i++ ) {
+//             if ( tmp[k] == tmp[i] + 1  ) {
+                
+//             }
+//         }
+        
+//     }   
+
+    
+// }
+
+// void arr_order(int arr[5]) {
+//     int k, i;
+//     int tmp;
+
+//     for ( k = 0; k < HNUM; k++ ) {
+//         for ( i = 4; i > k; i-- ) {
+//             if ( arr[i] < arr[i-1] ) {
+//                 tmp = arr[i];
+//                 arr[i] = arr[i-1];
+//                 arr[i-1] = tmp;
+//             }
+//         }
+//     }
+    
+// }
