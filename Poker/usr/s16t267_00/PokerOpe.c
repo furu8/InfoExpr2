@@ -42,7 +42,8 @@
 
 void init(int count[5][13]);                        // Countの初期化
 void count_sum(int count[5][13], int sum[13]);      // Countの合計値
-void two_pair(int sum[13], int the);        // ツーペアの実装
+int two_pair(int numCount[5][13], int n, int m);        // ツーペアの実装
+void one_pair(int numCount[5][13], int ud[], int us, int the);
 void straight(int shdcCount[5][13], int the);        // ストレートの実装
 void arr_order(int arr[5]);                         // 配列の順番を降順にする
 
@@ -82,7 +83,7 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
     init(shdcCount);
     init(numCount);
     
-    // card_show(myhd, HNUM);
+    //card_show(myhd, HNUM);
     // printf(" ?  ");  scanf("%d", &the);
 
     /*  カードの種類    カードの数字
@@ -105,41 +106,36 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
         shdcCount[k][shdc]++;
         numCount[k][num]++;
     }
-    // for ( k = 0; k < HNUM; k++ ) {
-    //     for ( i = 0; i < 13; i++ ) {
-    //         printf("%d ", numCount[k][i]);
-    //     }
-    //     puts("");
-    // }
-    // puts("---------------------------");
-
-    // count_sum(shdcCount, sum);
-    // for ( i = 0; i < 13; i++ ) {
-    //     printf("%d ", sum[i]);
-    // }
-    // puts("\n-----------------------");
     count_sum(numCount, sum);
-    // for ( i = 0; i < 13; i++ ) {
-    //     printf("%d ", sum[i]);
-    // }
-    // puts("");
 
     for ( k = 0; k < 13; k++ ) {
         if ( sum[k] == 4 ) {                        // フォーカード
             the = -1;
+            break;
         } else if ( sum[k] == 3 ) {                 // スリーカード
             the = -1;
-        } else if ( sum[k] == 2 ) {                 // ワンペア 
-            //the = 1;
-            for ( i = k; i < 13; i++ ) {
-                if ( sum[i] == 2 ) {                // ツーペア
-                    two_pair(sum, the);   
+            break;
+        } else if ( sum[k] == 2 ) {                  
+            if ( k == 12 ) {                        // ワンペア
+                the = -1;
+                break;
+            } else {                                
+                for ( i = k+1; i < 13; i++ ) {
+                    if ( sum[i] == 2 ) {            // ツーペア
+                        the = two_pair(numCount, k, i);  
+                        break; 
+                    } else {                        // ワンペア
+                        the = -1;
+                        break;
+                    }
                 }
-            }
+                break;
+            }  
         } else if ( sum[k] == 1 || sum[k] == 0 ) {  // ノーペア
             the = -1;
         } 
     }
+    //printf(" %d\n", the);
     
 
     /*
@@ -149,7 +145,7 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
     */
 
     // if ( the < 0 || the > 4 ) { the = -1; }
-    return the;
+    return -1;
 }
 
 
@@ -175,12 +171,32 @@ void count_sum(int count[5][13], int sum[13]) {
     }
 }
 
-void two_pair(int sum[13], int the) {
-    int k;
-    for ( k = 0; k < 13; k++ ) { 
-        if ( sum[k] == 1 ) {
-            the = k;
+int two_pair(int numCount[5][13], int n, int m) {
+    int i, j;
+    int the;
+    for ( i = 0; i < HNUM; i++ ) {
+        for ( j = 0; j < 13; j++ ) { 
+            if ( numCount[i][j] == 1 && j != n && j != m ) {
+                the = i;
+                //printf(" %d", the);
+                return the;
+            }
         }
+    }
+}
+
+void one_pair(int numCount[5][13], int ud[], int us, int the) {
+    int k, num;
+    int count[5][13], sum[13] = {0};
+
+    init(count);
+    for ( k = 0; k < us; k++ ) {
+        num = ud[k] % 13;
+        count[k][num]++;
+    }
+    count_sum(count, sum);
+    for( k = 0; k < us; k++ ) {
+        
     }
 }
 
