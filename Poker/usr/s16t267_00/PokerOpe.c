@@ -32,6 +32,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <math.h>
 
 #include "Poker.h"
@@ -40,13 +41,14 @@
 //  関数宣言
 //--------------------------------------------------------------------
 
-void init(int count[5][13]);                        // Countの初期化
-void count_sum(int count[5][13], int sum[13], int n);      // Countの合計値
+// void init(int count[5][13]);                        // Countの初期化
+// void count_sum(int count[][], int sum[], int n);      // Countの合計値
 int two_pair(int numCount[5][13], int n, int m);        // ツーペアの実装
 int one_pair(int ud[], int us, int hd[], int n);
 int straight(int hd[]);        // ストレートの実装
+int flash(int hd[], int shdcCount[5][4], int n);            // フラッシュの実装
 void arr_order(int arr[5]);                         // 配列の順番を降順にする
-int arr_max(int arr[5]);
+int arr_max(int arr[5]);        // 最大値の配列の要素を返却
 
 
 
@@ -73,12 +75,14 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
     int myhd[HNUM];
     int the;
     int k, i;
-    int sum[13] = {0};
-    int arr[5];
     int shdc;               // スペード、ハート、ダイヤ、クラブ のどれか判断
     int num;                // 手札の数字を判断
-    int shdcCount[5][13] = {{0}};    // 手札の種類の枚数
+    int arr[5];             // 手札の数字を配列に格納
+    int shdcSum[4] = {0};   // 手札の種類の合計値を格納
+    int numSum[13] = {0};   // 手札の数字の合計値を格納
+    int shdcCount[5][4] = {{0}};    // 手札の種類の枚数
     int numCount[5][13] = {{0}};    // 手札の数字の枚数
+    _Bool flag = false;
    
     // init(shdcCount);
     // init(numCount);
@@ -100,27 +104,39 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
     //              1 2 3 4 6
     // */
 
-    // -- 手札の判定
+    // ---- 手札の判定
+    // -- 判定値を計算
     for ( k = 0; k < HNUM; k++ ) { 
         shdc = myhd[k] / 13;
         num = myhd[k] % 13;
-        shdcCount[k][shdc]++;
-        numCount[k][num]++;
         arr[k] = num;
+        // shdcCount[k][shdc]++;
+        numCount[k][num]++;
+        shdcSum[shdc]++;
+        numSum[num]++;
     }
-    count_sum(numCount, sum, 13);
 
+    // -- 判定値の合計値を求める
+    // count_sum(numCount, numSum, 13);
+    // count_sum(shdcCount, shdcSum, 4);
+
+    // -- 合計値を元に分類
     for ( k = 0; k < 13; k++ ) {
-        if ( sum[k] == 4 ) {                        // フォーカード
-            return -1;
-        } else if ( sum[k] == 3 ) {                 // スリーカード
-            return -1;
-        } else if ( sum[k] == 2 ) {                  
+        if ( numSum[k] == 4 ) {                        // フォーカード
+            the = -1;
+            break;
+        } else if ( poker_point(myhd) == P6 ) {         // フルハウス
+            the = -1;
+            break;
+        } else if ( numSum[k] == 3 ) {                 // スリーカード
+            the =  -1;
+            break;
+        } else if ( numSum[k] == 2 ) {                  
             if ( k == 12 ) {                        // ワンペア
                 the = one_pair(ud, us, myhd, k);
             } else {                                
                 for ( i = k+1; i < 13; i++ ) {
-                    if ( sum[i] == 2 ) {            // ツーペア
+                    if ( numSum[i] == 2 ) {            // ツーペア
                         the = two_pair(numCount, k, i);  
                         break; 
                     } else {                        // ワンペア
@@ -130,15 +146,46 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
                 }
                 break;
             }  
-        } else if ( sum[k] == 1 || sum[k] == 0 ) {  // ノーペア
-            the = straight(arr);
-            if ( the != -1 ) { break; }
+        } else if ( numSum[k] == 1 || numSum[k] == 0 ) {  // ノーペア
+            for ( i = 0; i < 4; i++ ) {
+                if ( shdcSum[i] == 5 ) {
+                    the = -1;
+                    flag = true;
+                    break;
+                } else if ( shdcSum[i] == 4 ) {
+                    the = flash(myhd, shdcCount, i);
+                    break;
+                }
+            }
+            the = straight(arr);                        // ストレート
+            if ( the != -1 || flag == true ) { break; }
         }
     }
-    //printf(" %d\n", the);
     
+    /*
+    if ( poker_point(myhd) == P7 ) {
+        the = -1;
+    } else if ( poker_point(myhd) == P6 ) {
+        the = -1;
+    } else if ( poker_point(myhd) == P5 ) {
+        the = flash(myhd, shdcCount, i);
+    } else if ( poker_point(myhd) == P4 ) {
+        the = straight(arr); 
+    } else if ( poker_point(myhd) == P3 ) {
 
+    } else if ( poker_point(myhd) == P2 ) {
+        the = two_pair(numCount, k, i);  
+    } else if ( poker_point(myhd) == P1 ) {
+        the = one_pair(ud, us, myhd, k);
+    }
     
+    card_show(hd, HNUM);
+    printf(" %d\n", the);
+    for ( k = 0; k < 13; k++ ) { 
+        printf("%d ", numSum[k]);
+    }
+    puts("\n");
+    */
     // for ( k = 0; k < HNUM; k++) { printf("my %d hd %d\n", myhd[k], hd[k]); }
     // printf("cg %d us %d\n", cg, us);
     // for ( k = 0; k < us; k++) { printf("fd %d ud %d\n", fd[k], ud[k]); }
@@ -153,23 +200,23 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
 //  補助関数
 //====================================================================
 
-void init(int count[5][13]) {
-    int i, j;
-    for ( i = 0; i < HNUM; i++ ) {
-        for ( j = 0; j < 13; j++ ) {
-            count[i][j] = 0;
-        }
-    }
-}
+// void init(int count[5][13]) {
+//     int i, j;
+//     for ( i = 0; i < HNUM; i++ ) {
+//         for ( j = 0; j < 13; j++ ) {
+//             count[i][j] = 0;
+//         }
+//     }
+// }
 
-void count_sum(int count[5][13], int sum[13], int n) {
-    int i, j; 
-    for ( i = 0; i < HNUM; i++ ) {
-        for ( j = 0; j < n; j++ ) {
-            sum[j] += count[i][j];
-        }
-    }
-}
+// void count_sum(int count[][], int sum[], int n) {
+//     int i, j; 
+//     for ( i = 0; i < HNUM; i++ ) {
+//         for ( j = 0; j < n; j++ ) {
+//             sum[j] += count[i][j];
+//         }
+//     }
+// }
 
 int two_pair(int numCount[5][13], int n, int m) {
     int i, j;
@@ -184,14 +231,13 @@ int two_pair(int numCount[5][13], int n, int m) {
 
 int one_pair(int ud[], int us, int hd[], int n) {
     int i, j;
-    int num1, num2;     // num1 = 捨てた数字, num2 = 手札の数字
+    int num;     // num1 = 捨てた数字
     int sum[5] = {0};
     
     for ( i = 0; i < us; i++ ) {
-        num1 = ud[i] % 13;
-        num2 = hd[i] % 13;
+        num = ud[i] % 13;
         for ( j = 0; j < HNUM; j++ ) {
-            if ( num1 == num2 && j != n ) {
+            if ( num == (hd[j] % 13) && j != n ) {
                 sum[j]++;
             }
         }
@@ -224,6 +270,18 @@ int straight(int hd[]) {
         return num;
     } else {        // count == 4 も含む
         return -1;
+    }
+}
+
+int flash(int hd[], int shdcCount[5][4], int n) {
+    int i, j;
+
+    for ( i = 0; i < HNUM; i++ ) {
+        for ( j = 0; j < HNUM-1; j++ ) {
+            if ( shdcCount[i][j] == 1 && j != n ) {
+                return i;
+            }
+        }
     }
 }
 

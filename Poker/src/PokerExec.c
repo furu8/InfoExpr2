@@ -321,16 +321,16 @@ void result_show(int point[][TAKE])
   for ( i = 0; i < Trial; i++ ) {
     for ( j = 0; j < TAKE; j++ ) {
       switch( point[i][j] ) {
-      case P9: deg[9][j]++; break;
-      case P8: deg[8][j]++; break;
-      case P7: deg[7][j]++; break;
-      case P6: deg[6][j]++; break;
-      case P5: deg[5][j]++; break;
-      case P4: deg[4][j]++; break;
-      case P3: deg[3][j]++; break;
-      case P2: deg[2][j]++; break;
-      case P1: deg[1][j]++; break;
-      case P0: deg[0][j]++; break;
+      case P9: deg[9][j]++; break;  // ロイヤル
+      case P8: deg[8][j]++; break;  // ストレートフラッシュ
+      case P7: deg[7][j]++; break;  // フォーカード
+      case P6: deg[6][j]++; break;  // フルハウス
+      case P5: deg[5][j]++; break;  // フラッシュ
+      case P4: deg[4][j]++; break;  // ストレート
+      case P3: deg[3][j]++; break;  // スリーカード
+      case P2: deg[2][j]++; break;  // ツーペア
+      case P1: deg[1][j]++; break;  // ワンペア
+      case P0: deg[0][j]++; break;  // ノーペア
       default : break;
       }
     }
