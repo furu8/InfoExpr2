@@ -44,7 +44,7 @@ void init(int count[5][13]);                        // Countの初期化
 void count_sum(int count[5][13], int sum[13], int n);      // Countの合計値
 int two_pair(int numCount[5][13], int n, int m);        // ツーペアの実装
 int one_pair(int ud[], int us, int hd[], int n);
-void straight(int shdcCount[5][13], int the);        // ストレートの実装
+int straight(int hd[]);        // ストレートの実装
 void arr_order(int arr[5]);                         // 配列の順番を降順にする
 int arr_max(int arr[5]);
 
@@ -74,6 +74,7 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
     int the;
     int k, i;
     int sum[13] = {0};
+    int arr[5];
     int shdc;               // スペード、ハート、ダイヤ、クラブ のどれか判断
     int num;                // 手札の数字を判断
     int shdcCount[5][13] = {{0}};    // 手札の種類の枚数
@@ -82,7 +83,7 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
     // init(shdcCount);
     // init(numCount);
 
-    // for ( k = 0; k < HNUM; k++ ) { myhd[k] = hd[k]; }
+     for ( k = 0; k < HNUM; k++ ) { myhd[k] = hd[k]; }
     // card_show(myhd, HNUM);
     // printf(" ?  ");  scanf("%d", &the);
 
@@ -101,10 +102,11 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
 
     // -- 手札の判定
     for ( k = 0; k < HNUM; k++ ) { 
-        shdc = hd[k] / 13;
-        num = hd[k] % 13;
+        shdc = myhd[k] / 13;
+        num = myhd[k] % 13;
         shdcCount[k][shdc]++;
         numCount[k][num]++;
+        arr[k] = num;
     }
     count_sum(numCount, sum, 13);
 
@@ -115,22 +117,23 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
             return -1;
         } else if ( sum[k] == 2 ) {                  
             if ( k == 12 ) {                        // ワンペア
-                the = one_pair(ud, us, hd, k);
+                the = one_pair(ud, us, myhd, k);
             } else {                                
                 for ( i = k+1; i < 13; i++ ) {
                     if ( sum[i] == 2 ) {            // ツーペア
                         the = two_pair(numCount, k, i);  
                         break; 
                     } else {                        // ワンペア
-                        the = one_pair(ud, us, hd, k);
+                        the = one_pair(ud, us, myhd, k);
                         break;
                     }
                 }
                 break;
             }  
         } else if ( sum[k] == 1 || sum[k] == 0 ) {  // ノーペア
-            the = -1;
-        } 
+            the = straight(arr);
+            if ( the != -1 ) { break; }
+        }
     }
     //printf(" %d\n", the);
     
@@ -180,13 +183,15 @@ int two_pair(int numCount[5][13], int n, int m) {
 }
 
 int one_pair(int ud[], int us, int hd[], int n) {
-    int i, j, num, a = 0;
+    int i, j;
+    int num1, num2;     // num1 = 捨てた数字, num2 = 手札の数字
     int sum[5] = {0};
     
     for ( i = 0; i < us; i++ ) {
-        num = ud[i] % 13;
+        num1 = ud[i] % 13;
+        num2 = hd[i] % 13;
         for ( j = 0; j < HNUM; j++ ) {
-            if ( num == hd[j] && j != n ) {
+            if ( num1 == num2 && j != n ) {
                 sum[j]++;
             }
         }
@@ -194,37 +199,40 @@ int one_pair(int ud[], int us, int hd[], int n) {
     return arr_max(sum);
 }
 
-// void straight(int shdcCount[5][13], int the) {
-//     int k, i;
-//     int tmp[5];
-
-//     for ( k = 0; k < HNUM; k++ ) {
-//         for ( i = 0; i < 13; i++ ) {
-//             if ( numCount[i][k] == 1 ) {
-//                 tmp[k] = i;
-//             } else {
-//                 break;
-//             }
-//         }
-//     }
-
-//     for ( k = 0; k < HNUM; k++ ) {
-//         for ( i = k+1; i < 5; i++ ) {
-//             if ( tmp[k] == tmp[i] + 1  ) {
-                
-//             }
-//         }
-        
-//     }   
-
+int straight(int hd[]) {
+    int k, num, count = 0;
     
-// }
+    //arr_output(hd, 5);
+    arr_order(hd);
+    //arr_output(hd, 5);
+    //puts("");
+    for ( k = 0; k < HNUM-1; k++ ) {
+        if ( hd[4] - hd[0] == 4 ) {
+            if ( hd[k] == hd[k+1] - 1 ) {
+                count++;
+            } else {
+                num = k;
+            }
+        } else if ( hd[k] == hd[k+1] - 1 ) {
+            count++;
+        } else {
+            num = k;
+        }
+    }
+
+    if ( count == 3 || count == 2 ) {
+        return num;
+    } else {        // count == 4 も含む
+        return -1;
+    }
+}
 
 void arr_order(int arr[5]) {
     int i, j;
     int tmp;
+    
     for ( i = 0; i < HNUM; i++ ) {
-        for ( i = 4; j > i; j-- ) {
+        for ( j = 4; j > i; j-- ) {
             if ( arr[j] < arr[j-1] ) {
                 tmp = arr[j];
                 arr[j] = arr[j-1];
