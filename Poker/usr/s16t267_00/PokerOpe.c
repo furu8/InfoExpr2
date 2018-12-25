@@ -141,21 +141,23 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
     } else if ( poker_point(myhd) == P5 || poker_point(myhd) == P4 ) {  // フラッシュ、ストレート
         the = -1;
     } else if ( poker_point(myhd) == P0 ) {     // ノーペア
-        for ( i = 0; i < 4; i++ ) {
+        arr_order(arr);
+        for ( i = 0; i < HNUM-1; i++ ) {
             if ( shdcSum[i] == 4 ) {            // -> フラッシュ
                 the = flash(myhd, shdcCount, i);
-                break;
+            } else if ( arr[4] - arr[0] == 4 || arr[3] - arr[0] == 3 || arr[4] - arr[1] == 3 ) {
+                the = straight(arr);            // -> ストレート  
             }
         }
-        the = straight(arr);                    // -> ストレート       
+                                 
     }
     
-    card_show(hd, HNUM);
-    printf(" %d\n", the);
-    for ( k = 0; k < 13; k++ ) { 
-        printf("%d ", numSum[k]);
-    }
-    puts("\n");
+    // card_show(hd, HNUM);
+    // printf(" %d\n", the);
+    // for ( k = 0; k < 13; k++ ) { 
+    //     printf("%d ", numSum[k]);
+    // }
+    // puts("\n");
     
     // for ( k = 0; k < HNUM; k++) { printf("my %d hd %d\n", myhd[k], hd[k]); }
     // printf("cg %d us %d\n", cg, us);
@@ -239,9 +241,7 @@ int straight(int hd[]) {
 
     if ( count == 3 || count == 2 ) {
         return num;
-    } else {        // count == 4 も含む
-        return -1;
-    }
+    } 
 }
 
 int flash(int hd[], int shdcCount[5][4], int n) {
