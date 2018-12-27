@@ -121,9 +121,9 @@
 [2] S8 C8 H8 C2 H7  > C2
 [3] S8 C8 H8 S4 H7  > S4
 [4] S8 C8 H8 DK H7  > H7
-[5] S8 C8 H8 DK H5  > S8
-[6] DT C8 H8 DK H5 
-テイク素点 :   1
+[5] S8 C8 H8 DK H5  > DK
+[6] S8 C8 H8 DT H5 
+テイク素点 :   8
 [0] C5 S7 H2 DQ S2  > S7
 [1] C5 D6 H2 DQ S2  > C5
 [2] C6 D6 H2 DQ S2  > DQ
@@ -144,7 +144,7 @@
 [3] S3 S5 CK SK S6  > CK
 [4] S3 S5 S1 SK S6 
 テイク素点 :  24
-トライ得点 :  69.50
+トライ得点 :  80.00
 [0] C7 C8 D3 H5 S8  > C8
 [1] C7 S3 D3 H5 S8  > S3
 [2] C7 CT D3 H5 S8  > D3
@@ -294,10 +294,10 @@
 [1] D9 H8 SQ H3 C5  > H3
 [2] D9 H8 SQ S5 C5  > D9
 [3] CK H8 SQ S5 C5  > CK
-[4] D5 H8 SQ S5 C5  > D5
-[5] H9 H8 SQ S5 C5  > H9
-[6] D3 H8 SQ S5 C5 
-テイク素点 :   1
+[4] D5 H8 SQ S5 C5  > H8
+[5] D5 H9 SQ S5 C5  > H9
+[6] D5 D3 SQ S5 C5 
+テイク素点 :   8
 [0] D4 S4 D8 HJ DT  > D8
 [1] D4 S4 C3 HJ DT  > C3
 [2] D4 S4 S6 HJ DT  > S6
@@ -327,7 +327,7 @@
 [5] D6 H1 CQ C6 D7  > H1
 [6] D6 S7 CQ C6 D7 
 テイク素点 :   2
-トライ得点 :  41.00
+トライ得点 :  51.50
 [0] S3 C7 H3 D7 DT  > DT
 [1] S3 C7 H3 D7 SJ  > SJ
 [2] S3 C7 H3 D7 S7 
@@ -771,11 +771,11 @@
 [0] CJ D4 ST DQ H1  > H1
 [1] CJ D4 ST DQ HQ  > CJ
 [2] C5 D4 ST DQ HQ  > C5
-[3] SQ D4 ST DQ HQ  > SQ
-[4] S3 D4 ST DQ HQ  > S3
-[5] H4 D4 ST DQ HQ  > ST
-[6] H4 D4 H5 DQ HQ 
-テイク素点 :   2
+[3] SQ D4 ST DQ HQ  > D4
+[4] SQ S3 ST DQ HQ  > S3
+[5] SQ H4 ST DQ HQ  > H4
+[6] SQ H5 ST DQ HQ 
+テイク素点 :   8
 [0] SK CQ C7 C4 S8  > C4
 [1] SK CQ C7 H9 S8  > CQ
 [2] SK C8 C7 H9 S8  > SK
@@ -798,7 +798,7 @@
 [3] DT D2 HT C1 S2  > C1
 [4] DT D2 HT C2 S2 
 テイク素点 :  16
-トライ得点 :  86.00
+トライ得点 :  95.00
 [0] HT H2 CT S2 C4  > C4
 [1] HT H2 CT S2 DT 
 テイク素点 :  16
@@ -1178,33 +1178,27 @@
 [0] D9 H9 S9 C7 S5  > S5
 [1] D9 H9 S9 C7 C4  > C7
 [2] D9 H9 S9 HK C4  > HK
-[3] D9 H9 S9 H2 C4  > D9
-[4] C3 H9 S9 H2 C4  > C3
-[5] D4 H9 S9 H2 C4  > H2
-[6] D4 H9 S9 DQ C4 
-テイク素点 :   2
-[0] CT H3 SJ DK H1  > DK
-[1] CT H3 SJ D5 H1  > D5
-[2] CT H3 SJ HJ H1  > H3
-[3] CT S4 SJ HJ H1  > S4
-[4] CT HT SJ HJ H1  > H1
-[5] CT HT SJ HJ D1  > D1
-[6] CT HT SJ HJ S1 
-テイク素点 :   2
-[0] S7 H6 S3 H8 H4  > S3
-[1] S7 H6 C6 H8 H4  > H6
-[2] S7 S2 C6 H8 H4  > H4
-[3] S7 S2 C6 H8 SQ  > S2
-[4] S7 C9 C6 H8 SQ  > SQ
-[5] S7 C9 C6 H8 C2  > C2
-[6] S7 C9 C6 H8 D7 
-テイク素点 :   1
-[0] CJ C1 D8 D6 ST  > C1
-[1] CJ D2 D8 D6 ST  > D2
-[2] CJ S8 D8 D6 ST  > S8
-[3] CJ DJ D8 D6 ST 
-テイク素点 :   1
-トライ得点 :  12.00
+[3] D9 H9 S9 H2 C4  > H2
+[4] D9 H9 S9 C3 C4  > C3
+[5] D9 H9 S9 D4 C4 
+テイク素点 :  16
+[0] DQ CT H3 SJ DK  > H3
+[1] DQ CT H1 SJ DK 
+テイク素点 :  32
+[0] D5 HJ S4 HT D1  > D1
+[1] D5 HJ S4 HT S1  > S1
+[2] D5 HJ S4 HT S7  > D5
+[3] H6 HJ S4 HT S7  > S4
+[4] H6 HJ S3 HT S7  > S3
+[5] H6 HJ H8 HT S7  > S7
+[6] H6 HJ H8 HT H4 
+テイク素点 :  24
+[0] C6 S2 SQ C9 C2  > SQ
+[1] C6 S2 D7 C9 C2  > D7
+[2] C6 S2 CJ C9 C2  > S2
+[3] C6 C1 CJ C9 C2 
+テイク素点 :  24
+トライ得点 : 155.00
 [0] S9 H9 S5 ST H5  > ST
 [1] S9 H9 S5 D9 H5 
 テイク素点 :  16
@@ -1244,10 +1238,10 @@
 [1] D4 S5 S2 D9 C2  > D4
 [2] H8 S5 S2 D9 C2  > H8
 [3] S8 S5 S2 D9 C2  > S8
-[4] H2 S5 S2 D9 C2  > H2
-[5] C7 S5 S2 D9 C2  > C7
-[6] C4 S5 S2 D9 C2 
-テイク素点 :   1
+[4] H2 S5 S2 D9 C2  > S5
+[5] H2 C7 S2 D9 C2  > C7
+[6] H2 C4 S2 D9 C2 
+テイク素点 :   8
 [0] C5 H1 C8 S4 S7  > H1
 [1] C5 H4 C8 S4 S7  > H4
 [2] C5 H3 C8 S4 S7  > S4
@@ -1277,7 +1271,7 @@
 [2] S9 SQ C1 C9 DQ  > C1
 [3] S9 SQ S1 C9 DQ 
 テイク素点 :   2
-トライ得点 :  19.00
+トライ得点 :  29.50
 [0] H7 D7 H2 C4 HJ  > H7
 [1] CT D7 H2 C4 HJ  > D7
 [2] CT C1 H2 C4 HJ  > CT
@@ -1548,9 +1542,9 @@
 [2] DK D7 DQ C4 HK  > DQ
 [3] DK D7 C8 C4 HK  > D7
 [4] DK D6 C8 C4 HK  > D6
-[5] DK CK C8 C4 HK  > DK
-[6] D9 CK C8 C4 HK 
-テイク素点 :   1
+[5] DK CK C8 C4 HK  > C8
+[6] DK CK D9 C4 HK 
+テイク素点 :   8
 [0] H1 S5 D1 S7 S8  > S5
 [1] H1 H3 D1 S7 S8  > H3
 [2] H1 C1 D1 S7 S8  > S7
@@ -1569,7 +1563,7 @@
 [5] CT DJ ST HT S4  > DJ
 [6] CT H2 ST HT S4 
 テイク素点 :   8
-トライ得点 : 100.50
+トライ得点 : 111.00
 [0] D2 D6 S2 DQ C6  > DQ
 [1] D2 D6 S2 SJ C6  > SJ
 [2] D2 D6 S2 DJ C6  > DJ
@@ -1648,38 +1642,39 @@
 トライ得点 :  33.50
 [0] H5 C2 H2 S8 C7  > H5
 [1] HQ C2 H2 S8 C7  > HQ
-[2] S2 C2 H2 S8 C7  > S2
-[3] D6 C2 H2 S8 C7  > D6
-[4] D7 C2 H2 S8 C7  > S8
-[5] D7 C2 H2 D3 C7  > D3
-[6] D7 C2 H2 D1 C7 
-テイク素点 :   2
-[0] SQ D9 SJ DT D4  > D4
-[1] SQ D9 SJ DT H3  > H3
-[2] SQ D9 SJ DT HT  > DT
-[3] SQ D9 SJ DK HT 
-テイク素点 :  32
-[0] C8 S6 C1 C3 CT  > S6
-[1] C8 D2 C1 C3 CT  > D2
-[2] C8 C5 C1 C3 CT 
+[2] S2 C2 H2 S8 C7  > S8
+[3] S2 C2 H2 D6 C7  > D6
+[4] S2 C2 H2 D7 C7 
+テイク素点 :  16
+[0] D3 D1 SQ D9 SJ  > SQ
+[1] D3 D1 DT D9 SJ  > SJ
+[2] D3 D1 DT D9 D4 
 テイク素点 :  24
-[0] C4 C9 CJ H8 H6  > H8
-[1] C4 C9 CJ HJ H6  > H6
-[2] C4 C9 CJ HJ S4  > C9
-[3] C4 D8 CJ HJ S4  > D8
-[4] C4 DQ CJ HJ S4  > DQ
-[5] C4 S1 CJ HJ S4  > S1
-[6] C4 SK CJ HJ S4 
+[0] H3 HT DK C8 S6  > H3
+[1] C1 HT DK C8 S6  > C1
+[2] C3 HT DK C8 S6  > C3
+[3] CT HT DK C8 S6  > C8
+[4] CT HT DK D2 S6  > D2
+[5] CT HT DK C5 S6  > C5
+[6] CT HT DK C4 S6 
+テイク素点 :   1
+[0] C9 CJ H8 H6 HJ  > CJ
+[1] C9 S4 H8 H6 HJ  > S4
+[2] C9 D8 H8 H6 HJ  > D8
+[3] C9 DQ H8 H6 HJ  > H8
+[4] C9 DQ S1 H6 HJ  > S1
+[5] C9 DQ SK H6 HJ  > H6
+[6] C9 DQ SK CQ HJ 
+テイク素点 :   1
+[0] H9 C6 S9 HK ST  > C6
+[1] H9 S5 S9 HK ST  > ST
+[2] H9 S5 S9 HK D5  > HK
+[3] H9 S5 S9 H7 D5  > H7
+[4] H9 S5 S9 H4 D5  > H4
+[5] H9 S5 S9 S7 D5  > S7
+[6] H9 S5 S9 DJ D5 
 テイク素点 :   2
-[0] CQ H9 C6 S9 HK  > CQ
-[1] ST H9 C6 S9 HK  > ST
-[2] S5 H9 C6 S9 HK  > C6
-[3] S5 H9 D5 S9 HK  > HK
-[4] S5 H9 D5 S9 H7  > H7
-[5] S5 H9 D5 S9 H4  > H4
-[6] S5 H9 D5 S9 S7 
-テイク素点 :   2
-トライ得点 :  83.00
+トライ得点 :  67.00
 [0] C3 C6 HK H8 DT  > C3
 [1] ST C6 HK H8 DT  > C6
 [2] ST DK HK H8 DT  > H8
@@ -1793,11 +1788,11 @@
 [0] ST D9 C3 HK C4  > ST
 [1] SQ D9 C3 HK C4  > SQ
 [2] CK D9 C3 HK C4  > D9
-[3] CK SK C3 HK C4  > CK
-[4] C6 SK C3 HK C4  > C6
-[5] DJ SK C3 HK C4  > DJ
-[6] D8 SK C3 HK C4 
-テイク素点 :   1
+[3] CK SK C3 HK C4  > C3
+[4] CK SK C6 HK C4  > C6
+[5] CK SK DJ HK C4  > DJ
+[6] CK SK D8 HK C4 
+テイク素点 :   8
 [0] DT HT D2 H9 H7  > H9
 [1] DT HT D2 C5 H7  > D2
 [2] DT HT HQ C5 H7  > HQ
@@ -1826,7 +1821,7 @@
 [5] H8 D1 C1 HJ S7  > HJ
 [6] H8 D1 C1 C8 S7 
 テイク素点 :   2
-トライ得点 :  74.50
+トライ得点 :  85.00
 [0] D5 C5 D3 S8 DT  > D5
 [1] DK C5 D3 S8 DT  > C5
 [2] DK C3 D3 S8 DT  > DK
@@ -2032,11 +2027,11 @@
 [0] S4 S9 H2 CT D5  > S4
 [1] ST S9 H2 CT D5  > D5
 [2] ST S9 H2 CT C6  > C6
-[3] ST S9 H2 CT DT  > ST
-[4] HK S9 H2 CT DT  > HK
-[5] SQ S9 H2 CT DT  > SQ
-[6] S8 S9 H2 CT DT 
-テイク素点 :   1
+[3] ST S9 H2 CT DT  > S9
+[4] ST HK H2 CT DT  > HK
+[5] ST SQ H2 CT DT  > SQ
+[6] ST S8 H2 CT DT 
+テイク素点 :   8
 [0] HQ DJ C3 D9 S5  > DJ
 [1] HQ S2 C3 D9 S5  > HQ
 [2] D3 S2 C3 D9 S5  > S5
@@ -2050,7 +2045,7 @@
 [2] C9 D2 C8 H9 H4  > D2
 [3] C9 H8 C8 H9 H4 
 テイク素点 :   2
-トライ得点 :  10.50
+トライ得点 :  17.50
 [0] DQ D9 S4 HQ C6  > DQ
 [1] DK D9 S4 HQ C6  > HQ
 [2] DK D9 S4 HK C6  > D9
@@ -2431,11 +2426,11 @@
 [0] HK S5 H8 S6 DK  > S5
 [1] HK CK H8 S6 DK  > S6
 [2] HK CK H8 D4 DK  > D4
-[3] HK CK H8 D7 DK  > HK
-[4] C5 CK H8 D7 DK  > C5
-[5] S2 CK H8 D7 DK  > S2
-[6] CT CK H8 D7 DK 
-テイク素点 :   1
+[3] HK CK H8 D7 DK  > H8
+[4] HK CK C5 D7 DK  > C5
+[5] HK CK S2 D7 DK  > S2
+[6] HK CK CT D7 DK 
+テイク素点 :   8
 [0] DQ H7 HJ DT S3  > S3
 [1] DQ H7 HJ DT D5  > DT
 [2] DQ H7 HJ D2 D5  > D2
@@ -2457,7 +2452,7 @@
 [2] H6 DJ C9 SK HQ  > H6
 [3] C3 DJ C9 SK HQ 
 テイク素点 :   0
-トライ得点 :   9.50
+トライ得点 :  20.00
 [0] D9 S2 HT C6 H5  > S2
 [1] D9 C1 HT C6 H5  > C1
 [2] D9 CQ HT C6 H5  > D9
@@ -2543,13 +2538,13 @@
 [6] DK HT HJ CJ H9 
 テイク素点 :   1
 [0] D5 D7 C1 D1 C8  > D5
-[1] H1 D7 C1 D1 C8  > H1
-[2] SJ D7 C1 D1 C8  > SJ
-[3] DJ D7 C1 D1 C8  > DJ
-[4] C9 D7 C1 D1 C8  > C9
-[5] CT D7 C1 D1 C8  > CT
-[6] S9 D7 C1 D1 C8 
-テイク素点 :   1
+[1] H1 D7 C1 D1 C8  > D7
+[2] H1 SJ C1 D1 C8  > SJ
+[3] H1 DJ C1 D1 C8  > DJ
+[4] H1 C9 C1 D1 C8  > C9
+[5] H1 CT C1 D1 C8  > CT
+[6] H1 S9 C1 D1 C8 
+テイク素点 :   8
 [0] D4 S7 C4 C7 H2  > H2
 [1] D4 S7 C4 C7 C3  > C3
 [2] D4 S7 C4 C7 C6  > C6
@@ -2571,7 +2566,7 @@
 [4] SK S2 S1 HK D2  > S1
 [5] SK S2 H7 HK D2 
 テイク素点 :   2
-トライ得点 :  41.00
+トライ得点 :  51.50
 [0] S1 H5 CJ DQ H8  > S1
 [1] D6 H5 CJ DQ H8  > D6
 [2] D4 H5 CJ DQ H8  > D4
@@ -2653,10 +2648,10 @@
 [1] CQ C8 HJ SK D6  > SK
 [2] CQ C8 HJ D2 D6  > D2
 [3] CQ C8 HJ H6 D6  > CQ
-[4] S6 C8 HJ H6 D6  > S6
-[5] SQ C8 HJ H6 D6  > SQ
-[6] S1 C8 HJ H6 D6 
-テイク素点 :   1
+[4] S6 C8 HJ H6 D6  > C8
+[5] S6 SQ HJ H6 D6  > SQ
+[6] S6 S1 HJ H6 D6 
+テイク素点 :   8
 [0] C1 D1 H3 C4 H9  > H3
 [1] C1 D1 H5 C4 H9  > H5
 [2] C1 D1 H4 C4 H9  > H9
@@ -2679,7 +2674,7 @@
 [5] H8 D8 C5 D5 CJ  > CJ
 [6] H8 D8 C5 D5 CT 
 テイク素点 :   2
-トライ得点 :  47.50
+トライ得点 :  58.00
 [0] CQ D6 S6 S4 S8  > CQ
 [1] D1 D6 S6 S4 S8  > D1
 [2] C9 D6 S6 S4 S8  > D6
@@ -3093,12 +3088,12 @@
 トライ得点 :  53.50
 [0] D1 C9 S3 D7 SK  > D1
 [1] D9 C9 S3 D7 SK  > S3
-[2] D9 C9 H9 D7 SK  > D9
-[3] C3 C9 H9 D7 SK  > C3
-[4] D5 C9 H9 D7 SK  > D5
-[5] C1 C9 H9 D7 SK  > C1
-[6] H7 C9 H9 D7 SK 
-テイク素点 :   2
+[2] D9 C9 H9 D7 SK  > D7
+[3] D9 C9 H9 C3 SK  > C3
+[4] D9 C9 H9 D5 SK  > D5
+[5] D9 C9 H9 C1 SK  > C1
+[6] D9 C9 H9 H7 SK 
+テイク素点 :   8
 [0] H4 H6 CT S1 C4  > S1
 [1] H4 H6 CT DQ C4  > H6
 [2] H4 S5 CT DQ C4  > S5
@@ -3128,7 +3123,7 @@
 [2] S6 SJ D6 C5 CJ  > C5
 [3] S6 SJ D6 D3 CJ 
 テイク素点 :   2
-トライ得点 :  30.00
+トライ得点 :  39.00
 [0] S1 D6 S5 S3 D7  > S1
 [1] H2 D6 S5 S3 D7  > H2
 [2] CQ D6 S5 S3 D7  > CQ
@@ -3271,11 +3266,11 @@
 [0] HJ SQ S6 C7 C3  > C3
 [1] HJ SQ S6 C7 S2  > S2
 [2] HJ SQ S6 C7 SJ  > SQ
-[3] HJ DJ S6 C7 SJ  > HJ
-[4] D6 DJ S6 C7 SJ  > C7
-[5] D6 DJ S6 C1 SJ  > C1
-[6] D6 DJ S6 DT SJ 
-テイク素点 :   2
+[3] HJ DJ S6 C7 SJ  > S6
+[4] HJ DJ D6 C7 SJ  > D6
+[5] HJ DJ C1 C7 SJ  > C1
+[6] HJ DJ DT C7 SJ 
+テイク素点 :   8
 [0] DQ C2 HQ S4 HK  > C2
 [1] DQ D9 HQ S4 HK  > D9
 [2] DQ S9 HQ S4 HK  > S9
@@ -3305,7 +3300,7 @@
 [2] S3 D4 S7 D7 S5  > S7
 [3] S3 D4 SK D7 S5 
 テイク素点 :   0
-トライ得点 :   9.00
+トライ得点 :  18.00
 [0] DT DQ ST C3 S4  > DT
 [1] H3 DQ ST C3 S4  > ST
 [2] H3 DQ S8 C3 S4  > DQ
@@ -3317,11 +3312,11 @@
 [0] D7 D5 S6 HJ S9  > S9
 [1] D7 D5 S6 HJ HT  > HT
 [2] D7 D5 S6 HJ C6  > D7
-[3] H6 D5 S6 HJ C6  > H6
-[4] C2 D5 S6 HJ C6  > C2
-[5] S1 D5 S6 HJ C6  > S1
-[6] SK D5 S6 HJ C6 
-テイク素点 :   1
+[3] H6 D5 S6 HJ C6  > D5
+[4] H6 C2 S6 HJ C6  > C2
+[5] H6 S1 S6 HJ C6  > S1
+[6] H6 SK S6 HJ C6 
+テイク素点 :   8
 [0] S7 D8 S3 H2 C1  > S3
 [1] S7 D8 D4 H2 C1  > D4
 [2] S7 D8 D6 H2 C1  > D6
@@ -3343,7 +3338,7 @@
 [2] D2 D9 H8 CT CK  > D2
 [3] SQ D9 H8 CT CK 
 テイク素点 :   0
-トライ得点 :  37.50
+トライ得点 :  48.00
 [0] CJ D4 S1 D1 SJ  > D4
 [1] CJ DQ S1 D1 SJ  > DQ
 [2] CJ C7 S1 D1 SJ  > C7
@@ -3436,9 +3431,9 @@
 [2] C6 S6 C8 D4 D6  > D4
 [3] C6 S6 C8 S5 D6  > C8
 [4] C6 S6 C3 S5 D6  > S5
-[5] C6 S6 C3 H1 D6  > C6
-[6] C1 S6 C3 H1 D6 
-テイク素点 :   2
+[5] C6 S6 C3 H1 D6  > C3
+[6] C6 S6 C1 H1 D6 
+テイク素点 :  16
 [0] CK S3 H2 SK D1  > H2
 [1] CK S3 D8 SK D1  > D8
 [2] CK S3 HT SK D1  > HT
@@ -3455,7 +3450,7 @@
 [5] DK D5 HK H8 C7  > D5
 [6] DK D7 HK H8 C7 
 テイク素点 :   2
-トライ得点 :  56.00
+トライ得点 :  70.00
 [0] D9 CQ H7 S5 HK  > D9
 [1] S3 CQ H7 S5 HK  > S3
 [2] DK CQ H7 S5 HK  > CQ
@@ -3492,41 +3487,41 @@
 [0] S2 CT D5 DT DJ  > S2
 [1] H4 CT D5 DT DJ  > H4
 [2] H8 CT D5 DT DJ  > H8
-[3] HT CT D5 DT DJ  > HT
-[4] S3 CT D5 DT DJ  > S3
-[5] SJ CT D5 DT DJ  > D5
-[6] SJ CT HQ DT DJ 
+[3] HT CT D5 DT DJ  > D5
+[4] HT CT S3 DT DJ  > S3
+[5] HT CT SJ DT DJ 
+テイク素点 :  16
+[0] HQ C8 CJ HJ C1  > C8
+[1] HQ D8 CJ HJ C1  > D8
+[2] HQ H9 CJ HJ C1  > HQ
+[3] S4 H9 CJ HJ C1  > S4
+[4] S1 H9 CJ HJ C1  > H9
+[5] S1 S5 CJ HJ C1  > S5
+[6] S1 H3 CJ HJ C1 
 テイク素点 :   2
-[0] C8 CJ HJ C1 D8  > C1
-[1] C8 CJ HJ H9 D8  > H9
-[2] C8 CJ HJ S4 D8  > S4
-[3] C8 CJ HJ S1 D8  > S1
-[4] C8 CJ HJ S5 D8  > S5
-[5] C8 CJ HJ H3 D8  > H3
-[6] C8 CJ HJ HK D8 
+[0] HK H1 DQ H7 CK  > H1
+[1] HK D9 DQ H7 CK  > D9
+[2] HK S9 DQ H7 CK  > S9
+[3] HK C6 DQ H7 CK  > DQ
+[4] HK C6 S8 H7 CK  > S8
+[5] HK C6 D7 H7 CK  > C6
+[6] HK D6 D7 H7 CK 
 テイク素点 :   2
-[0] H1 DQ H7 CK D9  > H1
-[1] S9 DQ H7 CK D9  > DQ
-[2] S9 C6 H7 CK D9  > CK
-[3] S9 C6 H7 S8 D9  > S9
-[4] D7 C6 H7 S8 D9  > D7
-[5] D6 C6 H7 S8 D9  > D6
-[6] S6 C6 H7 S8 D9 
+[0] S6 C5 D4 C9 SK  > C9
+[1] S6 C5 D4 SQ SK  > S6
+[2] DK C5 D4 SQ SK  > C5
+[3] DK ST D4 SQ SK  > ST
+[4] DK C7 D4 SQ SK  > C7
+[5] DK D3 D4 SQ SK  > D3
+[6] DK D1 D4 SQ SK 
 テイク素点 :   1
-[0] C5 D4 C9 SK SQ  > C9
-[1] C5 D4 DK SK SQ  > C5
-[2] ST D4 DK SK SQ  > ST
-[3] C7 D4 DK SK SQ  > C7
-[4] D3 D4 DK SK SQ  > D3
-[5] D1 D4 DK SK SQ  > D1
-[6] C4 D4 DK SK SQ 
-テイク素点 :   2
-[0] H6 C2 D2 S7 C3  > H6
-[1] H5 C2 D2 S7 C3  > C2
-[2] H5 CQ D2 S7 C3  > CQ
-[3] H5 H2 D2 S7 C3 
+[0] C4 H6 C2 D2 S7  > C2
+[1] C4 H6 C3 D2 S7  > C4
+[2] H5 H6 C3 D2 S7  > H5
+[3] CQ H6 C3 D2 S7  > CQ
+[4] H2 H6 C3 D2 S7 
 テイク素点 :   1
-トライ得点 :  13.00
+トライ得点 :  33.00
 [0] D6 D2 D7 S1 C5  > D6
 [1] S7 D2 D7 S1 C5  > D2
 [2] S7 HQ D7 S1 C5  > HQ
@@ -3644,11 +3639,11 @@
 [0] C6 S4 H5 H9 C1  > C1
 [1] C6 S4 H5 H9 D1  > D1
 [2] C6 S4 H5 H9 C9  > C6
-[3] S9 S4 H5 H9 C9  > S9
-[4] SK S4 H5 H9 C9  > SK
-[5] C2 S4 H5 H9 C9  > C2
-[6] S6 S4 H5 H9 C9 
-テイク素点 :   1
+[3] S9 S4 H5 H9 C9  > S4
+[4] S9 SK H5 H9 C9  > SK
+[5] S9 C2 H5 H9 C9  > C2
+[6] S9 S6 H5 H9 C9 
+テイク素点 :   8
 [0] CJ S8 DJ C4 C5  > C4
 [1] CJ S8 DJ S7 C5  > C5
 [2] CJ S8 DJ S7 C8  > S7
@@ -3678,7 +3673,7 @@
 [2] H7 D3 D8 CQ HT  > D3
 [3] H7 H4 D8 CQ HT 
 テイク素点 :   0
-トライ得点 :   5.50
+トライ得点 :  16.00
 [0] H7 SK D5 CJ H5  > H7
 [1] C2 SK D5 CJ H5  > C2
 [2] S9 SK D5 CJ H5  > S9
@@ -3692,9 +3687,9 @@
 [2] S1 C1 S4 D1 DK  > DK
 [3] S1 C1 S4 D1 D7  > D7
 [4] S1 C1 S4 D1 D2  > D2
-[5] S1 C1 S4 D1 HQ  > S1
-[6] CQ C1 S4 D1 HQ 
-テイク素点 :   2
+[5] S1 C1 S4 D1 HQ  > S4
+[6] S1 C1 CQ D1 HQ 
+テイク素点 :  16
 [0] HK S8 SJ C3 D4  > HK
 [1] CK S8 SJ C3 D4  > CK
 [2] C6 S8 SJ C3 D4  > SJ
@@ -3714,15 +3709,15 @@
 [2] D8 C8 C4 H6 C7  > D8
 [3] S5 C8 C4 H6 C7 
 テイク素点 :  32
-トライ得点 : 101.50
+トライ得点 : 122.50
 [0] C1 H7 S7 C9 D8  > C1
-[1] D7 H7 S7 C9 D8  > D7
-[2] S4 H7 S7 C9 D8  > S4
-[3] D2 H7 S7 C9 D8  > D2
-[4] HQ H7 S7 C9 D8  > HQ
-[5] C6 H7 S7 C9 D8  > H7
-[6] C6 DT S7 C9 D8 
-テイク素点 :  32
+[1] D7 H7 S7 C9 D8  > C9
+[2] D7 H7 S7 S4 D8  > S4
+[3] D7 H7 S7 D2 D8  > D2
+[4] D7 H7 S7 HQ D8  > HQ
+[5] D7 H7 S7 C6 D8  > C6
+[6] D7 H7 S7 DT D8 
+テイク素点 :   8
 [0] H6 D9 H8 D5 C5  > D5
 [1] H6 D9 H8 S6 C5  > H6
 [2] S5 D9 H8 S6 C5  > S5
@@ -3752,7 +3747,7 @@
 [2] SQ C2 H2 HK CQ  > HK
 [3] SQ C2 H2 H1 CQ 
 テイク素点 :   2
-トライ得点 :  55.50
+トライ得点 :  19.50
 [0] C7 S1 S4 HQ H4  > C7
 [1] HT S1 S4 HQ H4  > HT
 [2] C8 S1 S4 HQ H4  > C8
@@ -4270,12 +4265,12 @@
 トライ得点 :  56.00
 [0] C3 SK HK H1 SQ  > C3
 [1] S3 SK HK H1 SQ  > S3
-[2] DK SK HK H1 SQ  > DK
-[3] C6 SK HK H1 SQ  > C6
-[4] H4 SK HK H1 SQ  > H4
-[5] C4 SK HK H1 SQ  > C4
-[6] S2 SK HK H1 SQ 
-テイク素点 :   1
+[2] DK SK HK H1 SQ  > H1
+[3] DK SK HK C6 SQ  > C6
+[4] DK SK HK H4 SQ  > H4
+[5] DK SK HK C4 SQ  > C4
+[6] DK SK HK S2 SQ 
+テイク素点 :   8
 [0] H3 H5 S5 CQ H2  > H3
 [1] S8 H5 S5 CQ H2  > CQ
 [2] S8 H5 S5 ST H2  > H2
@@ -4305,7 +4300,7 @@
 [2] C5 SJ H6 CT S4  > C5
 [3] H9 SJ H6 CT S4 
 テイク素点 :   0
-トライ得点 :  13.50
+トライ得点 :  24.00
 [0] C2 D3 S4 CK S3  > C2
 [1] HT D3 S4 CK S3  > HT
 [2] C8 D3 S4 CK S3  > C8
@@ -4600,12 +4595,12 @@
 トライ得点 :  43.50
 [0] H9 CT S3 D1 H1  > H9
 [1] H8 CT S3 D1 H1  > H8
-[2] S1 CT S3 D1 H1  > S1
-[3] C8 CT S3 D1 H1  > C8
-[4] CK CT S3 D1 H1  > CK
-[5] H2 CT S3 D1 H1  > H2
-[6] CJ CT S3 D1 H1 
-テイク素点 :   1
+[2] S1 CT S3 D1 H1  > CT
+[3] S1 C8 S3 D1 H1  > C8
+[4] S1 CK S3 D1 H1  > CK
+[5] S1 H2 S3 D1 H1  > H2
+[6] S1 CJ S3 D1 H1 
+テイク素点 :   8
 [0] C3 S8 C5 D7 CQ  > CQ
 [1] C3 S8 C5 D7 D4  > S8
 [2] C3 D5 C5 D7 D4  > D5
@@ -4635,7 +4630,7 @@
 [2] H4 D6 C6 D3 C4  > D3
 [3] H4 D6 C6 H5 C4 
 テイク素点 :   2
-トライ得点 :  47.00
+トライ得点 :  57.50
 [0] DT S9 HQ D5 SJ  > D5
 [1] DT S9 HQ CT SJ  > DT
 [2] D6 S9 HQ CT SJ  > D6
@@ -4756,11 +4751,11 @@
 [0] H9 DQ H5 S9 C4  > H5
 [1] H9 DQ DT S9 C4  > DQ
 [2] H9 S8 DT S9 C4  > S8
-[3] H9 C9 DT S9 C4  > H9
-[4] CQ C9 DT S9 C4  > CQ
-[5] ST C9 DT S9 C4  > C4
-[6] ST C9 DT S9 S7 
-テイク素点 :   2
+[3] H9 C9 DT S9 C4  > DT
+[4] H9 C9 CQ S9 C4  > CQ
+[5] H9 C9 ST S9 C4  > ST
+[6] H9 C9 S7 S9 C4 
+テイク素点 :   8
 [0] C8 HQ SK H7 D9  > D9
 [1] C8 HQ SK H7 H4  > H4
 [2] C8 HQ SK H7 C3  > C3
@@ -4782,7 +4777,7 @@
 [2] SJ D7 D2 C1 D4  > D7
 [3] SJ DJ D2 C1 D4 
 テイク素点 :   1
-トライ得点 :  11.00
+トライ得点 :  20.00
 [0] H4 D9 DQ D5 S6  > H4
 [1] DK D9 DQ D5 S6  > S6
 [2] DK D9 DQ D5 SJ  > D5
@@ -5037,12 +5032,12 @@
 トライ得点 : 115.50
 [0] D4 H6 S3 SJ DK  > D4
 [1] H3 H6 S3 SJ DK  > H6
-[2] H3 C3 S3 SJ DK  > H3
-[3] D8 C3 S3 SJ DK  > D8
-[4] D2 C3 S3 SJ DK  > D2
-[5] D6 C3 S3 SJ DK  > D6
-[6] H1 C3 S3 SJ DK 
-テイク素点 :   1
+[2] H3 C3 S3 SJ DK  > SJ
+[3] H3 C3 S3 D8 DK  > D8
+[4] H3 C3 S3 D2 DK  > D2
+[5] H3 C3 S3 D6 DK  > D6
+[6] H3 C3 S3 H1 DK 
+テイク素点 :   8
 [0] C7 H4 S9 HQ CK  > H4
 [1] C7 D1 S9 HQ CK  > D1
 [2] C7 D7 S9 HQ CK  > CK
@@ -5070,7 +5065,7 @@
 [5] H2 S2 D5 H7 S4  > H2
 [6] C1 S2 D5 H7 S4 
 テイク素点 :   0
-トライ得点 :  30.50
+トライ得点 :  41.00
 [0] C3 H9 D9 H3 H2  > H2
 [1] C3 H9 D9 H3 D1  > D1
 [2] C3 H9 D9 H3 SQ  > SQ
@@ -5156,13 +5151,13 @@
 [6] HQ CQ S1 S9 C9 
 テイク素点 :   2
 [0] D2 S7 H7 S6 D5  > D2
-[1] D7 S7 H7 S6 D5  > D7
-[2] S8 S7 H7 S6 D5  > S7
-[3] S8 C2 H7 S6 D5  > C2
-[4] S8 C8 H7 S6 D5  > S8
-[5] H3 C8 H7 S6 D5  > H7
-[6] H3 C8 C5 S6 D5 
-テイク素点 :   1
+[1] D7 S7 H7 S6 D5  > S6
+[2] D7 S7 H7 S8 D5  > S8
+[3] D7 S7 H7 C2 D5  > C2
+[4] D7 S7 H7 C8 D5  > C8
+[5] D7 S7 H7 H3 D5  > H3
+[6] D7 S7 H7 C5 D5 
+テイク素点 :  16
 [0] HK C3 H5 S3 D1  > H5
 [1] HK C3 SJ S3 D1  > HK
 [2] DT C3 SJ S3 D1  > DT
@@ -5184,7 +5179,7 @@
 [2] D8 H9 H4 H8 D6  > D8
 [3] DQ H9 H4 H8 D6 
 テイク素点 :   0
-トライ得点 :   9.50
+トライ得点 :  32.00
 [0] CT H7 S1 H2 S7  > CT
 [1] C2 H7 S1 H2 S7  > S1
 [2] C2 H7 CJ H2 S7  > CJ
@@ -5991,12 +5986,12 @@
 テイク素点 :   1
 [0] S1 C5 DT D4 H5  > D4
 [1] S1 C5 DT D7 H5  > S1
-[2] S5 C5 DT D7 H5  > S5
-[3] H2 C5 DT D7 H5  > H2
-[4] SK C5 DT D7 H5  > SK
-[5] ST C5 DT D7 H5  > D7
-[6] ST C5 DT SQ H5 
-テイク素点 :   2
+[2] S5 C5 DT D7 H5  > DT
+[3] S5 C5 H2 D7 H5  > H2
+[4] S5 C5 SK D7 H5  > SK
+[5] S5 C5 ST D7 H5  > ST
+[6] S5 C5 SQ D7 H5 
+テイク素点 :   8
 [0] HT D1 CT DK D5  > D5
 [1] HT D1 CT DK H6  > D1
 [2] HT D9 CT DK H6  > D9
@@ -6018,7 +6013,7 @@
 [2] DQ HJ C9 D8 S7  > DQ
 [3] H7 HJ C9 D8 S7 
 テイク素点 :   1
-トライ得点 :  12.50
+トライ得点 :  21.50
 [0] HK CT HT H7 S2  > HK
 [1] C7 CT HT H7 S2  > S2
 [2] C7 CT HT H7 D8  > D8
@@ -6887,11 +6882,11 @@
 [0] ST C4 H8 S3 S2  > ST
 [1] SK C4 H8 S3 S2  > SK
 [2] H2 C4 H8 S3 S2  > C4
-[3] H2 C2 H8 S3 S2  > H2
-[4] D9 C2 H8 S3 S2  > D9
-[5] S8 C2 H8 S3 S2  > S3
-[6] S8 C2 H8 D4 S2 
-テイク素点 :   2
+[3] H2 C2 H8 S3 S2  > H8
+[4] H2 C2 D9 S3 S2  > D9
+[5] H2 C2 S8 S3 S2  > S8
+[6] H2 C2 D4 S3 S2 
+テイク素点 :   8
 [0] CJ H7 S9 C3 C6  > C3
 [1] CJ H7 S9 D2 C6  > D2
 [2] CJ H7 S9 H3 C6  > H3
@@ -6913,7 +6908,7 @@
 [2] H5 D3 DJ C5 DK  > D3
 [3] H5 HQ DJ C5 DK 
 テイク素点 :   1
-トライ得点 :   6.00
+トライ得点 :  15.00
 [0] S5 C2 S7 CJ C3  > CJ
 [1] S5 C2 S7 C1 C3  > S5
 [2] SK C2 S7 C1 C3  > SK
@@ -7180,41 +7175,41 @@
 [0] S8 S2 D9 S6 ST  > S2
 [1] S8 DQ D9 S6 ST  > S8
 [2] HT DQ D9 S6 ST  > DQ
-[3] HT CT D9 S6 ST  > HT
-[4] C6 CT D9 S6 ST  > D9
-[5] C6 CT D3 S6 ST  > D3
-[6] C6 CT D1 S6 ST 
-テイク素点 :   2
-[0] C4 H2 C3 H8 H6  > H6
-[1] C4 H2 C3 H8 HJ  > H2
-[2] C4 DK C3 H8 HJ  > C3
-[3] C4 DK S1 H8 HJ  > S1
-[4] C4 DK D2 H8 HJ  > D2
-[5] C4 DK H4 H8 HJ  > H8
-[6] C4 DK H4 C2 HJ 
+[3] HT CT D9 S6 ST  > D9
+[4] HT CT C6 S6 ST 
+テイク素点 :  16
+[0] D3 D1 C4 H2 C3  > D3
+[1] H8 D1 C4 H2 C3  > H8
+[2] H6 D1 C4 H2 C3  > H6
+[3] HJ D1 C4 H2 C3  > HJ
+[4] DK D1 C4 H2 C3  > DK
+[5] S1 D1 C4 H2 C3  > S1
+[6] D2 D1 C4 H2 C3 
 テイク素点 :   1
-[0] C7 SK DJ D5 D6  > D6
-[1] C7 SK DJ D5 H7  > SK
-[2] C7 C1 DJ D5 H7  > C1
-[3] C7 H3 DJ D5 H7  > H3
-[4] C7 S5 DJ D5 H7  > DJ
-[5] C7 S5 S4 D5 H7  > S4
-[6] C7 S5 C8 D5 H7 
+[0] H4 C2 C7 SK DJ  > C2
+[1] H4 D5 C7 SK DJ  > H4
+[2] D6 D5 C7 SK DJ  > D6
+[3] H7 D5 C7 SK DJ  > SK
+[4] H7 D5 C7 C1 DJ  > C1
+[5] H7 D5 C7 H3 DJ  > H3
+[6] H7 D5 C7 S5 DJ 
 テイク素点 :   2
-[0] C5 H9 DT SJ S3  > DT
-[1] C5 H9 HQ SJ S3  > S3
-[2] C5 H9 HQ SJ SQ  > C5
-[3] S9 H9 HQ SJ SQ  > SJ
-[4] S9 H9 HQ H5 SQ  > H5
-[5] S9 H9 HQ D7 SQ  > D7
-[6] S9 H9 HQ HK SQ 
-テイク素点 :   2
-[0] D8 CQ S7 CJ H1  > H1
-[1] D8 CQ S7 CJ CK  > D8
-[2] D4 CQ S7 CJ CK  > D4
-[3] C9 CQ S7 CJ CK 
+[0] S4 C8 C5 H9 DT  > DT
+[1] S4 C8 C5 H9 SJ  > S4
+[2] S3 C8 C5 H9 SJ  > S3
+[3] HQ C8 C5 H9 SJ  > C5
+[4] HQ C8 SQ H9 SJ  > HQ
+[5] S9 C8 SQ H9 SJ  > S9
+[6] H5 C8 SQ H9 SJ 
 テイク素点 :   0
-トライ得点 :  10.50
+[0] D7 HK D8 CQ S7  > D8
+[1] D7 HK CJ CQ S7  > CJ
+[2] D7 HK H1 CQ S7  > H1
+[3] D7 HK CK CQ S7  > CQ
+[4] D7 HK CK D4 S7  > D4
+[5] D7 HK CK C9 S7 
+テイク素点 :   2
+トライ得点 :  31.50
 [0] D8 D4 S4 C6 S1  > D8
 [1] H2 D4 S4 C6 S1  > D4
 [2] H2 D3 S4 C6 S1  > S4
@@ -7226,11 +7221,11 @@
 [0] H6 C8 CT D1 DK  > D1
 [1] H6 C8 CT S6 DK  > C8
 [2] H6 H8 CT S6 DK  > H8
-[3] H6 D6 CT S6 DK  > H6
-[4] H1 D6 CT S6 DK  > H1
-[5] DJ D6 CT S6 DK  > DJ
-[6] S2 D6 CT S6 DK 
-テイク素点 :   1
+[3] H6 D6 CT S6 DK  > CT
+[4] H6 D6 H1 S6 DK  > H1
+[5] H6 D6 DJ S6 DK  > DJ
+[6] H6 D6 S2 S6 DK 
+テイク素点 :   8
 [0] S7 C3 CK S3 D5  > CK
 [1] S7 C3 DQ S3 D5  > DQ
 [2] S7 C3 DT S3 D5  > DT
@@ -7252,7 +7247,7 @@
 [2] ST H9 HK SJ H7  > ST
 [3] H3 H9 HK SJ H7 
 テイク素点 :   0
-トライ得点 :   3.50
+トライ得点 :  14.00
 [0] D4 D1 HJ D8 C3  > D4
 [1] S7 D1 HJ D8 C3  > S7
 [2] DJ D1 HJ D8 C3  > D1
@@ -7994,13 +7989,13 @@
 テイク素点 :   0
 トライ得点 :  22.00
 [0] DJ H7 C3 C5 S7  > DJ
-[1] D7 H7 C3 C5 S7  > D7
-[2] CK H7 C3 C5 S7  > CK
-[3] C1 H7 C3 C5 S7  > H7
-[4] C1 C2 C3 C5 S7  > S7
-[5] C1 C2 C3 C5 HQ  > HQ
-[6] C1 C2 C3 C5 DT 
-テイク素点 :   0
+[1] D7 H7 C3 C5 S7  > C3
+[2] D7 H7 CK C5 S7  > CK
+[3] D7 H7 C1 C5 S7  > C1
+[4] D7 H7 C2 C5 S7  > C2
+[5] D7 H7 HQ C5 S7  > HQ
+[6] D7 H7 DT C5 S7 
+テイク素点 :   8
 [0] D2 S9 D8 H9 H8  > D2
 [1] HT S9 D8 H9 H8  > HT
 [2] S8 S9 D8 H9 H8 
@@ -8027,7 +8022,7 @@
 [3] S4 SJ D4 SK CJ  > SK
 [4] S4 SJ D4 HJ CJ 
 テイク素点 :  16
-トライ得点 :  59.00
+トライ得点 :  71.00
 [0] S4 S6 CQ C3 C9  > S4
 [1] DK S6 CQ C3 C9  > C3
 [2] DK S6 CQ S7 C9  > DK
@@ -8995,9 +8990,9 @@
 [2] H8 D8 C3 S1 CQ  > C3
 [3] H8 D8 S4 S1 CQ  > S4
 [4] H8 D8 D9 S1 CQ  > D9
-[5] H8 D8 S8 S1 CQ  > H8
-[6] C4 D8 S8 S1 CQ 
-テイク素点 :   1
+[5] H8 D8 S8 S1 CQ  > S1
+[6] H8 D8 S8 C4 CQ 
+テイク素点 :   8
 [0] D5 H4 H3 D7 S9  > H4
 [1] D5 DT H3 D7 S9  > S9
 [2] D5 DT H3 D7 SJ  > D5
@@ -9027,7 +9022,7 @@
 [2] D6 HJ HQ DK C8  > D6
 [3] D4 HJ HQ DK C8 
 テイク素点 :   0
-トライ得点 :  19.50
+トライ得点 :  30.00
 [0] C3 DT C4 S2 D3  > C3
 [1] S3 DT C4 S2 D3  > DT
 [2] S3 CT C4 S2 D3  > CT
@@ -9077,10 +9072,10 @@
 [1] D2 C5 S2 D6 CK  > C5
 [2] D2 D3 S2 D6 CK  > D6
 [3] D2 D3 S2 H9 CK  > H9
-[4] D2 D3 S2 C2 CK  > D2
-[5] S3 D3 S2 C2 CK  > CK
-[6] S3 D3 S2 C2 SQ 
-テイク素点 :   2
+[4] D2 D3 S2 C2 CK  > D3
+[5] D2 S3 S2 C2 CK  > S3
+[6] D2 SQ S2 C2 CK 
+テイク素点 :   8
 [0] DJ CQ C3 H3 DK  > CQ
 [1] DJ SJ C3 H3 DK  > DK
 [2] DJ SJ C3 H3 CJ 
@@ -9101,7 +9096,7 @@
 [5] S6 SK H5 HT H8  > SK
 [6] S6 DT H5 HT H8 
 テイク素点 :   1
-トライ得点 : 109.00
+トライ得点 : 118.00
 [0] D3 D8 D5 S3 C7  > D3
 [1] C2 D8 D5 S3 C7  > S3
 [2] C2 D8 D5 D6 C7  > C2
@@ -9215,9 +9210,9 @@
 [2] C4 HK HQ S5 D7  > C4
 [3] C8 HK HQ S5 D7  > C8
 [4] DK HK HQ S5 D7  > HQ
-[5] DK HK SK S5 D7  > DK
-[6] S8 HK SK S5 D7 
-テイク素点 :   1
+[5] DK HK SK S5 D7  > S5
+[6] DK HK SK S8 D7 
+テイク素点 :   8
 [0] C5 DJ S7 H6 S3  > DJ
 [1] C5 CK S7 H6 S3  > CK
 [2] C5 HT S7 H6 S3  > HT
@@ -9242,7 +9237,7 @@
 [3] C9 D5 D8 S6 ST  > D5
 [4] C9 H7 D8 S6 ST 
 テイク素点 :  32
-トライ得点 :  99.00
+トライ得点 : 109.50
 [0] SK D3 DK C2 C6  > SK
 [1] DQ D3 DK C2 C6  > DK
 [2] DQ D3 D2 C2 C6  > DQ
@@ -9355,13 +9350,13 @@
 テイク素点 :  16
 トライ得点 : 103.50
 [0] H5 D4 SQ C4 C7  > H5
-[1] S4 D4 SQ C4 C7  > S4
-[2] S3 D4 SQ C4 C7  > S3
-[3] H9 D4 SQ C4 C7  > H9
-[4] S1 D4 SQ C4 C7  > S1
-[5] CT D4 SQ C4 C7  > CT
-[6] H2 D4 SQ C4 C7 
-テイク素点 :   1
+[1] S4 D4 SQ C4 C7  > SQ
+[2] S4 D4 S3 C4 C7  > S3
+[3] S4 D4 H9 C4 C7  > H9
+[4] S4 D4 S1 C4 C7  > S1
+[5] S4 D4 CT C4 C7  > CT
+[6] S4 D4 H2 C4 C7 
+テイク素点 :   8
 [0] C9 S6 D7 S2 C8  > S2
 [1] C9 S6 D7 S5 C8 
 テイク素点 :  32
@@ -9389,41 +9384,37 @@
 [5] D8 S8 DK CK C3  > C3
 [6] D8 S8 DK CK SJ 
 テイク素点 :   2
-トライ得点 :  69.50
+トライ得点 :  80.00
 [0] D5 HQ C5 H5 S5 
 テイク素点 :  64
 [0] HK SK DK DQ S9  > DQ
-[1] HK SK DK D6 S9  > HK
-[2] C7 SK DK D6 S9  > C7
-[3] C3 SK DK D6 S9  > C3
-[4] H9 SK DK D6 S9  > D6
-[5] H9 SK DK C4 S9  > C4
-[6] H9 SK DK ST S9 
-テイク素点 :   2
-[0] S4 C9 D1 C2 CQ  > C9
-[1] S4 HT D1 C2 CQ  > CQ
-[2] S4 HT D1 C2 C8  > S4
-[3] S1 HT D1 C2 C8  > HT
-[4] S1 S8 D1 C2 C8  > C2
-[5] S1 S8 D1 S7 C8  > S7
-[6] S1 S8 D1 CT C8 
-テイク素点 :   2
-[0] H8 D2 D8 DT H4  > DT
-[1] H8 D2 D8 H1 H4  > H1
-[2] H8 D2 D8 H7 H4  > H7
-[3] H8 D2 D8 DJ H4  > H4
-[4] H8 D2 D8 DJ D4  > H8
-[5] D3 D2 D8 DJ D4 
-テイク素点 :  24
-[0] CK H6 HJ S2 SJ  > CK
-[1] S3 H6 HJ S2 SJ  > S3
-[2] H3 H6 HJ S2 SJ  > H3
-[3] D9 H6 HJ S2 SJ  > D9
-[4] D7 H6 HJ S2 SJ  > D7
-[5] H2 H6 HJ S2 SJ  > H6
-[6] H2 CJ HJ S2 SJ 
+[1] HK SK DK D6 S9  > D6
+[2] HK SK DK C7 S9  > C7
+[3] HK SK DK C3 S9  > C3
+[4] HK SK DK H9 S9 
 テイク素点 :  16
-トライ得点 : 181.00
+[0] C4 ST S4 C9 D1  > C9
+[1] C4 ST S4 C2 D1  > ST
+[2] C4 CQ S4 C2 D1  > CQ
+[3] C4 HT S4 C2 D1  > HT
+[4] C4 C8 S4 C2 D1  > C8
+[5] C4 S1 S4 C2 D1  > C2
+[6] C4 S1 S4 S8 D1 
+テイク素点 :   2
+[0] S7 CT H8 D2 D8  > CT
+[1] S7 DT H8 D2 D8  > DT
+[2] S7 H4 H8 D2 D8  > H4
+[3] S7 H1 H8 D2 D8  > H1
+[4] S7 H7 H8 D2 D8  > D2
+[5] S7 H7 H8 DJ D8  > DJ
+[6] S7 H7 H8 D4 D8 
+テイク素点 :   2
+[0] D3 CK H6 HJ S2  > CK
+[1] D3 SJ H6 HJ S2  > S2
+[2] D3 SJ H6 HJ S3  > H6
+[3] D3 SJ H3 HJ S3 
+テイク素点 :  16
+トライ得点 : 158.00
 [0] H6 D2 CK SK D7  > H6
 [1] H7 D2 CK SK D7  > D2
 [2] H7 S1 CK SK D7  > S1
@@ -9757,34 +9748,29 @@
 テイク素点 :   0
 [0] C3 S4 H2 D4 SK  > C3
 [1] C4 S4 H2 D4 SK  > H2
-[2] C4 S4 D9 D4 SK  > C4
-[3] C6 S4 D9 D4 SK  > C6
-[4] HK S4 D9 D4 SK  > D9
-[5] HK S4 C2 D4 SK  > C2
-[6] HK S4 CK D4 SK 
+[2] C4 S4 D9 D4 SK  > D9
+[3] C4 S4 C6 D4 SK  > C6
+[4] C4 S4 HK D4 SK 
 テイク素点 :  16
-[0] S5 CQ H3 SQ D6  > H3
-[1] S5 CQ H4 SQ D6  > H4
-[2] S5 CQ HT SQ D6  > S5
-[3] DK CQ HT SQ D6  > DK
-[4] S2 CQ HT SQ D6  > S2
-[5] C7 CQ HT SQ D6  > D6
-[6] C7 CQ HT SQ HQ 
-テイク素点 :   8
-[0] HJ H9 S9 DT DJ  > DT
-[1] HJ H9 S9 D8 DJ  > D8
-[2] HJ H9 S9 S8 DJ  > S8
-[3] HJ H9 S9 C5 DJ  > C5
-[4] HJ H9 S9 CT DJ  > CT
-[5] HJ H9 S9 SJ DJ 
-テイク素点 :  16
-[0] H8 S6 H7 C9 D7  > H7
-[1] H8 S6 C1 C9 D7  > C1
-[2] H8 S6 S1 C9 D7  > S1
-[3] H8 S6 D1 C9 D7  > D1
-[4] H8 S6 C8 C9 D7 
+[0] C2 CK S5 CQ H3  > H3
+[1] C2 CK S5 CQ SQ  > C2
+[2] D6 CK S5 CQ SQ  > D6
+[3] H4 CK S5 CQ SQ  > H4
+[4] HT CK S5 CQ SQ  > CK
+[5] HT DK S5 CQ SQ  > DK
+[6] HT S2 S5 CQ SQ 
 テイク素点 :   1
-トライ得点 :  66.00
+[0] C7 HQ HJ H9 S9  > H9
+[1] C7 HQ HJ DT S9  > HQ
+[2] C7 DJ HJ DT S9  > DJ
+[3] C7 D8 HJ DT S9 
+テイク素点 :  32
+[0] S8 C5 CT SJ H8  > C5
+[1] S8 S6 CT SJ H8  > S8
+[2] H7 S6 CT SJ H8  > S6
+[3] H7 C9 CT SJ H8 
+テイク素点 :  32
+トライ得点 : 153.00
 [0] HK HJ H3 D9 S1  > HK
 [1] S2 HJ H3 D9 S1  > S2
 [2] H5 HJ H3 D9 S1  > H5
@@ -10447,9 +10433,9 @@
 [2] H2 C7 H6 S6 S8  > H2
 [3] C2 C7 H6 S6 S8  > C2
 [4] HK C7 H6 S6 S8  > HK
-[5] C6 C7 H6 S6 S8  > C6
-[6] S3 C7 H6 S6 S8 
-テイク素点 :   1
+[5] C6 C7 H6 S6 S8  > C7
+[6] C6 S3 H6 S6 S8 
+テイク素点 :   8
 [0] DT D6 S4 S2 D7  > DT
 [1] HJ D6 S4 S2 D7  > HJ
 [2] HT D6 S4 S2 D7  > HT
@@ -10479,7 +10465,7 @@
 [2] CK DQ D5 C9 D8  > D5
 [3] CK DQ H7 C9 D8 
 テイク素点 :   0
-トライ得点 :  37.00
+トライ得点 :  47.50
 [0] D2 D5 CQ DK H2  > D2
 [1] DJ D5 CQ DK H2  > H2
 [2] DJ D5 CQ DK HK  > DJ
@@ -11353,11 +11339,11 @@
 [0] H7 CJ HT D6 D5  > H7
 [1] S5 CJ HT D6 D5  > CJ
 [2] S5 HQ HT D6 D5  > HQ
-[3] S5 H5 HT D6 D5  > S5
-[4] S3 H5 HT D6 D5  > S3
-[5] CK H5 HT D6 D5  > CK
-[6] C1 H5 HT D6 D5 
-テイク素点 :   1
+[3] S5 H5 HT D6 D5  > HT
+[4] S5 H5 S3 D6 D5  > S3
+[5] S5 H5 CK D6 D5  > CK
+[6] S5 H5 C1 D6 D5 
+テイク素点 :   8
 [0] H2 S2 S4 S8 D7  > D7
 [1] H2 S2 S4 S8 S9  > H2
 [2] C3 S2 S4 S8 S9  > C3
@@ -11387,7 +11373,7 @@
 [4] DJ H3 C6 H9 C5  > DJ
 [5] C8 H3 C6 H9 C5 
 テイク素点 :   0
-トライ得点 :  47.50
+トライ得点 :  58.00
 [0] S2 CQ SJ DQ H2  > SJ
 [1] S2 CQ DT DQ H2  > DT
 [2] S2 CQ C7 DQ H2  > C7
@@ -11728,47 +11714,44 @@
 [2] D8 H8 D3 D1 CT  > D3
 [3] D8 H8 CJ D1 CT  > CJ
 [4] D8 H8 CQ D1 CT  > CQ
-[5] D8 H8 C8 D1 CT  > D8
-[6] C4 H8 C8 D1 CT 
-テイク素点 :   1
+[5] D8 H8 C8 D1 CT  > D1
+[6] D8 H8 C8 C4 CT 
+テイク素点 :   8
 [0] CK DK C2 H6 HT  > HT
 [1] CK DK C2 H6 SJ  > SJ
 [2] CK DK C2 H6 H1  > H1
-[3] CK DK C2 H6 SK  > CK
-[4] S8 DK C2 H6 SK  > S8
-[5] C6 DK C2 H6 SK  > C2
-[6] C6 DK H7 H6 SK 
-テイク素点 :   2
-[0] H2 HJ D6 C1 S3  > HJ
-[1] H2 C5 D6 C1 S3  > D6
-[2] H2 C5 DQ C1 S3  > DQ
-[3] H2 C5 S5 C1 S3  > C5
-[4] H2 ST S5 C1 S3  > ST
-[5] H2 HQ S5 C1 S3  > HQ
-[6] H2 C9 S5 C1 S3 
+[3] CK DK C2 H6 SK  > C2
+[4] CK DK S8 H6 SK  > S8
+[5] CK DK C6 H6 SK 
+テイク素点 :  16
+[0] H7 H2 HJ D6 C1  > HJ
+[1] H7 H2 S3 D6 C1  > D6
+[2] H7 H2 S3 C5 C1  > C1
+[3] H7 H2 S3 C5 DQ  > DQ
+[4] H7 H2 S3 C5 S5  > C5
+[5] H7 H2 S3 ST S5  > ST
+[6] H7 H2 S3 HQ S5 
 テイク素点 :   0
-[0] S7 SQ DJ C7 S1  > SQ
-[1] S7 S9 DJ C7 S1  > DJ
-[2] S7 S9 H3 C7 S1  > S1
-[3] S7 S9 H3 C7 S4  > H3
-[4] S7 S9 D2 C7 S4  > D2
-[5] S7 S9 HK C7 S4  > HK
-[6] S7 S9 S6 C7 S4 
-テイク素点 :   1
-[0] DT C3 H4 D5 S2  > DT
-[1] D9 C3 H4 D5 S2  > D9
-[2] H9 C3 H4 D5 S2  > H9
-[3] D4 C3 H4 D5 S2 
-テイク素点 :   1
-トライ得点 :   8.50
+[0] C9 S7 SQ DJ C7  > S7
+[1] C9 S1 SQ DJ C7  > S1
+[2] C9 S9 SQ DJ C7  > C9
+[3] H3 S9 SQ DJ C7  > H3
+[4] S4 S9 SQ DJ C7  > S4
+[5] D2 S9 SQ DJ C7  > D2
+[6] HK S9 SQ DJ C7 
+テイク素点 :   0
+[0] S6 DT C3 H4 D5  > DT
+[1] S6 S2 C3 H4 D5 
+テイク素点 :  32
+トライ得点 : 100.00
 [0] SK ST S9 HT H2  > SK
 [1] CQ ST S9 HT H2  > CQ
 [2] DK ST S9 HT H2  > DK
 [3] H4 ST S9 HT H2  > H4
-[4] DT ST S9 HT H2  > DT
-[5] HK ST S9 HT H2  > HK
-[6] SJ ST S9 HT H2 
-テイク素点 :   1
+[4] DT ST S9 HT H2  > S9
+[5] DT ST HK HT H2  > HK
+[6] DT ST SJ HT H2 
+テイク素点 :   8
 [0] D8 C5 S1 C8 H1  > C5
 [1] D8 CJ S1 C8 H1  > CJ
 [2] D8 H8 S1 C8 H1 
@@ -11792,7 +11775,7 @@
 [0] C7 S8 S7 S3 D7  > S8
 [1] C7 D3 S7 S3 D7 
 テイク素点 :  16
-トライ得点 :  77.50
+トライ得点 :  88.00
 [0] D4 H6 S7 D2 D7  > S7
 [1] D4 H6 HK D2 D7  > HK
 [2] D4 H6 C2 D2 D7  > C2
@@ -14319,12 +14302,12 @@
 テイク素点 :  16
 [0] SQ C6 H2 HQ DJ  > C6
 [1] SQ D6 H2 HQ DJ  > D6
-[2] SQ CQ H2 HQ DJ  > SQ
-[3] DK CQ H2 HQ DJ  > DK
-[4] S5 CQ H2 HQ DJ  > S5
-[5] S9 CQ H2 HQ DJ  > S9
-[6] SK CQ H2 HQ DJ 
-テイク素点 :   1
+[2] SQ CQ H2 HQ DJ  > H2
+[3] SQ CQ DK HQ DJ  > DK
+[4] SQ CQ S5 HQ DJ  > S5
+[5] SQ CQ S9 HQ DJ  > S9
+[6] SQ CQ SK HQ DJ 
+テイク素点 :   8
 [0] S1 C5 ST D2 D9  > ST
 [1] S1 C5 H8 D2 D9  > H8
 [2] S1 C5 S3 D2 D9  > D9
@@ -14348,7 +14331,7 @@
 [4] D4 D3 C4 D7 H4  > D3
 [5] D4 C7 C4 D7 H4 
 テイク素点 :  16
-トライ得点 :  57.50
+トライ得点 :  68.00
 [0] CK C7 H8 S5 D4  > CK
 [1] HT C7 H8 S5 D4  > HT
 [2] H1 C7 H8 S5 D4  > H1
@@ -14461,9 +14444,9 @@
 [2] S6 S8 S4 HQ DQ  > S6
 [3] HT S8 S4 HQ DQ  > HT
 [4] H3 S8 S4 HQ DQ  > H3
-[5] SQ S8 S4 HQ DQ  > SQ
-[6] S5 S8 S4 HQ DQ 
-テイク素点 :   1
+[5] SQ S8 S4 HQ DQ  > S8
+[6] SQ S5 S4 HQ DQ 
+テイク素点 :   8
 [0] ST S3 D9 HJ C3  > ST
 [1] C2 S3 D9 HJ C3  > C2
 [2] D7 S3 D9 HJ C3  > D7
@@ -14490,7 +14473,7 @@
 [1] C9 H5 D5 HK DK  > C9
 [2] SK H5 D5 HK DK 
 テイク素点 :  16
-トライ得点 :  64.50
+トライ得点 :  75.00
 [0] S8 S4 C6 C5 S2  > S8
 [1] D6 S4 C6 C5 S2  > D6
 [2] S5 S4 C6 C5 S2  > S5
@@ -14500,13 +14483,13 @@
 [6] C1 S4 S3 C5 S2 
 テイク素点 :  32
 [0] D5 D7 DT SJ CT  > D5
-[1] HT D7 DT SJ CT  > HT
-[2] C7 D7 DT SJ CT  > SJ
-[3] C7 D7 DT D3 CT  > D3
-[4] C7 D7 DT S1 CT  > S1
-[5] C7 D7 DT D9 CT  > D9
-[6] C7 D7 DT HK CT 
-テイク素点 :   2
+[1] HT D7 DT SJ CT  > D7
+[2] HT C7 DT SJ CT  > C7
+[3] HT D3 DT SJ CT  > D3
+[4] HT S1 DT SJ CT  > S1
+[5] HT D9 DT SJ CT  > D9
+[6] HT HK DT SJ CT 
+テイク素点 :   8
 [0] DK D1 H2 DJ HJ  > DK
 [1] C9 D1 H2 DJ HJ  > D1
 [2] C9 C3 H2 DJ HJ  > C3
@@ -14528,7 +14511,7 @@
 [4] D8 SQ S7 H8 C8  > S7
 [5] D8 SQ DQ H8 C8 
 テイク素点 :  16
-トライ得点 : 115.00
+トライ得点 : 124.00
 [0] DK CT C4 S9 ST  > DK
 [1] C9 CT C4 S9 ST  > C4
 [2] C9 CT S6 S9 ST  > S6
@@ -14646,10 +14629,10 @@
 [1] S2 C5 C7 H2 D1  > D1
 [2] S2 C5 C7 H2 C9  > C5
 [3] S2 S4 C7 H2 C9  > S4
-[4] S2 D2 C7 H2 C9  > S2
-[5] S6 D2 C7 H2 C9  > S6
-[6] D9 D2 C7 H2 C9 
-テイク素点 :   2
+[4] S2 D2 C7 H2 C9  > C7
+[5] S2 D2 S6 H2 C9  > S6
+[6] S2 D2 D9 H2 C9 
+テイク素点 :  16
 [0] HJ SK H3 S5 C4  > S5
 [1] HJ SK H3 D5 C4  > D5
 [2] HJ SK H3 H1 C4  > H1
@@ -14676,7 +14659,7 @@
 [5] H6 DQ C1 D6 C2  > C1
 [6] H6 DQ CT D6 C2 
 テイク素点 :   1
-トライ得点 :  86.50
+トライ得点 : 107.50
 [0] C1 CT DT H4 SJ  > C1
 [1] S9 CT DT H4 SJ  > S9
 [2] HQ CT DT H4 SJ  > HQ
@@ -15063,13 +15046,13 @@
 [6] C8 CK C9 D9 S8 
 テイク素点 :   2
 [0] S9 C4 C1 D1 H3  > S9
-[1] H1 C4 C1 D1 H3  > H1
-[2] DJ C4 C1 D1 H3  > DJ
-[3] DQ C4 C1 D1 H3  > DQ
-[4] H6 C4 C1 D1 H3  > C1
-[5] H6 C4 H9 D1 H3  > H9
-[6] H6 C4 HK D1 H3 
-テイク素点 :   0
+[1] H1 C4 C1 D1 H3  > C4
+[2] H1 DJ C1 D1 H3  > DJ
+[3] H1 DQ C1 D1 H3  > DQ
+[4] H1 H6 C1 D1 H3  > H6
+[5] H1 H9 C1 D1 H3  > H9
+[6] H1 HK C1 D1 H3 
+テイク素点 :   8
 [0] HJ S7 HQ D8 S6  > S7
 [1] HJ S2 HQ D8 S6  > S2
 [2] HJ D2 HQ D8 S6  > D2
@@ -15090,7 +15073,7 @@
 [5] CQ S3 D3 SQ H7  > H7
 [6] CQ S3 D3 SQ C3 
 テイク素点 :  16
-トライ得点 :  68.00
+トライ得点 :  80.00
 [0] D8 C7 D1 HT C3  > D8
 [1] HQ C7 D1 HT C3  > HQ
 [2] SJ C7 D1 HT C3  > SJ
@@ -15164,10 +15147,10 @@
 [1] H5 HQ C3 D3 H4  > H5
 [2] D9 HQ C3 D3 H4  > D9
 [3] S1 HQ C3 D3 H4  > S1
-[4] H3 HQ C3 D3 H4  > H3
-[5] S7 HQ C3 D3 H4  > S7
-[6] H6 HQ C3 D3 H4 
-テイク素点 :   1
+[4] H3 HQ C3 D3 H4  > HQ
+[5] H3 S7 C3 D3 H4  > S7
+[6] H3 H6 C3 D3 H4 
+テイク素点 :   8
 [0] D2 D5 S6 D4 DQ  > DQ
 [1] D2 D5 S6 D4 C1  > D5
 [2] D2 HJ S6 D4 C1  > HJ
@@ -15194,7 +15177,7 @@
 [3] D1 DT S4 CT H1  > S4
 [4] D1 DT ST CT H1 
 テイク素点 :  16
-トライ得点 :  69.00
+トライ得点 :  79.50
 [0] H3 S5 C2 C7 C3  > H3
 [1] D6 S5 C2 C7 C3  > C3
 [2] D6 S5 C2 C7 S3  > S3
@@ -15246,9 +15229,9 @@
 [2] S1 H5 S2 S5 D7  > S1
 [3] S9 H5 S2 S5 D7  > S9
 [4] ST H5 S2 S5 D7  > ST
-[5] C5 H5 S2 S5 D7  > C5
-[6] H4 H5 S2 S5 D7 
-テイク素点 :   1
+[5] C5 H5 S2 S5 D7  > S2
+[6] C5 H5 H4 S5 D7 
+テイク素点 :   8
 [0] D6 CK S8 SK D8  > D6
 [1] H1 CK S8 SK D8  > H1
 [2] C7 CK S8 SK D8  > C7
@@ -15270,7 +15253,7 @@
 [2] D2 H2 CT H3 HT  > H3
 [3] D2 H2 CT C6 HT 
 テイク素点 :   2
-トライ得点 :  13.00
+トライ得点 :  23.50
 [0] SJ H8 C3 D6 H6  > SJ
 [1] C5 H8 C3 D6 H6  > D6
 [2] C5 H8 C3 SK H6  > SK
@@ -15614,10 +15597,10 @@
 [1] S3 D1 D6 C7 C3  > C7
 [2] S3 D1 D6 SQ C3  > SQ
 [3] S3 D1 D6 D2 C3  > D2
-[4] S3 D1 D6 H3 C3  > S3
-[5] S8 D1 D6 H3 C3  > S8
-[6] HJ D1 D6 H3 C3 
-テイク素点 :   1
+[4] S3 D1 D6 H3 C3  > D1
+[5] S3 S8 D6 H3 C3  > S8
+[6] S3 HJ D6 H3 C3 
+テイク素点 :   8
 [0] H8 C1 S6 H2 C4  > H2
 [1] H8 C1 S6 H1 C4  > H8
 [2] CT C1 S6 H1 C4  > CT
@@ -15631,7 +15614,7 @@
 [2] D3 CK D8 H7 C6  > D3
 [3] D4 CK D8 H7 C6 
 テイク素点 :   0
-トライ得点 :   8.00
+トライ得点 :  15.00
 [0] H6 D3 D6 H3 DQ  > DQ
 [1] H6 D3 D6 H3 C4  > C4
 [2] H6 D3 D6 H3 D2  > D2
@@ -15864,9 +15847,9 @@
 [2] C9 DK C8 CJ S6  > C9
 [3] D8 DK C8 CJ S6  > DK
 [4] D8 S1 C8 CJ S6  > S1
-[5] D8 S8 C8 CJ S6  > D8
-[6] HK S8 C8 CJ S6 
-テイク素点 :   1
+[5] D8 S8 C8 CJ S6  > CJ
+[6] D8 S8 C8 HK S6 
+テイク素点 :   8
 [0] CQ H2 CT S9 SK  > H2
 [1] CQ H4 CT S9 SK  > H4
 [2] CQ C7 CT S9 SK  > SK
@@ -15896,7 +15879,7 @@
 [4] C2 D2 H8 D9 D5  > H8
 [5] C2 D2 H9 D9 D5 
 テイク素点 :   2
-トライ得点 :  63.00
+トライ得点 :  73.50
 [0] H8 C8 S3 DT S9  > H8
 [1] S4 C8 S3 DT S9  > C8
 [2] S4 DJ S3 DT S9  > S4
@@ -15978,34 +15961,30 @@
 [1] C6 S6 H1 H6 DQ  > H1
 [2] C6 S6 HJ H6 DQ  > HJ
 [3] C6 S6 S3 H6 DQ  > DQ
-[4] C6 S6 S3 H6 C7  > C6
-[5] H7 S6 S3 H6 C7  > S3
-[6] H7 S6 C4 H6 C7 
-テイク素点 :   2
-[0] SK CK D7 H4 D3  > D7
-[1] SK CK H2 H4 D3  > H4
-[2] SK CK H2 HK D3  > H2
-[3] SK CK H5 HK D3  > D3
-[4] SK CK H5 HK D6  > D6
-[5] SK CK H5 HK D5 
+[4] C6 S6 S3 H6 C7  > S3
+[5] C6 S6 H7 H6 C7 
 テイク素点 :  16
-[0] H8 DT S7 C3 C5  > S7
-[1] H8 DT SQ C3 C5  > SQ
-[2] H8 DT DJ C3 C5  > DJ
-[3] H8 DT HQ C3 C5  > HQ
-[4] H8 DT D1 C3 C5  > D1
-[5] H8 DT C8 C3 C5  > C3
-[6] H8 DT C8 ST C5 
-テイク素点 :   2
-[0] H3 S4 S8 H9 CT  > H3
-[1] D2 S4 S8 H9 CT  > S4
-[2] D2 D8 S8 H9 CT  > CT
-[3] D2 D8 S8 H9 S5  > S5
-[4] D2 D8 S8 H9 S9  > D2
-[5] S2 D8 S8 H9 S9  > S2
-[6] CJ D8 S8 H9 S9 
-テイク素点 :   2
-トライ得点 :  75.00
+[0] C4 SK CK D7 H4  > D7
+[1] C4 SK CK D3 H4  > D3
+[2] C4 SK CK H2 H4  > H2
+[3] C4 SK CK HK H4 
+テイク素点 :  16
+[0] H5 D6 D5 H8 DT  > H5
+[1] S7 D6 D5 H8 DT  > S7
+[2] C3 D6 D5 H8 DT  > D6
+[3] C3 C5 D5 H8 DT  > C3
+[4] SQ C5 D5 H8 DT  > SQ
+[5] DJ C5 D5 H8 DT  > DJ
+[6] HQ C5 D5 H8 DT 
+テイク素点 :   1
+[0] D1 C8 ST H3 S4  > D1
+[1] S8 C8 ST H3 S4  > H3
+[2] S8 C8 ST H9 S4  > S4
+[3] S8 C8 ST H9 CT  > H9
+[4] S8 C8 ST D2 CT  > D2
+[5] S8 C8 ST D8 CT 
+テイク素点 :  16
+トライ得点 : 122.00
 [0] CQ C5 S6 S8 C1  > C1
 [1] CQ C5 S6 S8 H6  > CQ
 [2] H8 C5 S6 S8 H6  > C5
@@ -16267,10 +16246,10 @@
 [1] SJ SK HK CQ S6  > SJ
 [2] HJ SK HK CQ S6  > HJ
 [3] CT SK HK CQ S6  > CT
-[4] DK SK HK CQ S6  > DK
-[5] S9 SK HK CQ S6  > S9
-[6] D7 SK HK CQ S6 
-テイク素点 :   1
+[4] DK SK HK CQ S6  > CQ
+[5] DK SK HK S9 S6  > S9
+[6] DK SK HK D7 S6 
+テイク素点 :   8
 [0] H3 D9 C4 H5 D8  > D9
 [1] H3 C2 C4 H5 D8  > D8
 [2] H3 C2 C4 H5 S7  > S7
@@ -16300,7 +16279,7 @@
 [2] CJ H6 C9 C7 ST  > CJ
 [3] S3 H6 C9 C7 ST 
 テイク素点 :   0
-トライ得点 :   4.50
+トライ得点 :  15.00
 [0] D8 SK D5 CT H2  > H2
 [1] D8 SK D5 CT H3  > D8
 [2] S6 SK D5 CT H3  > S6
@@ -16921,12 +16900,12 @@
 テイク素点 :   0
 [0] S7 S8 C3 C2 C7  > S8
 [1] S7 H6 C3 C2 C7  > H6
-[2] S7 H7 C3 C2 C7  > S7
-[3] H5 H7 C3 C2 C7  > H7
-[4] H5 SJ C3 C2 C7  > SJ
-[5] H5 C8 C3 C2 C7  > H5
-[6] ST C8 C3 C2 C7 
-テイク素点 :   0
+[2] S7 H7 C3 C2 C7  > C3
+[3] S7 H7 H5 C2 C7  > H5
+[4] S7 H7 SJ C2 C7  > SJ
+[5] S7 H7 C8 C2 C7  > C8
+[6] S7 H7 ST C2 C7 
+テイク素点 :   8
 [0] D5 HK D6 H2 H1  > D6
 [1] D5 HK HJ H2 H1  > D5
 [2] CT HK HJ H2 H1  > CT
@@ -16947,7 +16926,7 @@
 [5] C9 H9 C5 S9 C4  > C5
 [6] C9 H9 S4 S9 C4 
 テイク素点 :  16
-トライ得点 : 104.00
+トライ得点 : 116.00
 [0] CQ H9 C9 S9 C2  > CQ
 [1] C1 H9 C9 S9 C2  > C1
 [2] SQ H9 C9 S9 C2  > SQ
@@ -17031,21 +17010,21 @@
 [0] D6 S6 C1 CT S4  > C1
 [1] D6 S6 S2 CT S4  > S2
 [2] D6 S6 SK CT S4  > CT
-[3] D6 S6 SK C6 S4  > D6
-[4] C7 S6 SK C6 S4  > C7
-[5] D4 S6 SK C6 S4  > SK
-[6] D4 S6 HT C6 S4 
-テイク素点 :   2
-[0] SJ S9 DK D9 D7  > S9
-[1] SJ SQ DK D9 D7  > D9
-[2] SJ SQ DK DJ D7  > DK
-[3] SJ SQ C5 DJ D7  > D7
-[4] SJ SQ C5 DJ C8  > C8
-[5] SJ SQ C5 DJ CK  > CK
-[6] SJ SQ C5 DJ S7 
+[3] D6 S6 SK C6 S4  > SK
+[4] D6 S6 C7 C6 S4  > C7
+[5] D6 S6 D4 C6 S4 
+テイク素点 :  16
+[0] HT SJ S9 DK D9  > S9
+[1] HT SJ D7 DK D9  > D9
+[2] HT SJ D7 DK SQ  > D7
+[3] HT SJ DJ DK SQ  > SJ
+[4] HT C5 DJ DK SQ  > C5
+[5] HT C8 DJ DK SQ  > DJ
+[6] HT C8 CK DK SQ 
 テイク素点 :   1
-[0] C3 D5 H1 HK C4  > HK
-[1] C3 D5 H1 H2 C4 
+[0] S7 C3 D5 H1 HK  > HK
+[1] S7 C3 D5 H1 C4  > S7
+[2] H2 C3 D5 H1 C4 
 テイク素点 :  32
 [0] S3 H7 DQ H5 H8  > DQ
 [1] S3 H7 DT H5 H8  > S3
@@ -17055,7 +17034,7 @@
 [5] H4 H7 DT H5 H8  > DT
 [6] H4 H7 S1 H5 H8 
 テイク素点 :   0
-トライ得点 :  68.00
+トライ得点 :  89.00
 [0] D3 D2 HT H2 CQ  > D3
 [1] C4 D2 HT H2 CQ  > C4
 [2] CK D2 HT H2 CQ  > CK
@@ -17647,44 +17626,40 @@
 [5] H3 D3 CT DT DK  > DK
 [6] H3 D3 CT DT D7 
 テイク素点 :   2
-[0] H6 S6 C4 C6 CQ  > H6
-[1] H9 S6 C4 C6 CQ  > H9
-[2] H8 S6 C4 C6 CQ  > H8
-[3] C7 S6 C4 C6 CQ  > S6
-[4] C7 DQ C4 C6 CQ  > DQ
-[5] C7 S7 C4 C6 CQ  > S7
-[6] C7 D5 C4 C6 CQ 
-テイク素点 :   0
-[0] H1 S5 H5 D2 C5  > D2
-[1] H1 S5 H5 S8 C5  > S8
-[2] H1 S5 H5 H2 C5  > H2
-[3] H1 S5 H5 C3 C5  > C3
-[4] H1 S5 H5 C8 C5  > C8
-[5] H1 S5 H5 SQ C5  > SQ
-[6] H1 S5 H5 D1 C5 
+[0] H6 S6 C4 C6 CQ  > C4
+[1] H6 S6 H9 C6 CQ  > H9
+[2] H6 S6 H8 C6 CQ  > H8
+[3] H6 S6 C7 C6 CQ  > C7
+[4] H6 S6 DQ C6 CQ 
 テイク素点 :  16
-[0] S4 S1 SK H4 C9  > SK
-[1] S4 S1 ST H4 C9  > S1
-[2] S4 S3 ST H4 C9  > S3
-[3] S4 S2 ST H4 C9  > S2
-[4] S4 C1 ST H4 C9  > C1
-[5] S4 D9 ST H4 C9  > ST
-[6] S4 D9 D4 H4 C9 
+[0] S7 D5 H1 S5 H5  > S7
+[1] D2 D5 H1 S5 H5  > D2
+[2] C5 D5 H1 S5 H5 
+テイク素点 :  64
+[0] S8 H2 C3 C8 SQ  > H2
+[1] S8 D1 C3 C8 SQ  > C3
+[2] S8 D1 S4 C8 SQ  > SQ
+[3] S8 D1 S4 C8 S1  > S4
+[4] S8 D1 SK C8 S1  > SK
+[5] S8 D1 H4 C8 S1  > H4
+[6] S8 D1 C9 C8 S1 
+テイク素点 :   2
+[0] ST S3 S2 C1 D9  > S3
+[1] ST D4 S2 C1 D9  > D4
+[2] ST DJ S2 C1 D9  > S2
+[3] ST DJ HJ C1 D9  > C1
+[4] ST DJ HJ HT D9  > D9
+[5] ST DJ HJ HT SJ 
 テイク素点 :  16
-[0] DJ HJ HT SJ D8  > HT
-[1] DJ HJ HQ SJ D8  > HQ
-[2] DJ HJ S9 SJ D8  > S9
-[3] DJ HJ H7 SJ D8 
-テイク素点 :   8
-トライ得点 :  67.00
+トライ得点 : 127.00
 [0] D2 S3 D9 S4 H3  > D2
 [1] S5 S3 D9 S4 H3  > S5
-[2] D3 S3 D9 S4 H3  > D3
-[3] C6 S3 D9 S4 H3  > C6
-[4] H6 S3 D9 S4 H3  > H6
-[5] D8 S3 D9 S4 H3  > D8
-[6] S9 S3 D9 S4 H3 
-テイク素点 :   2
+[2] D3 S3 D9 S4 H3  > D9
+[3] D3 S3 C6 S4 H3  > C6
+[4] D3 S3 H6 S4 H3  > H6
+[5] D3 S3 D8 S4 H3  > D8
+[6] D3 S3 S9 S4 H3 
+テイク素点 :   8
 [0] H8 HQ H1 CT C4  > H1
 [1] H8 HQ SJ CT C4  > C4
 [2] H8 HQ SJ CT C2  > C2
@@ -17713,7 +17688,7 @@
 [5] DT ST C7 CQ SQ  > C7
 [6] DT ST C9 CQ SQ 
 テイク素点 :   2
-トライ得点 :  80.50
+トライ得点 :  89.50
 [0] DK HT C6 CQ D3  > D3
 [1] DK HT C6 CQ H3  > H3
 [2] DK HT C6 CQ C8  > DK
@@ -18817,11 +18792,11 @@
 [0] CK ST H1 D2 C8  > CK
 [1] S3 ST H1 D2 C8  > H1
 [2] S3 ST H3 D2 C8  > D2
-[3] S3 ST H3 D3 C8  > S3
-[4] HQ ST H3 D3 C8  > HQ
-[5] C5 ST H3 D3 C8  > C5
-[6] HJ ST H3 D3 C8 
-テイク素点 :   1
+[3] S3 ST H3 D3 C8  > ST
+[4] S3 HQ H3 D3 C8  > HQ
+[5] S3 C5 H3 D3 C8  > C5
+[6] S3 HJ H3 D3 C8 
+テイク素点 :   8
 [0] CQ D7 S7 D9 H8  > D9
 [1] CQ D7 S7 S8 H8  > CQ
 [2] S5 D7 S7 S8 H8  > S5
@@ -18843,7 +18818,7 @@
 [2] H2 S2 C6 H6 H9  > H9
 [3] H2 S2 C6 H6 D4 
 テイク素点 :   2
-トライ得点 :  11.50
+トライ得点 :  22.00
 [0] S9 H8 S1 C4 CQ  > S1
 [1] S9 H8 SJ C4 CQ  > C4
 [2] S9 H8 SJ S5 CQ  > S5
@@ -19374,10 +19349,10 @@
 [1] H7 DT D3 S6 C7  > DT
 [2] H7 CT D3 S6 C7  > CT
 [3] H7 H9 D3 S6 C7  > H9
-[4] H7 D7 D3 S6 C7  > H7
-[5] H4 D7 D3 S6 C7  > D7
-[6] H4 SK D3 S6 C7 
-テイク素点 :   0
+[4] H7 D7 D3 S6 C7  > D3
+[5] H7 D7 H4 S6 C7  > H4
+[6] H7 D7 SK S6 C7 
+テイク素点 :   8
 [0] S3 C3 C5 S5 H1  > H1
 [1] S3 C3 C5 S5 S4  > S4
 [2] S3 C3 C5 S5 ST  > ST
@@ -19399,7 +19374,7 @@
 [5] S2 H2 C8 H8 SQ  > SQ
 [6] S2 H2 C8 H8 C2 
 テイク素点 :  16
-トライ得点 :  66.00
+トライ得点 :  78.00
 [0] ST D1 HT S9 D7  > ST
 [1] S7 D1 HT S9 D7  > HT
 [2] S7 D1 H5 S9 D7  > D1
@@ -19723,10 +19698,10 @@
 [1] SQ H3 DJ H7 D1  > SQ
 [2] C7 H3 DJ H7 D1  > H3
 [3] C7 H9 DJ H7 D1  > H9
-[4] C7 D7 DJ H7 D1  > C7
-[5] D6 D7 DJ H7 D1  > H7
-[6] D6 D7 DJ HK D1 
-テイク素点 :   0
+[4] C7 D7 DJ H7 D1  > DJ
+[5] C7 D7 D6 H7 D1  > D6
+[6] C7 D7 HK H7 D1 
+テイク素点 :   8
 [0] HT DK D8 H1 D5  > H1
 [1] HT DK D8 C9 D5  > D5
 [2] HT DK D8 C9 H5  > H5
@@ -19756,7 +19731,7 @@
 [3] S6 SK C6 CK C3  > C3
 [4] S6 SK C6 CK H6 
 テイク素点 :  16
-トライ得点 :  80.00
+トライ得点 :  92.00
 [0] C3 D4 C1 DQ S5  > DQ
 [1] C3 D4 C1 SK S5  > SK
 [2] C3 D4 C1 H1 S5  > C1
@@ -19837,37 +19812,32 @@
 [4] D5 D4 D3 C6 C7 
 テイク素点 :  32
 [0] S1 C8 D1 H1 S3  > S3
-[1] S1 C8 D1 H1 HT  > S1
-[2] CT C8 D1 H1 HT  > C8
-[3] CT S2 D1 H1 HT  > S2
-[4] CT SJ D1 H1 HT  > SJ
-[5] CT H3 D1 H1 HT  > H3
-[6] CT HJ D1 H1 HT 
-テイク素点 :   2
-[0] C3 HQ S7 C9 CJ  > C3
-[1] S8 HQ S7 C9 CJ  > CJ
-[2] S8 HQ S7 C9 C2  > C2
-[3] S8 HQ S7 C9 H9  > S8
-[4] C5 HQ S7 C9 H9  > C5
-[5] D6 HQ S7 C9 H9  > D6
-[6] DT HQ S7 C9 H9 
-テイク素点 :   1
-[0] SK H6 D8 DJ H4  > DJ
-[1] SK H6 D8 S4 H4  > H6
-[2] SK S5 D8 S4 H4  > S5
-[3] SK H5 D8 S4 H4  > H5
-[4] SK H7 D8 S4 H4  > H7
-[5] SK S6 D8 S4 H4  > S6
-[6] SK D7 D8 S4 H4 
-テイク素点 :   1
-[0] DK DQ S9 H8 C4  > C4
-[1] DK DQ S9 H8 D9  > H8
-[2] DK DQ S9 ST D9  > S9
-[3] DK DQ CQ ST D9  > DQ
-[4] DK CK CQ ST D9  > DK
-[5] C1 CK CQ ST D9 
+[1] S1 C8 D1 H1 HT  > C8
+[2] S1 CT D1 H1 HT 
+テイク素点 :  16
+[0] S2 SJ H3 HJ C3  > S2
+[1] HQ SJ H3 HJ C3  > HQ
+[2] S7 SJ H3 HJ C3  > S7
+[3] C9 SJ H3 HJ C3  > C9
+[4] CJ SJ H3 HJ C3 
+テイク素点 :  16
+[0] S8 C2 H9 C5 D6  > C2
+[1] S8 DT H9 C5 D6  > DT
+[2] S8 SK H9 C5 D6  > SK
+[3] S8 H6 H9 C5 D6  > H6
+[4] S8 D8 H9 C5 D6  > S8
+[5] DJ D8 H9 C5 D6  > DJ
+[6] H4 D8 H9 C5 D6 
 テイク素点 :   0
-トライ得点 :  54.00
+[0] S4 S5 H5 H7 S6  > S5
+[1] S4 D7 H5 H7 S6  > D7
+[2] S4 DK H5 H7 S6  > DK
+[3] S4 DQ H5 H7 S6  > DQ
+[4] S4 S9 H5 H7 S6  > H5
+[5] S4 S9 H8 H7 S6  > H8
+[6] S4 S9 C4 H7 S6 
+テイク素点 :   1
+トライ得点 :  90.00
 [0] S3 H1 S6 H3 D7  > S3
 [1] HK H1 S6 H3 D7  > H3
 [2] HK H1 S6 CK D7  > H1
@@ -20172,10 +20142,10 @@
 [1] S9 C1 HK C2 C8  > S9
 [2] D1 C1 HK C2 C8  > HK
 [3] D1 C1 SQ C2 C8  > SQ
-[4] D1 C1 S1 C2 C8  > D1
-[5] HT C1 S1 C2 C8  > HT
-[6] S4 C1 S1 C2 C8 
-テイク素点 :   1
+[4] D1 C1 S1 C2 C8  > C2
+[5] D1 C1 S1 HT C8  > HT
+[6] D1 C1 S1 S4 C8 
+テイク素点 :   8
 [0] D9 H6 S7 DT CT  > DT
 [1] D9 H6 S7 ST CT  > ST
 [2] D9 H6 S7 C4 CT  > CT
@@ -20202,7 +20172,7 @@
 [5] H9 S8 H2 DK CK  > H2
 [6] H9 S8 D5 DK CK 
 テイク素点 :   1
-トライ得点 :  83.50
+トライ得点 :  94.00
 [0] S3 H3 D7 ST SQ  > S3
 [1] SJ H3 D7 ST SQ  > H3
 [2] SJ SK D7 ST SQ  > D7
@@ -20435,32 +20405,29 @@
 [1] H8 C8 S5 S8 H3  > S5
 [2] H8 C8 HK S8 H3  > HK
 [3] H8 C8 S2 S8 H3  > S2
-[4] H8 C8 H7 S8 H3  > H8
-[5] S3 C8 H7 S8 H3  > H7
-[6] S3 C8 C7 S8 H3 
-テイク素点 :   2
-[0] C9 D6 HT H6 DK  > DK
-[1] C9 D6 HT H6 S9  > HT
-[2] C9 D6 S7 H6 S9  > S7
-[3] C9 D6 DT H6 S9  > DT
-[4] C9 D6 DQ H6 S9  > DQ
-[5] C9 D6 S4 H6 S9  > S4
-[6] C9 D6 C3 H6 S9 
-テイク素点 :   2
-[0] C4 H2 D8 H5 D1  > D8
-[1] C4 H2 S6 H5 D1  > H5
-[2] C4 H2 S6 SK D1  > SK
-[3] C4 H2 S6 CJ D1  > CJ
-[4] C4 H2 S6 S1 D1  > S1
-[5] C4 H2 S6 C1 D1  > C1
-[6] C4 H2 S6 CQ D1 
+[4] H8 C8 H7 S8 H3  > H7
+[5] H8 C8 S3 S8 H3 
+テイク素点 :  16
+[0] C7 C9 D6 HT H6  > D6
+[1] C7 C9 DK HT H6  > DK
+[2] C7 C9 S9 HT H6  > C9
+[3] C7 S7 S9 HT H6  > C7
+[4] DT S7 S9 HT H6  > DT
+[5] DQ S7 S9 HT H6  > DQ
+[6] S4 S7 S9 HT H6 
 テイク素点 :   0
-[0] ST H1 D3 D2 C6  > ST
-[1] H9 H1 D3 D2 C6  > H9
-[2] D7 H1 D3 D2 C6  > D7
-[3] D4 H1 D3 D2 C6 
-テイク素点 :   0
-トライ得点 :   6.50
+[0] C3 C4 H2 D8 H5  > D8
+[1] C3 C4 H2 D1 H5 
+テイク素点 :  32
+[0] S6 SK CJ S1 C1  > SK
+[1] S6 CQ CJ S1 C1  > CQ
+[2] S6 ST CJ S1 C1  > ST
+[3] S6 H1 CJ S1 C1  > CJ
+[4] S6 H1 D3 S1 C1  > D3
+[5] S6 H1 D2 S1 C1  > D2
+[6] S6 H1 C6 S1 C1 
+テイク素点 :  16
+トライ得点 : 121.50
 [0] DK H5 H4 S8 H1  > H1
 [1] DK H5 H4 S8 HQ  > DK
 [2] C9 H5 H4 S8 HQ  > C9
@@ -20587,24 +20554,24 @@
 [1] SK H8 DK C5 S4  > H8
 [2] SK H2 DK C5 S4  > H2
 [3] SK C9 DK C5 S4  > C9
-[4] SK CK DK C5 S4  > SK
-[5] H4 CK DK C5 S4  > C5
-[6] H4 CK DK C1 S4 
-テイク素点 :   2
-[0] S2 D9 CJ S6 H6  > S2
-[1] C2 D9 CJ S6 H6  > C2
-[2] H1 D9 CJ S6 H6  > H1
-[3] H7 D9 CJ S6 H6  > S6
-[4] H7 D9 CJ S5 H6  > H6
-[5] H7 D9 CJ S5 D1  > D1
-[6] H7 D9 CJ S5 D6 
-テイク素点 :   0
-[0] D3 HT D7 H9 D4  > D3
-[1] S1 HT D7 H9 D4  > S1
-[2] H5 HT D7 H9 D4  > H5
-[3] D5 HT D7 H9 D4  > D5
-[4] C8 HT D7 H9 D4  > D4
-[5] C8 HT D7 H9 HJ 
+[4] SK CK DK C5 S4  > C5
+[5] SK CK DK H4 S4 
+テイク素点 :  16
+[0] C1 S2 D9 CJ S6  > S2
+[1] C1 H6 D9 CJ S6  > D9
+[2] C1 H6 C2 CJ S6  > C2
+[3] C1 H6 H1 CJ S6  > CJ
+[4] C1 H6 H1 H7 S6  > H7
+[5] C1 H6 H1 S5 S6  > S5
+[6] C1 H6 H1 D1 S6 
+テイク素点 :  16
+[0] D6 D3 HT D7 H9  > D3
+[1] D6 D4 HT D7 H9  > D6
+[2] S1 D4 HT D7 H9  > S1
+[3] H5 D4 HT D7 H9  > H5
+[4] D5 D4 HT D7 H9  > D5
+[5] C8 D4 HT D7 H9  > D4
+[6] C8 HJ HT D7 H9 
 テイク素点 :  32
 [0] DJ C4 CT S7 C7  > DJ
 [1] S9 C4 CT S7 C7  > S9
@@ -20612,45 +20579,44 @@
 [3] D8 C4 CT S7 C7  > D8
 [4] HQ C4 CT S7 C7 
 テイク素点 :   1
-トライ得点 :  69.00
+トライ得点 : 106.00
 [0] S6 D1 CQ DJ C3  > S6
 [1] SK D1 CQ DJ C3  > SK
 [2] S3 D1 CQ DJ C3  > D1
-[3] S3 D3 CQ DJ C3  > S3
-[4] SJ D3 CQ DJ C3  > CQ
-[5] SJ D3 DT DJ C3  > DT
-[6] SJ D3 CJ DJ C3 
+[3] S3 D3 CQ DJ C3  > CQ
+[4] S3 D3 SJ DJ C3 
 テイク素点 :  16
-[0] DQ SQ HT H3 D4  > H3
-[1] DQ SQ HT H1 D4  > HT
-[2] DQ SQ DK H1 D4  > DK
-[3] DQ SQ CT H1 D4  > CT
-[4] DQ SQ H6 H1 D4  > H6
-[5] DQ SQ C2 H1 D4  > H1
-[6] DQ SQ C2 H5 D4 
-テイク素点 :   1
-[0] C7 H7 H2 S1 C6  > S1
-[1] C7 H7 H2 C1 C6  > C1
-[2] C7 H7 H2 CK C6  > CK
-[3] C7 H7 H2 S9 C6  > C6
-[4] C7 H7 H2 S9 D8  > H2
-[5] C7 H7 C8 S9 D8  > S9
-[6] C7 H7 C8 D6 D8 
+[0] DT CJ DQ SQ HT  > CJ
+[1] DT H3 DQ SQ HT  > H3
+[2] DT D4 DQ SQ HT  > D4
+[3] DT H1 DQ SQ HT  > H1
+[4] DT DK DQ SQ HT  > DK
+[5] DT CT DQ SQ HT 
+テイク素点 :  16
+[0] H6 C2 H5 C7 H7  > H6
+[1] H2 C2 H5 C7 H7  > H5
+[2] H2 C2 S1 C7 H7  > S1
+[3] H2 C2 C6 C7 H7  > C6
+[4] H2 C2 C1 C7 H7  > C1
+[5] H2 C2 CK C7 H7  > CK
+[6] H2 C2 S9 C7 H7 
 テイク素点 :   2
-[0] D7 C4 S4 ST D2  > ST
-[1] D7 C4 S4 HQ D2  > HQ
-[2] D7 C4 S4 HK D2  > HK
-[3] D7 C4 S4 H8 D2  > D7
-[4] HJ C4 S4 H8 D2  > HJ
-[5] C9 C4 S4 H8 D2  > H8
-[6] C9 C4 S4 H4 D2 
-テイク素点 :   8
-[0] H9 C5 S5 S8 S7  > C5
-[1] H9 S2 S5 S8 S7  > S2
-[2] H9 D5 S5 S8 S7  > D5
-[3] H9 D9 S5 S8 S7 
+[0] D8 C8 D6 D7 C4  > D8
+[1] S4 C8 D6 D7 C4  > S4
+[2] ST C8 D6 D7 C4  > ST
+[3] D2 C8 D6 D7 C4  > D6
+[4] D2 C8 HQ D7 C4  > HQ
+[5] D2 C8 HK D7 C4  > HK
+[6] D2 C8 H8 D7 C4 
 テイク素点 :   1
-トライ得点 :  45.50
+[0] HJ C9 H4 H9 C5  > HJ
+[1] S5 C9 H4 H9 C5  > H4
+[2] S5 C9 S8 H9 C5  > S8
+[3] S5 C9 S7 H9 C5  > S7
+[4] S5 C9 S2 H9 C5  > S2
+[5] S5 C9 D5 H9 C5 
+テイク素点 :  16
+トライ得点 :  84.00
 [0] C3 CQ ST D1 S4  > C3
 [1] D3 CQ ST D1 S4  > D3
 [2] H1 CQ ST D1 S4  > CQ
@@ -20692,9 +20658,9 @@
 [2] HQ DK H6 HK S3  > HQ
 [3] HT DK H6 HK S3  > HT
 [4] HJ DK H6 HK S3  > HJ
-[5] SK DK H6 HK S3  > SK
-[6] S5 DK H6 HK S3 
-テイク素点 :   1
+[5] SK DK H6 HK S3  > H6
+[6] SK DK S5 HK S3 
+テイク素点 :   8
 [0] S2 D1 S7 H9 ST  > S2
 [1] H7 D1 S7 H9 ST  > D1
 [2] H7 D5 S7 H9 ST  > H7
@@ -20724,7 +20690,7 @@
 [3] S4 H8 D4 CJ S6  > H8
 [4] S4 H2 D4 CJ S6 
 テイク素点 :   1
-トライ得点 :  83.50
+トライ得点 :  94.00
 [0] D1 SJ D4 C8 S4  > D1
 [1] SK SJ D4 C8 S4  > SK
 [2] H7 SJ D4 C8 S4  > H7
@@ -21994,9 +21960,9 @@
 [2] H1 D1 HK H7 S1  > HK
 [3] H1 D1 S6 H7 S1  > H7
 [4] H1 D1 S6 CK S1  > CK
-[5] H1 D1 S6 S2 S1  > H1
-[6] SK D1 S6 S2 S1 
-テイク素点 :   1
+[5] H1 D1 S6 S2 S1  > S6
+[6] H1 D1 SK S2 S1 
+テイク素点 :   8
 [0] DT H2 C2 H8 HJ  > H8
 [1] DT H2 C2 S7 HJ  > S7
 [2] DT H2 C2 C6 HJ  > HJ
@@ -22018,7 +21984,7 @@
 [2] ST C1 D6 C8 S4  > C1
 [3] ST HT D6 C8 S4 
 テイク素点 :   1
-トライ得点 :  22.00
+トライ得点 :  32.50
 [0] CJ C1 C2 H8 HK  > CJ
 [1] DQ C1 C2 H8 HK  > DQ
 [2] S9 C1 C2 H8 HK  > S9
@@ -22138,9 +22104,9 @@
 [2] CQ H9 C5 D9 D3  > CQ
 [3] HJ H9 C5 D9 D3  > C5
 [4] HJ H9 D8 D9 D3  > HJ
-[5] C9 H9 D8 D9 D3  > C9
-[6] C1 H9 D8 D9 D3 
-テイク素点 :   1
+[5] C9 H9 D8 D9 D3  > D8
+[6] C9 H9 C1 D9 D3 
+テイク素点 :   8
 [0] C7 C8 DJ SK HQ  > C7
 [1] H4 C8 DJ SK HQ  > H4
 [2] SQ C8 DJ SK HQ  > C8
@@ -22159,7 +22125,7 @@
 [5] CJ C4 CK S8 S9  > C4
 [6] CJ D5 CK S8 S9 
 テイク素点 :   0
-トライ得点 :  69.50
+トライ得点 :  80.00
 [0] S8 S7 D7 DT CT  > S8
 [1] H4 S7 D7 DT CT  > H4
 [2] D5 S7 D7 DT CT  > D5
@@ -22529,43 +22495,42 @@
 テイク素点 :   1
 トライ得点 :  12.00
 [0] CQ S7 S1 D6 S6  > CQ
-[1] C6 S7 S1 D6 S6  > C6
-[2] HQ S7 S1 D6 S6  > HQ
-[3] H5 S7 S1 D6 S6  > H5
-[4] S9 S7 S1 D6 S6  > D6
-[5] S9 S7 S1 H1 S6  > H1
-[6] S9 S7 S1 CK S6 
-テイク素点 :   0
-[0] H3 DJ D4 C4 SK  > SK
-[1] H3 DJ D4 C4 HK  > HK
-[2] H3 DJ D4 C4 S8  > H3
-[3] S4 DJ D4 C4 S8  > S4
-[4] S3 DJ D4 C4 S8  > S3
-[5] C2 DJ D4 C4 S8  > C2
-[6] H7 DJ D4 C4 S8 
-テイク素点 :   1
-[0] S2 D1 SQ DQ C9  > D1
-[1] S2 HJ SQ DQ C9  > S2
-[2] C8 HJ SQ DQ C9  > SQ
-[3] C8 HJ C5 DQ C9  > C5
-[4] C8 HJ C3 DQ C9  > C3
-[5] C8 HJ S5 DQ C9  > S5
-[6] C8 HJ D7 DQ C9 
-テイク素点 :   0
-[0] SJ CT D9 CJ H2  > D9
-[1] SJ CT C7 CJ H2  > C7
-[2] SJ CT D8 CJ H2  > D8
-[3] SJ CT ST CJ H2  > H2
-[4] SJ CT ST CJ DT 
+[1] C6 S7 S1 D6 S6  > S7
+[2] C6 HQ S1 D6 S6  > HQ
+[3] C6 H5 S1 D6 S6  > H5
+[4] C6 S9 S1 D6 S6  > S9
+[5] C6 H1 S1 D6 S6 
 テイク素点 :  16
-[0] H4 HT D2 D3 H8  > H4
-[1] DK HT D2 D3 H8  > DK
-[2] C1 HT D2 D3 H8  > C1
-[3] H6 HT D2 D3 H8  > H6
-[4] D5 HT D2 D3 H8  > D5
-[5] H9 HT D2 D3 H8 
-テイク素点 :   0
-トライ得点 :  33.50
+[0] CK H3 DJ D4 C4  > CK
+[1] SK H3 DJ D4 C4  > SK
+[2] HK H3 DJ D4 C4  > HK
+[3] S8 H3 DJ D4 C4  > S8
+[4] S4 H3 DJ D4 C4  > H3
+[5] S4 S3 DJ D4 C4  > S3
+[6] S4 C2 DJ D4 C4 
+テイク素点 :   8
+[0] H7 S2 D1 SQ DQ  > D1
+[1] H7 S2 C9 SQ DQ  > H7
+[2] HJ S2 C9 SQ DQ  > HJ
+[3] C8 S2 C9 SQ DQ  > C8
+[4] C5 S2 C9 SQ DQ  > C5
+[5] C3 S2 C9 SQ DQ  > C3
+[6] S5 S2 C9 SQ DQ 
+テイク素点 :   1
+[0] D7 SJ CT D9 CJ  > SJ
+[1] D7 H2 CT D9 CJ  > H2
+[2] D7 C7 CT D9 CJ  > D7
+[3] D8 C7 CT D9 CJ 
+テイク素点 :  32
+[0] ST DT H4 HT D2  > H4
+[1] ST DT D3 HT D2  > D3
+[2] ST DT H8 HT D2  > H8
+[3] ST DT DK HT D2  > DK
+[4] ST DT C1 HT D2  > C1
+[5] ST DT H6 HT D2  > H6
+[6] ST DT D5 HT D2 
+テイク素点 :   8
+トライ得点 : 117.00
 [0] D5 SJ SK H6 H9  > D5
 [1] ST SJ SK H6 H9  > H6
 [2] ST SJ SK C4 H9  > C4
@@ -22777,12 +22742,12 @@
 トライ得点 : 121.50
 [0] ST S3 H8 C3 DQ  > ST
 [1] C9 S3 H8 C3 DQ  > C9
-[2] H3 S3 H8 C3 DQ  > H3
-[3] DT S3 H8 C3 DQ  > DT
-[4] D7 S3 H8 C3 DQ  > D7
-[5] S1 S3 H8 C3 DQ  > S1
-[6] D6 S3 H8 C3 DQ 
-テイク素点 :   1
+[2] H3 S3 H8 C3 DQ  > H8
+[3] H3 S3 DT C3 DQ  > DT
+[4] H3 S3 D7 C3 DQ  > D7
+[5] H3 S3 S1 C3 DQ  > S1
+[6] H3 S3 D6 C3 DQ 
+テイク素点 :   8
 [0] CQ S7 H4 S8 C1  > C1
 [1] CQ S7 H4 S8 SQ  > S7
 [2] CQ H7 H4 S8 SQ  > H7
@@ -22812,7 +22777,7 @@
 [2] HJ C2 CJ C4 S4  > C2
 [3] HJ D2 CJ C4 S4 
 テイク素点 :   2
-トライ得点 :  12.50
+トライ得点 :  23.00
 [0] ST H7 C3 SJ CT  > ST
 [1] C9 H7 C3 SJ CT  > C3
 [2] C9 H7 H3 SJ CT  > H3
@@ -22967,9 +22932,9 @@
 [2] CT D9 H1 C6 H9  > CT
 [3] C3 D9 H1 C6 H9  > C3
 [4] D2 D9 H1 C6 H9  > D2
-[5] C9 D9 H1 C6 H9  > C9
-[6] D5 D9 H1 C6 H9 
-テイク素点 :   1
+[5] C9 D9 H1 C6 H9  > H1
+[6] C9 D9 D5 C6 H9 
+テイク素点 :   8
 [0] SK HT HK C7 H7  > HT
 [1] SK D3 HK C7 H7  > D3
 [2] SK H4 HK C7 H7  > H4
@@ -22991,7 +22956,7 @@
 [2] D6 S3 S6 H3 DQ  > DQ
 [3] D6 S3 S6 H3 CQ 
 テイク素点 :   2
-トライ得点 :  11.00
+トライ得点 :  21.50
 [0] SK CK HJ DK C4  > SK
 [1] HQ CK HJ DK C4  > HQ
 [2] D2 CK HJ DK C4  > D2
@@ -23469,9 +23434,9 @@
 [2] ST CJ DJ C4 HK  > ST
 [3] H2 CJ DJ C4 HK  > H2
 [4] S1 CJ DJ C4 HK  > S1
-[5] HJ CJ DJ C4 HK  > HJ
-[6] D6 CJ DJ C4 HK 
-テイク素点 :   1
+[5] HJ CJ DJ C4 HK  > C4
+[6] HJ CJ DJ D6 HK 
+テイク素点 :   8
 [0] H4 SJ H5 CQ S4  > SJ
 [1] H4 HT H5 CQ S4  > HT
 [2] H4 D7 H5 CQ S4  > D7
@@ -23492,7 +23457,7 @@
 [1] H3 S9 CT C3 DT  > S9
 [2] H3 S3 CT C3 DT 
 テイク素点 :  16
-トライ得点 :  62.50
+トライ得点 :  73.00
 [0] DK D1 D4 SJ DQ  > D1
 [1] DK D3 D4 SJ DQ  > SJ
 [2] DK D3 D4 CJ DQ  > CJ
@@ -23919,9 +23884,9 @@
 [2] C8 DQ DJ HQ S7  > DJ
 [3] C8 DQ H9 HQ S7  > C8
 [4] C2 DQ H9 HQ S7  > C2
-[5] SQ DQ H9 HQ S7  > SQ
-[6] S9 DQ H9 HQ S7 
-テイク素点 :   2
+[5] SQ DQ H9 HQ S7  > H9
+[6] SQ DQ S9 HQ S7 
+テイク素点 :   8
 [0] C1 S4 C3 DT S5  > DT
 [1] C1 S4 C3 H1 S5  > C1
 [2] D5 S4 C3 H1 S5  > D5
@@ -23943,7 +23908,7 @@
 [2] H5 ST D7 D9 C7  > D7
 [3] H5 ST H6 D9 C7 
 テイク素点 :   0
-トライ得点 :   5.00
+トライ得点 :  14.00
 [0] H3 HT D2 HQ SK  > H3
 [1] HK HT D2 HQ SK  > HT
 [2] HK DQ D2 HQ SK  > D2
@@ -24050,43 +24015,43 @@
 テイク素点 :   8
 トライ得点 :  90.00
 [0] S1 H9 H3 HT ST  > S1
-[1] DT H9 H3 HT ST  > DT
-[2] H8 H9 H3 HT ST  > ST
-[3] H8 H9 H3 HT D5  > D5
-[4] H8 H9 H3 HT S2  > S2
-[5] H8 H9 H3 HT S7  > H3
-[6] H8 H9 SJ HT S7 
-テイク素点 :  32
+[1] DT H9 H3 HT ST  > H9
+[2] DT H8 H3 HT ST  > H8
+[3] DT D5 H3 HT ST  > D5
+[4] DT S2 H3 HT ST  > S2
+[5] DT S7 H3 HT ST  > S7
+[6] DT SJ H3 HT ST 
+テイク素点 :   8
 [0] S4 H6 CT H4 DK  > CT
-[1] S4 H6 D4 H4 DK  > S4
-[2] H2 H6 D4 H4 DK  > H2
-[3] C3 H6 D4 H4 DK  > C3
-[4] HK H6 D4 H4 DK  > H6
-[5] HK DJ D4 H4 DK  > DJ
-[6] HK D7 D4 H4 DK 
-テイク素点 :   2
-[0] HJ D8 C4 C5 H1  > H1
-[1] HJ D8 C4 C5 SQ  > C4
-[2] HJ D8 DQ C5 SQ  > HJ
-[3] D3 D8 DQ C5 SQ  > D3
-[4] S3 D8 DQ C5 SQ  > S3
-[5] D6 D8 DQ C5 SQ  > D6
-[6] C8 D8 DQ C5 SQ 
-テイク素点 :   2
-[0] D9 CJ C2 D1 S5  > CJ
-[1] D9 S6 C2 D1 S5  > S6
-[2] D9 C9 C2 D1 S5  > C2
-[3] D9 C9 C1 D1 S5  > S5
-[4] D9 C9 C1 D1 D2  > D2
-[5] D9 C9 C1 D1 H5  > H5
-[6] D9 C9 C1 D1 S9 
+[1] S4 H6 D4 H4 DK  > H6
+[2] S4 H2 D4 H4 DK  > H2
+[3] S4 C3 D4 H4 DK  > C3
+[4] S4 HK D4 H4 DK 
 テイク素点 :  16
-[0] C6 HQ CK SK C7  > C6
-[1] S8 HQ CK SK C7  > S8
-[2] CQ HQ CK SK C7  > C7
-[3] CQ HQ CK SK H7 
+[0] DJ D7 HJ D8 C4  > C4
+[1] DJ D7 HJ D8 C5  > D7
+[2] DJ H1 HJ D8 C5  > H1
+[3] DJ SQ HJ D8 C5  > D8
+[4] DJ SQ HJ DQ C5  > C5
+[5] DJ SQ HJ DQ D3  > D3
+[6] DJ SQ HJ DQ S3 
 テイク素点 :   2
-トライ得点 :  89.00
+[0] D6 C8 D9 CJ C2  > C2
+[1] D6 C8 D9 CJ D1  > D1
+[2] D6 C8 D9 CJ S5  > CJ
+[3] D6 C8 D9 S6 S5  > D6
+[4] C9 C8 D9 S6 S5  > C9
+[5] C1 C8 D9 S6 S5  > C1
+[6] D2 C8 D9 S6 S5 
+テイク素点 :   0
+[0] H5 S9 C6 HQ CK  > H5
+[1] SK S9 C6 HQ CK  > S9
+[2] SK C7 C6 HQ CK  > C6
+[3] SK C7 S8 HQ CK  > S8
+[4] SK C7 CQ HQ CK  > C7
+[5] SK H7 CQ HQ CK 
+テイク素点 :   2
+トライ得点 :  42.00
 [0] CQ D1 S6 C2 S1  > CQ
 [1] D2 D1 S6 C2 S1  > S6
 [2] D2 D1 CK C2 S1  > CK
@@ -24309,42 +24274,39 @@
 テイク素点 :   1
 トライ得点 :  58.00
 [0] H7 D5 SQ HT ST  > H7
-[1] CT D5 SQ HT ST  > CT
-[2] C5 D5 SQ HT ST  > SQ
-[3] C5 D5 CK HT ST  > CK
-[4] C5 D5 HQ HT ST  > HQ
-[5] C5 D5 C8 HT ST  > C8
-[6] C5 D5 S3 HT ST 
+[1] CT D5 SQ HT ST  > D5
+[2] CT C5 SQ HT ST  > C5
+[3] CT CK SQ HT ST  > CK
+[4] CT HQ SQ HT ST 
+テイク素点 :  16
+[0] C8 S3 D8 C9 DT  > DT
+[1] C8 S3 D8 C9 S4  > S3
+[2] C8 HJ D8 C9 S4  > HJ
+[3] C8 H8 D8 C9 S4  > C9
+[4] C8 H8 D8 D7 S4  > D7
+[5] C8 H8 D8 D6 S4  > D6
+[6] C8 H8 D8 H4 S4 
+テイク素点 :  16
+[0] C7 C3 C1 S6 C4  > S6
+[1] C7 C3 C1 C2 C4 
+テイク素点 :  24
+[0] H3 S5 C6 DJ SJ  > H3
+[1] S2 S5 C6 DJ SJ  > S5
+[2] S2 H6 C6 DJ SJ  > S2
+[3] H5 H6 C6 DJ SJ  > H5
+[4] S9 H6 C6 DJ SJ  > S9
+[5] H9 H6 C6 DJ SJ  > H9
+[6] D4 H6 C6 DJ SJ 
 テイク素点 :   2
-[0] D8 C9 DT S4 HJ  > S4
-[1] D8 C9 DT H8 HJ  > D8
-[2] D7 C9 DT H8 HJ 
-テイク素点 :  32
-[0] D6 H4 C7 C3 C1  > C7
-[1] D6 H4 S6 C3 C1  > D6
-[2] C4 H4 S6 C3 C1  > C4
-[3] C2 H4 S6 C3 C1  > H4
-[4] C2 H3 S6 C3 C1  > S6
-[5] C2 H3 S5 C3 C1  > H3
-[6] C2 C6 S5 C3 C1 
-テイク素点 :   0
-[0] DJ SJ S2 H6 H5  > H6
-[1] DJ SJ S2 S9 H5  > H5
-[2] DJ SJ S2 S9 H9  > S2
-[3] DJ SJ D4 S9 H9  > D4
-[4] DJ SJ HK S9 H9  > HK
-[5] DJ SJ CQ S9 H9  > CQ
-[6] DJ SJ D2 S9 H9 
+[0] HK CQ D2 H2 S7  > S7
+[1] HK CQ D2 H2 D1  > CQ
+[2] HK D3 D2 H2 D1  > D3
+[3] HK CJ D2 H2 D1  > CJ
+[4] HK S1 D2 H2 D1  > HK
+[5] S8 S1 D2 H2 D1  > S8
+[6] D9 S1 D2 H2 D1 
 テイク素点 :   2
-[0] H2 S7 D1 D3 CJ  > H2
-[1] S1 S7 D1 D3 CJ  > S7
-[2] S1 S8 D1 D3 CJ  > S8
-[3] S1 D9 D1 D3 CJ  > D9
-[4] S1 DK D1 D3 CJ  > D3
-[5] S1 DK D1 SK CJ  > CJ
-[6] S1 DK D1 SK DQ 
-テイク素点 :   2
-トライ得点 :  59.00
+トライ得点 :  80.00
 [0] S3 S8 D7 D1 HQ  > S3
 [1] C6 S8 D7 D1 HQ  > D1
 [2] C6 S8 D7 DJ HQ  > C6
@@ -24530,12 +24492,12 @@
 トライ得点 : 101.50
 [0] HJ H5 S5 S3 ST  > HJ
 [1] DQ H5 S5 S3 ST  > DQ
-[2] D5 H5 S5 S3 ST  > D5
-[3] D1 H5 S5 S3 ST  > D1
-[4] DK H5 S5 S3 ST  > DK
-[5] C4 H5 S5 S3 ST  > C4
-[6] H1 H5 S5 S3 ST 
-テイク素点 :   1
+[2] D5 H5 S5 S3 ST  > S3
+[3] D5 H5 S5 D1 ST  > D1
+[4] D5 H5 S5 DK ST  > DK
+[5] D5 H5 S5 C4 ST  > C4
+[6] D5 H5 S5 H1 ST 
+テイク素点 :   8
 [0] C9 C5 H4 C2 H3  > C9
 [1] D9 C5 H4 C2 H3  > D9
 [2] SK C5 H4 C2 H3  > SK
@@ -24565,7 +24527,7 @@
 [2] CJ S8 SQ C6 C8  > SQ
 [3] CJ S8 SJ C6 C8 
 テイク素点 :   2
-トライ得点 :   8.50
+トライ得点 :  19.00
 [0] HQ H5 CK S7 C3  > HQ
 [1] D7 H5 CK S7 C3  > H5
 [2] D7 H2 CK S7 C3  > H2
@@ -24577,11 +24539,11 @@
 [0] C1 C5 D5 S2 D8  > C1
 [1] S5 C5 D5 S2 D8  > S2
 [2] S5 C5 D5 H7 D8  > H7
-[3] S5 C5 D5 HT D8  > S5
-[4] DT C5 D5 HT D8  > D8
-[5] DT C5 D5 HT SQ  > SQ
-[6] DT C5 D5 HT C9 
-テイク素点 :   2
+[3] S5 C5 D5 HT D8  > HT
+[4] S5 C5 D5 DT D8  > DT
+[5] S5 C5 D5 SQ D8  > SQ
+[6] S5 C5 D5 C9 D8 
+テイク素点 :   8
 [0] S6 C4 ST C2 DK  > ST
 [1] S6 C4 C8 C2 DK  > DK
 [2] S6 C4 C8 C2 D1  > C2
@@ -24603,7 +24565,7 @@
 [2] S9 H6 C7 S8 H3  > H3
 [3] S9 H6 C7 S8 D9 
 テイク素点 :   1
-トライ得点 :  10.50
+トライ得点 :  19.50
 [0] D4 S8 D2 D7 D8  > S8
 [1] D4 C3 D2 D7 D8  > C3
 [2] D4 HQ D2 D7 D8  > HQ
@@ -25136,10 +25098,10 @@
 [1] S7 CK D6 HJ C6  > S7
 [2] HQ CK D6 HJ C6  > HQ
 [3] C7 CK D6 HJ C6  > C7
-[4] H6 CK D6 HJ C6  > H6
-[5] S2 CK D6 HJ C6  > S2
-[6] D9 CK D6 HJ C6 
-テイク素点 :   1
+[4] H6 CK D6 HJ C6  > CK
+[5] H6 S2 D6 HJ C6  > S2
+[6] H6 D9 D6 HJ C6 
+テイク素点 :   8
 [0] SJ H2 HT S6 CT  > S6
 [1] SJ H2 HT CQ CT  > H2
 [2] SJ S8 HT CQ CT  > HT
@@ -25169,7 +25131,7 @@
 [2] C9 C8 D8 CJ SK  > C8
 [3] C9 H8 D8 CJ SK 
 テイク素点 :   1
-トライ得点 :   7.50
+トライ得点 :  18.00
 [0] CJ CQ S7 HJ D4  > CJ
 [1] S2 CQ S7 HJ D4  > HJ
 [2] S2 CQ S7 H1 D4  > S2
@@ -25186,14 +25148,14 @@
 [5] S3 H8 C4 S4 H4  > S3
 [6] D2 H8 C4 S4 H4 
 テイク素点 :   8
-[0] D6 C6 H5 S6 HK  > D6
-[1] HQ C6 H5 S6 HK  > HQ
-[2] D1 C6 H5 S6 HK  > D1
-[3] H7 C6 H5 S6 HK  > H7
-[4] DT C6 H5 S6 HK  > DT
-[5] SJ C6 H5 S6 HK  > SJ
-[6] D5 C6 H5 S6 HK 
-テイク素点 :   2
+[0] D6 C6 H5 S6 HK  > H5
+[1] D6 C6 HQ S6 HK  > HQ
+[2] D6 C6 D1 S6 HK  > D1
+[3] D6 C6 H7 S6 HK  > H7
+[4] D6 C6 DT S6 HK  > DT
+[5] D6 C6 SJ S6 HK  > SJ
+[6] D6 C6 D5 S6 HK 
+テイク素点 :   8
 [0] S5 SK CT C8 D7  > SK
 [1] S5 H6 CT C8 D7  > H6
 [2] S5 CK CT C8 D7  > CK
@@ -25205,7 +25167,7 @@
 [0] C9 HT S8 DJ C5  > C5
 [1] C9 HT S8 DJ C7 
 テイク素点 :  32
-トライ得点 :  79.50
+トライ得点 :  85.50
 [0] H8 DJ D7 D9 D2  > D2
 [1] H8 DJ D7 D9 S5  > H8
 [2] CK DJ D7 D9 S5  > CK
@@ -26225,12 +26187,12 @@
 トライ得点 :  36.50
 [0] S9 H3 H2 C4 D7  > S9
 [1] C2 H3 H2 C4 D7  > H3
-[2] C2 D2 H2 C4 D7  > C2
-[3] HT D2 H2 C4 D7  > HT
-[4] CJ D2 H2 C4 D7  > CJ
-[5] C9 D2 H2 C4 D7  > C9
-[6] S8 D2 H2 C4 D7 
-テイク素点 :   1
+[2] C2 D2 H2 C4 D7  > C4
+[3] C2 D2 H2 HT D7  > HT
+[4] C2 D2 H2 CJ D7  > CJ
+[5] C2 D2 H2 C9 D7  > C9
+[6] C2 D2 H2 S8 D7 
+テイク素点 :   8
 [0] H7 DQ C7 HQ SQ 
 テイク素点 :  16
 [0] H8 SK C6 C3 C1  > H8
@@ -26255,7 +26217,7 @@
 [5] H6 S4 D6 H1 H4  > H1
 [6] H6 S4 D6 H5 H4 
 テイク素点 :   2
-トライ得点 :  55.50
+トライ得点 :  66.00
 [0] C8 D6 H3 S8 S1  > C8
 [1] DJ D6 H3 S8 S1  > S8
 [2] DJ D6 H3 H2 S1  > DJ
@@ -26524,9 +26486,9 @@
 [2] HK C6 DK SJ DQ  > C6
 [3] HK C3 DK SJ DQ  > C3
 [4] HK D7 DK SJ DQ  > D7
-[5] HK SK DK SJ DQ  > HK
-[6] HJ SK DK SJ DQ 
-テイク素点 :   2
+[5] HK SK DK SJ DQ  > SJ
+[6] HK SK DK HJ DQ 
+テイク素点 :   8
 [0] D1 HQ HT D2 C4  > C4
 [1] D1 HQ HT D2 C7  > C7
 [2] D1 HQ HT D2 H2  > HQ
@@ -26546,7 +26508,7 @@
 [0] SQ S7 S8 H9 DT  > SQ
 [1] H6 S7 S8 H9 DT 
 テイク素点 :  32
-トライ得点 : 149.00
+トライ得点 : 158.00
 [0] H1 C3 DT S4 S6  > DT
 [1] H1 C3 SJ S4 S6  > SJ
 [2] H1 C3 S1 S4 S6  > H1
@@ -26895,11 +26857,11 @@
 [0] D9 S1 DJ S2 S3  > S1
 [1] D9 H9 DJ S2 S3  > S3
 [2] D9 H9 DJ S2 SK  > DJ
-[3] D9 H9 S9 S2 SK  > D9
-[4] HQ H9 S9 S2 SK  > HQ
-[5] C2 H9 S9 S2 SK  > SK
-[6] C2 H9 S9 S2 HJ 
-テイク素点 :   2
+[3] D9 H9 S9 S2 SK  > S2
+[4] D9 H9 S9 HQ SK  > HQ
+[5] D9 H9 S9 C2 SK  > C2
+[6] D9 H9 S9 HJ SK 
+テイク素点 :   8
 [0] C9 C3 S5 C4 HT  > C9
 [1] S7 C3 S5 C4 HT  > HT
 [2] S7 C3 S5 C4 S8  > C3
@@ -26921,7 +26883,7 @@
 [2] H2 D2 H7 C8 D4  > H7
 [3] H2 D2 SQ C8 D4 
 テイク素点 :   1
-トライ得点 :  12.00
+トライ得点 :  21.00
 [0] HJ S4 D6 D1 DQ  > D1
 [1] HJ S4 D6 S8 DQ  > HJ
 [2] C5 S4 D6 S8 DQ  > DQ
@@ -27083,72 +27045,72 @@
 テイク素点 :   0
 [0] D8 DK S1 H1 HQ  > HQ
 [1] D8 DK S1 H1 S7  > D8
-[2] D1 DK S1 H1 S7  > D1
-[3] C1 DK S1 H1 S7  > C1
-[4] H2 DK S1 H1 S7  > H2
-[5] H7 DK S1 H1 S7  > DK
-[6] H7 C5 S1 H1 S7 
+[2] D1 DK S1 H1 S7  > DK
+[3] D1 C1 S1 H1 S7 
+テイク素点 :  64
+[0] H2 H7 C5 HT SQ  > H2
+[1] H3 H7 C5 HT SQ  > H3
+[2] C2 H7 C5 HT SQ  > C2
+[3] C8 H7 C5 HT SQ  > SQ
+[4] C8 H7 C5 HT D6  > C8
+[5] HK H7 C5 HT D6  > HK
+[6] DJ H7 C5 HT D6 
+テイク素点 :   0
+[0] H4 D3 S8 C7 H8  > D3
+[1] H4 CK S8 C7 H8  > H4
+[2] ST CK S8 C7 H8  > CK
+[3] ST DQ S8 C7 H8  > S8
+[4] ST DQ D5 C7 H8  > DQ
+[5] ST D7 D5 C7 H8  > D7
+[6] ST SK D5 C7 H8 
+テイク素点 :   0
+[0] D9 SJ CT DT S4  > S4
+[1] D9 SJ CT DT C9  > SJ
+[2] D9 CJ CT DT C9  > CJ
+[3] D9 C6 CT DT C9  > C6
+[4] D9 S6 CT DT C9  > S6
+[5] D9 H5 CT DT C9  > H5
+[6] D9 H6 CT DT C9 
 テイク素点 :   2
-[0] HT SQ H3 C2 C8  > C2
-[1] HT SQ H3 D6 C8  > H3
-[2] HT SQ HK D6 C8  > SQ
-[3] HT DJ HK D6 C8  > DJ
-[4] HT H4 HK D6 C8  > HK
-[5] HT H4 D3 D6 C8  > D3
-[6] HT H4 S8 D6 C8 
-テイク素点 :   1
-[0] C7 H8 CK ST DQ  > H8
-[1] C7 D5 CK ST DQ  > DQ
-[2] C7 D5 CK ST D7  > D5
-[3] C7 SK CK ST D7  > ST
-[4] C7 SK CK D9 D7  > D9
-[5] C7 SK CK SJ D7  > SJ
-[6] C7 SK CK CT D7 
-テイク素点 :   2
-[0] DT S4 C9 CJ C6  > DT
-[1] S6 S4 C9 CJ C6  > S4
-[2] S6 H5 C9 CJ C6  > H5
-[3] S6 H6 C9 CJ C6 
-テイク素点 :   8
-トライ得点 :  24.00
+トライ得点 : 100.00
 [0] ST H3 H6 DT D5  > ST
 [1] C6 H3 H6 DT D5  > DT
-[2] C6 H3 H6 D6 D5  > C6
-[3] CJ H3 H6 D6 D5  > CJ
-[4] HT H3 H6 D6 D5  > HT
-[5] H5 H3 H6 D6 D5  > H3
-[6] H5 CK H6 D6 D5 
-テイク素点 :   2
-[0] H1 S1 D2 S5 C1  > S5
-[1] H1 S1 D2 S8 C1  > H1
-[2] C5 S1 D2 S8 C1  > C5
-[3] C7 S1 D2 S8 C1  > C7
-[4] D3 S1 D2 S8 C1  > D3
-[5] C4 S1 D2 S8 C1  > C4
-[6] D8 S1 D2 S8 C1 
-テイク素点 :   2
-[0] S7 DK DQ SJ HK  > S7
-[1] H8 DK DQ SJ HK  > H8
-[2] C9 DK DQ SJ HK  > DK
-[3] C9 H7 DQ SJ HK  > H7
-[4] C9 D1 DQ SJ HK  > D1
-[5] C9 S3 DQ SJ HK  > S3
-[6] C9 H2 DQ SJ HK 
-テイク素点 :   0
-[0] C8 S4 H4 HJ D9  > C8
-[1] DJ S4 H4 HJ D9  > D9
-[2] DJ S4 H4 HJ D7  > D7
-[3] DJ S4 H4 HJ D4 
+[2] C6 H3 H6 D6 D5  > H3
+[3] C6 CJ H6 D6 D5  > CJ
+[4] C6 HT H6 D6 D5  > HT
+[5] C6 H5 H6 D6 D5 
 テイク素点 :  16
-[0] CT S9 C3 H9 SQ  > CT
-[1] SK S9 C3 H9 SQ  > SK
-[2] C2 S9 C3 H9 SQ  > C3
-[3] C2 S9 S6 H9 SQ  > S6
-[4] C2 S9 S2 H9 SQ  > SQ
-[5] C2 S9 S2 H9 CQ  > CQ
-[6] C2 S9 S2 H9 HQ 
-テイク素点 :   2
-トライ得点 :  42.00
+[0] CK H1 S1 D2 S5  > S5
+[1] CK H1 S1 D2 C1  > CK
+[2] S8 H1 S1 D2 C1  > S8
+[3] C5 H1 S1 D2 C1  > C5
+[4] C7 H1 S1 D2 C1  > C7
+[5] D3 H1 S1 D2 C1  > D3
+[6] C4 H1 S1 D2 C1 
+テイク素点 :   8
+[0] D8 S7 DK DQ SJ  > D8
+[1] HK S7 DK DQ SJ  > S7
+[2] HK H8 DK DQ SJ  > H8
+[3] HK C9 DK DQ SJ  > HK
+[4] H7 C9 DK DQ SJ  > H7
+[5] D1 C9 DK DQ SJ  > D1
+[6] S3 C9 DK DQ SJ 
+テイク素点 :   0
+[0] H2 C8 S4 H4 HJ  > C8
+[1] H2 D9 S4 H4 HJ  > HJ
+[2] H2 D9 S4 H4 DJ  > DJ
+[3] H2 D9 S4 H4 D7  > D7
+[4] H2 D9 S4 H4 D4  > H2
+[5] CT D9 S4 H4 D4  > CT
+[6] S9 D9 S4 H4 D4 
+テイク素点 :  16
+[0] C3 H9 SQ SK C2  > C3
+[1] S6 H9 SQ SK C2  > C2
+[2] S6 H9 SQ SK S2  > S2
+[3] S6 H9 SQ SK CQ  > S6
+[4] HQ H9 SQ SK CQ 
+テイク素点 :   8
+トライ得点 :  84.00
 [0] D2 DQ C8 H3 C6  > D2
 [1] SK DQ C8 H3 C6  > H3
 [2] SK DQ C8 S7 C6  > SK
@@ -27199,10 +27161,10 @@
 [1] DQ C3 HQ HK C8  > C8
 [2] DQ C3 HQ HK C7  > C3
 [3] DQ SJ HQ HK C7  > SJ
-[4] DQ CQ HQ HK C7  > DQ
-[5] C4 CQ HQ HK C7  > C4
-[6] DJ CQ HQ HK C7 
-テイク素点 :   1
+[4] DQ CQ HQ HK C7  > HK
+[5] DQ CQ HQ C4 C7  > C4
+[6] DQ CQ HQ DJ C7 
+テイク素点 :   8
 [0] S4 ST H9 DK D7  > S4
 [1] C2 ST H9 DK D7  > C2
 [2] D8 ST H9 DK D7  > DK
@@ -27223,7 +27185,7 @@
 [1] H1 H3 H6 C1 H8  > C1
 [2] H1 H3 H6 H5 H8 
 テイク素点 :  24
-トライ得点 :  55.00
+トライ得点 :  65.50
 [0] HQ H7 C1 C6 H2  > HQ
 [1] H1 H7 C1 C6 H2  > H7
 [2] H1 C5 C1 C6 H2  > C5
@@ -27485,43 +27447,39 @@
 テイク素点 :   0
 トライ得点 :  90.00
 [0] HQ S2 C1 H7 H2  > HQ
-[1] D2 S2 C1 H7 H2  > D2
-[2] C7 S2 C1 H7 H2  > C1
-[3] C7 S2 D3 H7 H2  > D3
-[4] C7 S2 H5 H7 H2  > H5
-[5] C7 S2 C9 H7 H2  > C9
-[6] C7 S2 C6 H7 H2 
-テイク素点 :   2
-[0] H4 SQ C4 C5 SJ  > SQ
-[1] H4 H1 C4 C5 SJ  > H1
-[2] H4 S1 C4 C5 SJ  > S1
-[3] H4 DK C4 C5 SJ  > C5
-[4] H4 DK C4 D9 SJ  > D9
-[5] H4 DK C4 S4 SJ  > H4
-[6] H6 DK C4 S4 SJ 
-テイク素点 :   1
-[0] HJ CJ SK DJ H3  > SK
-[1] HJ CJ C2 DJ H3  > C2
-[2] HJ CJ HK DJ H3  > HK
-[3] HJ CJ S9 DJ H3  > S9
-[4] HJ CJ D8 DJ H3  > H3
-[5] HJ CJ D8 DJ S3  > S3
-[6] HJ CJ D8 DJ S5 
-テイク素点 :   8
-[0] H8 CK CT D7 S6  > CK
-[1] H8 CQ CT D7 S6  > CQ
-[2] H8 C8 CT D7 S6  > H8
-[3] C3 C8 CT D7 S6  > C3
-[4] HT C8 CT D7 S6  > HT
-[5] S8 C8 CT D7 S6  > S8
-[6] D1 C8 CT D7 S6 
+[1] D2 S2 C1 H7 H2  > C1
+[2] D2 S2 C7 H7 H2 
+テイク素点 :  16
+[0] D3 H5 C9 C6 H4  > C9
+[1] D3 H5 SQ C6 H4  > SQ
+[2] D3 H5 C4 C6 H4  > C4
+[3] D3 H5 C5 C6 H4  > H5
+[4] D3 SJ C5 C6 H4  > SJ
+[5] D3 H1 C5 C6 H4  > H1
+[6] D3 S1 C5 C6 H4 
 テイク素点 :   0
-[0] H9 DT D5 S7 D6  > H9
-[1] ST DT D5 S7 D6  > D5
-[2] ST DT DQ S7 D6  > DQ
-[3] ST DT D4 S7 D6 
-テイク素点 :   1
-トライ得点 :  14.50
+[0] DK D9 S4 H6 HJ  > S4
+[1] DK D9 CJ H6 HJ  > D9
+[2] DK SK CJ H6 HJ  > H6
+[3] DK SK CJ DJ HJ 
+テイク素点 :  16
+[0] H3 C2 HK S9 D8  > C2
+[1] H3 S3 HK S9 D8  > HK
+[2] H3 S3 S5 S9 D8  > S5
+[3] H3 S3 H8 S9 D8  > S9
+[4] H3 S3 H8 CK D8  > CK
+[5] H3 S3 H8 CT D8  > CT
+[6] H3 S3 H8 D7 D8 
+テイク素点 :   2
+[0] S6 CQ C8 C3 HT  > C3
+[1] S6 CQ C8 S8 HT  > C8
+[2] S6 CQ D1 S8 HT  > D1
+[3] S6 CQ H9 S8 HT  > H9
+[4] S6 CQ DT S8 HT  > DT
+[5] S6 CQ D5 S8 HT  > D5
+[6] S6 CQ S7 S8 HT 
+テイク素点 :   0
+トライ得点 :  44.00
 [0] DT H5 C1 C5 C3  > DT
 [1] D6 H5 C1 C5 C3  > H5
 [2] D6 C6 C1 C5 C3  > D6
@@ -27644,35 +27602,36 @@
 [5] C9 H9 D7 CQ H8  > D7
 [6] C9 H9 H7 CQ H8 
 テイク素点 :   1
-[0] SJ CT C5 CJ HJ  > SJ
-[1] DT CT C5 CJ HJ  > C5
-[2] DT CT C7 CJ HJ  > C7
-[3] DT CT ST CJ HJ 
-テイク素点 :  16
-[0] S9 D9 C2 DQ S5  > C2
-[1] S9 D9 D6 DQ S5  > DQ
-[2] S9 D9 D6 HQ S5  > HQ
-[3] S9 D9 D6 DJ S5  > DJ
-[4] S9 D9 D6 HT S5  > HT
-[5] S9 D9 D6 C3 S5  > C3
-[6] S9 D9 D6 S3 S5 
-テイク素点 :   1
-[0] H4 H5 D4 D1 H6  > H5
-[1] H4 DK D4 D1 H6  > D1
-[2] H4 DK D4 SK H6  > H6
-[3] H4 DK D4 SK H3  > H3
-[4] H4 DK D4 SK D8  > D8
-[5] H4 DK D4 SK C4 
-テイク素点 :  16
-[0] C8 S6 C6 D5 S8  > D5
-[1] C8 S6 C6 CK S8  > CK
-[2] C8 S6 C6 SQ S8  > SQ
-[3] C8 S6 C6 H2 S8  > H2
-[4] C8 S6 C6 S7 S8  > S7
-[5] C8 S6 C6 S4 S8  > S4
-[6] C8 S6 C6 S1 S8 
+[0] SJ CT C5 CJ HJ  > CT
+[1] SJ DT C5 CJ HJ  > DT
+[2] SJ C7 C5 CJ HJ  > C7
+[3] SJ ST C5 CJ HJ  > ST
+[4] SJ S9 C5 CJ HJ  > S9
+[5] SJ D9 C5 CJ HJ  > D9
+[6] SJ C2 C5 CJ HJ 
+テイク素点 :   8
+[0] DQ S5 D6 HQ DJ  > DJ
+[1] DQ S5 D6 HQ HT  > HT
+[2] DQ S5 D6 HQ C3  > S5
+[3] DQ S3 D6 HQ C3  > D6
+[4] DQ S3 H4 HQ C3  > H4
+[5] DQ S3 H5 HQ C3  > H5
+[6] DQ S3 D4 HQ C3 
 テイク素点 :   2
-トライ得点 :  62.50
+[0] D1 H6 DK SK H3  > H3
+[1] D1 H6 DK SK D8  > D1
+[2] C4 H6 DK SK D8  > C4
+[3] C8 H6 DK SK D8  > H6
+[4] C8 S6 DK SK D8  > S6
+[5] C8 C6 DK SK D8  > C6
+[6] C8 D5 DK SK D8 
+テイク素点 :   2
+[0] S8 CK SQ H2 S7  > H2
+[1] S8 CK SQ S4 S7  > S4
+[2] S8 CK SQ S1 S7  > S1
+[3] S8 CK SQ S2 S7 
+テイク素点 :   0
+トライ得点 :  19.50
 [0] CJ D7 HT CT D4  > CJ
 [1] HJ D7 HT CT D4  > HJ
 [2] C8 D7 HT CT D4  > C8
@@ -27712,13 +27671,13 @@
 テイク素点 :  24
 トライ得点 :  60.00
 [0] H1 HJ H9 D3 D9  > H1
-[1] S9 HJ H9 D3 D9  > S9
-[2] HQ HJ H9 D3 D9  > HQ
-[3] H5 HJ H9 D3 D9  > H5
-[4] SQ HJ H9 D3 D9  > SQ
-[5] HT HJ H9 D3 D9  > HT
-[6] SK HJ H9 D3 D9 
-テイク素点 :   1
+[1] S9 HJ H9 D3 D9  > HJ
+[2] S9 HQ H9 D3 D9  > HQ
+[3] S9 H5 H9 D3 D9  > H5
+[4] S9 SQ H9 D3 D9  > SQ
+[5] S9 HT H9 D3 D9  > HT
+[6] S9 SK H9 D3 D9 
+テイク素点 :   8
 [0] SJ D2 S5 CQ H2  > CQ
 [1] SJ D2 S5 D5 H2  > SJ
 [2] C6 D2 S5 D5 H2  > C6
@@ -27748,7 +27707,7 @@
 [3] S7 D1 H7 D4 C1  > D4
 [4] S7 D1 H7 D8 C1 
 テイク素点 :   2
-トライ得点 :  42.50
+トライ得点 :  53.00
 [0] C6 H7 S6 CJ DK  > C6
 [1] S5 H7 S6 CJ DK  > S6
 [2] S5 H7 HT CJ DK  > S5
@@ -27792,9 +27751,9 @@
 [2] C2 DJ CQ S1 S7  > C2
 [3] C3 DJ CQ S1 S7  > C3
 [4] C7 DJ CQ S1 S7  > DJ
-[5] C7 H7 CQ S1 S7  > C7
-[6] D5 H7 CQ S1 S7 
-テイク素点 :   1
+[5] C7 H7 CQ S1 S7  > CQ
+[6] C7 H7 D5 S1 S7 
+テイク素点 :   8
 [0] HQ C9 HJ D2 C4  > HQ
 [1] S3 C9 HJ D2 C4  > S3
 [2] C8 C9 HJ D2 C4  > HJ
@@ -27824,7 +27783,7 @@
 [2] S5 S8 D7 D4 S9  > S5
 [3] H2 S8 D7 D4 S9 
 テイク素点 :   0
-トライ得点 :  11.00
+トライ得点 :  21.50
 [0] S8 SQ S2 SJ S1 
 テイク素点 :  24
 [0] H5 S6 S4 C2 CK  > CK
@@ -27891,19 +27850,19 @@
 [0] CQ H8 S1 C9 C4  > S1
 [1] CQ H8 S4 C9 C4  > CQ
 [2] D5 H8 S4 C9 C4  > D5
-[3] H4 H8 S4 C9 C4  > H4
-[4] D2 H8 S4 C9 C4  > D2
-[5] ST H8 S4 C9 C4  > ST
-[6] SQ H8 S4 C9 C4 
-テイク素点 :   1
+[3] H4 H8 S4 C9 C4  > H8
+[4] H4 D2 S4 C9 C4  > D2
+[5] H4 ST S4 C9 C4  > ST
+[6] H4 SQ S4 C9 C4 
+テイク素点 :   8
 [0] HQ C3 DK S6 CK  > HQ
-[1] HK C3 DK S6 CK  > HK
-[2] DT C3 DK S6 CK  > DT
-[3] D3 C3 DK S6 CK  > S6
-[4] D3 C3 DK H7 CK  > H7
-[5] D3 C3 DK D4 CK  > D4
-[6] D3 C3 DK D6 CK 
-テイク素点 :   2
+[1] HK C3 DK S6 CK  > C3
+[2] HK DT DK S6 CK  > DT
+[3] HK D3 DK S6 CK  > D3
+[4] HK H7 DK S6 CK  > H7
+[5] HK D4 DK S6 CK  > D4
+[6] HK D6 DK S6 CK 
+テイク素点 :  16
 [0] S7 SK C1 S8 H9  > C1
 [1] S7 SK C7 S8 H9  > SK
 [2] S7 DJ C7 S8 H9  > S7
@@ -27925,7 +27884,7 @@
 [2] CJ C5 SJ C2 S5  > C2
 [3] CJ C5 SJ DQ S5 
 テイク素点 :   2
-トライ得点 :   8.50
+トライ得点 :  40.00
 [0] H9 CJ DT C6 CT  > H9
 [1] DJ CJ DT C6 CT  > C6
 [2] DJ CJ DT DQ CT  > DQ
@@ -28448,9 +28407,9 @@
 [2] S2 C5 ST D2 C4  > C5
 [3] S2 CJ ST D2 C4  > CJ
 [4] S2 DJ ST D2 C4  > DJ
-[5] S2 H2 ST D2 C4  > S2
-[6] H4 H2 ST D2 C4 
-テイク素点 :   2
+[5] S2 H2 ST D2 C4  > ST
+[6] S2 H2 H4 D2 C4 
+テイク素点 :  16
 [0] C2 DT D9 D5 H5  > C2
 [1] H8 DT D9 D5 H5  > DT
 [2] H8 D4 D9 D5 H5  > D4
@@ -28480,7 +28439,7 @@
 [2] D3 D6 SJ SQ C6  > D3
 [3] D1 D6 SJ SQ C6 
 テイク素点 :   1
-トライ得点 :  12.00
+トライ得点 :  33.00
 [0] H7 C3 DK D8 C8  > H7
 [1] S2 C3 DK D8 C8  > S2
 [2] C7 C3 DK D8 C8  > C7
@@ -28741,13 +28700,13 @@
 テイク素点 :   2
 トライ得点 :  72.00
 [0] S3 HK SJ HJ C1  > S3
-[1] CJ HK SJ HJ C1  > CJ
-[2] D3 HK SJ HJ C1  > D3
-[3] C7 HK SJ HJ C1  > C7
-[4] D7 HK SJ HJ C1  > D7
-[5] S9 HK SJ HJ C1  > S9
-[6] ST HK SJ HJ C1 
-テイク素点 :   1
+[1] CJ HK SJ HJ C1  > HK
+[2] CJ D3 SJ HJ C1  > D3
+[3] CJ C7 SJ HJ C1  > C7
+[4] CJ D7 SJ HJ C1  > D7
+[5] CJ S9 SJ HJ C1  > S9
+[6] CJ ST SJ HJ C1 
+テイク素点 :   8
 [0] HT C6 C9 H6 S1  > HT
 [1] H2 C6 C9 H6 S1  > C9
 [2] H2 C6 SK H6 S1  > SK
@@ -28776,7 +28735,7 @@
 [5] H7 S7 CT HQ DQ  > CT
 [6] H7 S7 D8 HQ DQ 
 テイク素点 :   2
-トライ得点 :  49.50
+トライ得点 :  60.00
 [0] H3 S4 DJ H6 D8  > DJ
 [1] H3 S4 ST H6 D8  > H3
 [2] SK S4 ST H6 D8  > SK
@@ -29192,10 +29151,10 @@
 [1] C2 DJ C5 C8 S5  > C2
 [2] SK DJ C5 C8 S5  > SK
 [3] HT DJ C5 C8 S5  > HT
-[4] D5 DJ C5 C8 S5  > D5
-[5] CJ DJ C5 C8 S5  > C8
-[6] CJ DJ C5 C9 S5 
-テイク素点 :   2
+[4] D5 DJ C5 C8 S5  > DJ
+[5] D5 CJ C5 C8 S5  > CJ
+[6] D5 C9 C5 C8 S5 
+テイク素点 :   8
 [0] C1 D2 CK D8 D4  > D2
 [1] C1 H2 CK D8 D4  > H2
 [2] C1 H7 CK D8 D4  > C1
@@ -29225,7 +29184,7 @@
 [2] H1 H5 CT S2 C3  > CT
 [3] H1 H5 HJ S2 C3 
 テイク素点 :   0
-トライ得点 :   8.00
+トライ得点 :  17.00
 [0] D8 D2 S7 S4 H5  > D8
 [1] S2 D2 S7 S4 H5  > S2
 [2] CJ D2 S7 S4 H5  > CJ
@@ -30129,13 +30088,13 @@
 テイク素点 :   2
 トライ得点 :  25.00
 [0] S6 H3 HK S4 D3  > S6
-[1] C3 H3 HK S4 D3  > C3
-[2] S2 H3 HK S4 D3  > S2
-[3] H8 H3 HK S4 D3  > H8
-[4] C7 H3 HK S4 D3  > C7
-[5] H5 H3 HK S4 D3  > H5
-[6] SJ H3 HK S4 D3 
-テイク素点 :   1
+[1] C3 H3 HK S4 D3  > HK
+[2] C3 H3 S2 S4 D3  > S2
+[3] C3 H3 H8 S4 D3  > H8
+[4] C3 H3 C7 S4 D3  > C7
+[5] C3 H3 H5 S4 D3  > H5
+[6] C3 H3 SJ S4 D3 
+テイク素点 :   8
 [0] S7 SQ S5 H1 DK  > H1
 [1] S7 SQ S5 S3 DK  > DK
 [2] S7 SQ S5 S3 DQ  > DQ
@@ -30164,7 +30123,7 @@
 [1] HT SK S9 CT CJ  > HT
 [2] CQ SK S9 CT CJ 
 テイク素点 :  32
-トライ得点 : 119.50
+トライ得点 : 130.00
 [0] ST D9 DT DK D4  > ST
 [1] S6 D9 DT DK D4  > S6
 [2] S8 D9 DT DK D4  > D4
@@ -30615,9 +30574,9 @@
 [2] HT DQ H5 HK SK  > HT
 [3] H9 DQ H5 HK SK  > H9
 [4] S2 DQ H5 HK SK  > S2
-[5] DK DQ H5 HK SK  > DK
-[6] H7 DQ H5 HK SK 
-テイク素点 :   1
+[5] DK DQ H5 HK SK  > DQ
+[6] DK H7 H5 HK SK 
+テイク素点 :   8
 [0] CJ S9 S8 S7 D2  > D2
 [1] CJ S9 S8 S7 H3  > H3
 [2] CJ S9 S8 S7 D3  > D3
@@ -30647,7 +30606,7 @@
 [3] SQ H1 C2 S5 C3  > SQ
 [4] CQ H1 C2 S5 C3 
 テイク素点 :   0
-トライ得点 :  19.50
+トライ得点 :  30.00
 [0] DK SQ S6 S1 CK  > DK
 [1] S9 SQ S6 S1 CK  > S1
 [2] S9 SQ S6 D6 CK  > CK
@@ -30733,13 +30692,13 @@
 [6] H6 H2 DT D8 S9 
 テイク素点 :   0
 [0] SQ H1 C1 D3 C4  > SQ
-[1] S1 H1 C1 D3 C4  > S1
-[2] CT H1 C1 D3 C4  > CT
-[3] DJ H1 C1 D3 C4  > DJ
-[4] DK H1 C1 D3 C4  > DK
-[5] C9 H1 C1 D3 C4  > C9
-[6] H3 H1 C1 D3 C4 
-テイク素点 :   2
+[1] S1 H1 C1 D3 C4  > D3
+[2] S1 H1 C1 CT C4  > CT
+[3] S1 H1 C1 DJ C4  > DJ
+[4] S1 H1 C1 DK C4  > DK
+[5] S1 H1 C1 C9 C4  > C9
+[6] S1 H1 C1 H3 C4 
+テイク素点 :   8
 [0] HQ C3 C2 H4 HJ  > HQ
 [1] D1 C3 C2 H4 HJ  > HJ
 [2] D1 C3 C2 H4 S3  > C3
@@ -30761,7 +30720,7 @@
 [5] H9 HT D7 D5 D4  > HT
 [6] H9 D9 D7 D5 D4 
 テイク素点 :   1
-トライ得点 :  69.00
+トライ得点 :  78.00
 [0] S5 C3 HT C4 S8  > S5
 [1] H6 C3 HT C4 S8  > H6
 [2] D9 C3 HT C4 S8  > D9
@@ -31247,10 +31206,10 @@
 [1] H5 CK C4 S4 S7  > H5
 [2] S2 CK C4 S4 S7  > S2
 [3] C2 CK C4 S4 S7  > C2
-[4] H4 CK C4 S4 S7  > H4
-[5] H2 CK C4 S4 S7  > H2
-[6] S3 CK C4 S4 S7 
-テイク素点 :   1
+[4] H4 CK C4 S4 S7  > CK
+[5] H4 H2 C4 S4 S7  > H2
+[6] H4 S3 C4 S4 S7 
+テイク素点 :   8
 [0] D5 H9 SK H8 D4  > D4
 [1] D5 H9 SK H8 H6  > SK
 [2] D5 H9 D7 H8 H6 
@@ -31275,7 +31234,7 @@
 [5] C1 HT HK H7 HQ  > C1
 [6] DK HT HK H7 HQ 
 テイク素点 :   1
-トライ得点 : 107.50
+トライ得点 : 118.00
 [0] H5 SJ C9 H3 DQ  > H5
 [1] DJ SJ C9 H3 DQ  > C9
 [2] DJ SJ C8 H3 DQ  > C8
@@ -31318,10 +31277,10 @@
 [1] C3 H1 S4 C1 DK  > C3
 [2] H8 H1 S4 C1 DK  > H8
 [3] S8 H1 S4 C1 DK  > S8
-[4] S1 H1 S4 C1 DK  > S1
-[5] DT H1 S4 C1 DK  > DT
-[6] S2 H1 S4 C1 DK 
-テイク素点 :   1
+[4] S1 H1 S4 C1 DK  > S4
+[5] S1 H1 DT C1 DK  > DT
+[6] S1 H1 S2 C1 DK 
+テイク素点 :   8
 [0] S7 CT D8 C8 C6  > D8
 [1] S7 CT DQ C8 C6  > C8
 [2] S7 CT DQ H2 C6  > H2
@@ -31351,7 +31310,7 @@
 [4] CJ HK CK D3 HJ  > D3
 [5] CJ HK CK S3 HJ 
 テイク素点 :   2
-トライ得点 :  41.50
+トライ得点 :  52.00
 [0] HJ C3 S5 H8 S3  > HJ
 [1] SJ C3 S5 H8 S3  > SJ
 [2] D2 C3 S5 H8 S3  > D2
@@ -31467,9 +31426,9 @@
 [2] S6 HT S8 C3 D3  > S6
 [3] HQ HT S8 C3 D3  > HQ
 [4] C6 HT S8 C3 D3  > C6
-[5] S3 HT S8 C3 D3  > S3
-[6] SK HT S8 C3 D3 
-テイク素点 :   1
+[5] S3 HT S8 C3 D3  > HT
+[6] S3 SK S8 C3 D3 
+テイク素点 :   8
 [0] D4 D7 H9 D6 CT  > D6
 [1] D4 D7 H9 D5 CT  > D5
 [2] D4 D7 H9 HK CT  > D4
@@ -31499,7 +31458,7 @@
 [2] H7 C4 S7 DJ HJ  > C4
 [3] H7 S4 S7 DJ HJ 
 テイク素点 :   2
-トライ得点 :   7.50
+トライ得点 :  18.00
 [0] DT CT H1 C6 SK  > DT
 [1] CJ CT H1 C6 SK  > H1
 [2] CJ CT S4 C6 SK  > CT
@@ -31551,9 +31510,9 @@
 [2] D8 C9 H1 H6 C8  > C9
 [3] D8 S9 H1 H6 C8  > S9
 [4] D8 HJ H1 H6 C8  > HJ
-[5] D8 S8 H1 H6 C8  > D8
-[6] DT S8 H1 H6 C8 
-テイク素点 :   1
+[5] D8 S8 H1 H6 C8  > H1
+[6] D8 S8 DT H6 C8 
+テイク素点 :   8
 [0] D3 C4 C1 C5 HK  > HK
 [1] D3 C4 C1 C5 D6  > C4
 [2] D3 C3 C1 C5 D6  > D3
@@ -31575,7 +31534,7 @@
 [2] DQ H8 D4 S3 SJ  > H8
 [3] DQ SQ D4 S3 SJ 
 テイク素点 :   1
-トライ得点 :  10.00
+トライ得点 :  20.50
 [0] H9 C8 SQ D3 C7  > D3
 [1] H9 C8 SQ DJ C7  > H9
 [2] S9 C8 SQ DJ C7  > S9
@@ -31653,41 +31612,38 @@
 [0] C9 H6 D6 D7 C1  > C9
 [1] D3 H6 D6 D7 C1  > D3
 [2] SK H6 D6 D7 C1  > SK
-[3] C6 H6 D6 D7 C1  > C6
-[4] D1 H6 D6 D7 C1  > D7
-[5] D1 H6 D6 CJ C1  > CJ
-[6] D1 H6 D6 D4 C1 
-テイク素点 :   2
-[0] H8 HT HK H2 S8  > S8
-[1] H8 HT HK H2 S7  > H2
-[2] H8 HT HK D2 S7  > D2
-[3] H8 HT HK S6 S7  > HK
-[4] H8 HT C3 S6 S7  > C3
-[5] H8 HT S1 S6 S7  > S1
-[6] H8 HT H9 S6 S7 
-テイク素点 :  32
-[0] CK CT C2 S3 DQ  > CK
-[1] D5 CT C2 S3 DQ  > C2
-[2] D5 CT S9 S3 DQ  > S9
-[3] D5 CT S4 S3 DQ  > S3
-[4] D5 CT S4 S5 DQ  > CT
-[5] D5 DT S4 S5 DQ  > DT
-[6] D5 H4 S4 S5 DQ 
-テイク素点 :   2
-[0] D8 DJ DK S2 D9  > S2
-[1] D8 DJ DK C7 D9  > C7
-[2] D8 DJ DK HJ D9  > DJ
-[3] D8 H7 DK HJ D9  > H7
-[4] D8 SQ DK HJ D9  > DK
-[5] D8 SQ C5 HJ D9  > C5
-[6] D8 SQ C4 HJ D9 
+[3] C6 H6 D6 D7 C1  > D7
+[4] C6 H6 D6 D1 C1 
+テイク素点 :  16
+[0] CJ D4 H8 HT HK  > D4
+[1] CJ H2 H8 HT HK  > H2
+[2] CJ S8 H8 HT HK  > S8
+[3] CJ S7 H8 HT HK  > S7
+[4] CJ D2 H8 HT HK  > D2
+[5] CJ S6 H8 HT HK  > S6
+[6] CJ C3 H8 HT HK 
 テイク素点 :   0
-[0] H5 H1 CQ ST C8  > H1
-[1] H5 SJ CQ ST C8  > H5
-[2] H3 SJ CQ ST C8  > H3
-[3] HQ SJ CQ ST C8 
-テイク素点 :   1
-トライ得点 :  55.00
+[0] S1 H9 CK CT C2  > S1
+[1] S3 H9 CK CT C2  > S3
+[2] DQ H9 CK CT C2  > C2
+[3] DQ H9 CK CT D5  > D5
+[4] DQ H9 CK CT S9  > H9
+[5] DQ S4 CK CT S9  > S4
+[6] DQ S5 CK CT S9 
+テイク素点 :   0
+[0] DT H4 D8 DJ DK  > H4
+[1] DT S2 D8 DJ DK  > S2
+[2] DT D9 D8 DJ DK 
+テイク素点 :  24
+[0] C7 HJ H7 SQ C5  > HJ
+[1] C7 C4 H7 SQ C5  > C4
+[2] C7 H5 H7 SQ C5  > SQ
+[3] C7 H5 H7 H1 C5  > H1
+[4] C7 H5 H7 CQ C5  > CQ
+[5] C7 H5 H7 ST C5  > ST
+[6] C7 H5 H7 C8 C5 
+テイク素点 :   2
+トライ得点 :  76.00
 [0] H3 D6 D5 H9 S9  > H3
 [1] SJ D6 D5 H9 S9  > SJ
 [2] C4 D6 D5 H9 S9  > C4
@@ -31807,9 +31763,9 @@
 [2] S9 DT D1 HQ S1  > S9
 [3] S3 DT D1 HQ S1  > S3
 [4] H2 DT D1 HQ S1  > H2
-[5] C1 DT D1 HQ S1  > C1
-[6] CK DT D1 HQ S1 
-テイク素点 :   1
+[5] C1 DT D1 HQ S1  > DT
+[6] C1 CK D1 HQ S1 
+テイク素点 :   8
 [0] HT D6 C9 H8 CQ  > HT
 [1] CJ D6 C9 H8 CQ  > C9
 [2] CJ D6 DJ H8 CQ  > CQ
@@ -31835,7 +31791,7 @@
 [4] C6 S5 D3 D5 C7  > S5
 [5] C6 C4 D3 D5 C7 
 テイク素点 :  32
-トライ得点 : 133.50
+トライ得点 : 144.00
 [0] DJ C3 S8 S6 H6  > DJ
 [1] S5 C3 S8 S6 H6  > S6
 [2] S5 C3 S8 S1 H6  > H6
@@ -32151,10 +32107,10 @@
 [1] S9 C9 H2 SQ H9  > H2
 [2] S9 C9 CK SQ H9  > CK
 [3] S9 C9 C1 SQ H9  > C1
-[4] S9 C9 S8 SQ H9  > S9
-[5] C6 C9 S8 SQ H9  > C6
-[6] S1 C9 S8 SQ H9 
-テイク素点 :   1
+[4] S9 C9 S8 SQ H9  > S8
+[5] S9 C9 C6 SQ H9  > C6
+[6] S9 C9 S1 SQ H9 
+テイク素点 :   8
 [0] D2 HJ H3 C2 D4  > HJ
 [1] D2 DT H3 C2 D4  > D4
 [2] D2 DT H3 C2 CQ  > DT
@@ -32168,7 +32124,7 @@
 [2] SK C8 DK D8 HQ  > HQ
 [3] SK C8 DK D8 DQ 
 テイク素点 :   2
-トライ得点 :  11.50
+トライ得点 :  18.50
 [0] HJ SJ C6 DJ SK  > HJ
 [1] C7 SJ C6 DJ SK  > C7
 [2] C8 SJ C6 DJ SK  > C8
@@ -32627,26 +32583,26 @@
 [0] H5 SK C6 H6 S2  > H5
 [1] H7 SK C6 H6 S2  > H7
 [2] D6 SK C6 H6 S2  > S2
-[3] D6 SK C6 H6 H9  > D6
-[4] C9 SK C6 H6 H9  > SK
-[5] C9 DK C6 H6 H9  > DK
-[6] C9 CJ C6 H6 H9 
+[3] D6 SK C6 H6 H9  > SK
+[4] D6 C9 C6 H6 H9 
+テイク素点 :  16
+[0] DK CJ S1 HK D7  > CJ
+[1] DK CT S1 HK D7  > D7
+[2] DK CT S1 HK C5  > C5
+[3] DK CT S1 HK C1  > CT
+[4] DK DQ S1 HK C1  > DQ
+[5] DK D2 S1 HK C1  > D2
+[6] DK C8 S1 HK C1 
 テイク素点 :   2
-[0] S1 HK D7 CT C5  > S1
-[1] C1 HK D7 CT C5  > C1
-[2] DQ HK D7 CT C5  > D7
-[3] DQ HK D2 CT C5  > D2
-[4] DQ HK C8 CT C5  > C5
-[5] DQ HK C8 CT S4  > S4
-[6] DQ HK C8 CT C3 
-テイク素点 :   0
-[0] HQ S3 D9 CQ D4  > D4
-[1] HQ S3 D9 CQ S9  > S3
-[2] HQ CK D9 CQ S9  > CK
-[3] HQ DT D9 CQ S9  > DT
-[4] HQ H3 D9 CQ S9 
-テイク素点 :   2
-トライ得点 :  45.00
+[0] S4 C3 HQ S3 D9  > S4
+[1] CQ C3 HQ S3 D9  > D9
+[2] CQ C3 HQ S3 D4  > D4
+[3] CQ C3 HQ S3 S9  > S9
+[4] CQ C3 HQ S3 CK  > CK
+[5] CQ C3 HQ S3 DT  > DT
+[6] CQ C3 HQ S3 H3 
+テイク素点 :  16
+トライ得点 :  91.00
 [0] S8 CQ CJ SJ D9  > CJ
 [1] S8 CQ S3 SJ D9  > S3
 [2] S8 CQ DQ SJ D9  > CQ
@@ -32779,10 +32735,10 @@
 [1] D1 S1 D3 CJ C6  > C6
 [2] D1 S1 D3 CJ H4  > H4
 [3] D1 S1 D3 CJ DK  > DK
-[4] D1 S1 D3 CJ H1  > D1
-[5] H3 S1 D3 CJ H1  > CJ
-[6] H3 S1 D3 C9 H1 
-テイク素点 :   2
+[4] D1 S1 D3 CJ H1  > D3
+[5] D1 S1 H3 CJ H1  > H3
+[6] D1 S1 C9 CJ H1 
+テイク素点 :   8
 [0] CK SK C4 CQ HQ  > C4
 [1] CK SK HJ CQ HQ  > HJ
 [2] CK SK DQ CQ HQ 
@@ -32795,7 +32751,7 @@
 [5] C3 S3 SJ DJ SQ  > SQ
 [6] C3 S3 SJ DJ CT 
 テイク素点 :   2
-トライ得点 :  44.00
+トライ得点 :  50.00
 [0] H6 S8 HK S7 HJ  > H6
 [1] S5 S8 HK S7 HJ  > S5
 [2] H7 S8 HK S7 HJ  > S8
@@ -32915,11 +32871,11 @@
 [0] CT HJ C9 C2 D2  > CT
 [1] S1 HJ C9 C2 D2  > S1
 [2] D4 HJ C9 C2 D2  > D4
-[3] S2 HJ C9 C2 D2  > S2
-[4] HQ HJ C9 C2 D2  > HQ
-[5] C6 HJ C9 C2 D2  > C6
-[6] S3 HJ C9 C2 D2 
-テイク素点 :   1
+[3] S2 HJ C9 C2 D2  > HJ
+[4] S2 HQ C9 C2 D2  > HQ
+[5] S2 C6 C9 C2 D2  > C6
+[6] S2 S3 C9 C2 D2 
+テイク素点 :   8
 [0] S9 DT C7 HK CK  > C7
 [1] S9 DT HT HK CK  > S9
 [2] S4 DT HT HK CK  > S4
@@ -32944,7 +32900,7 @@
 [5] C5 DQ D7 ST H9  > C5
 [6] H3 DQ D7 ST H9 
 テイク素点 :   0
-トライ得点 :  55.50
+トライ得点 :  66.00
 [0] S6 S4 H6 SK D9  > S6
 [1] D2 S4 H6 SK D9  > H6
 [2] D2 S4 CK SK D9  > D2
@@ -33033,10 +32989,10 @@
 [1] S6 D3 C6 D4 DJ  > D3
 [2] S6 D7 C6 D4 DJ  > D7
 [3] S6 H2 C6 D4 DJ  > H2
-[4] S6 H6 C6 D4 DJ  > S6
-[5] C4 H6 C6 D4 DJ  > DJ
-[6] C4 H6 C6 D4 S1 
-テイク素点 :   2
+[4] S6 H6 C6 D4 DJ  > D4
+[5] S6 H6 C6 C4 DJ  > C4
+[6] S6 H6 C6 S1 DJ 
+テイク素点 :   8
 [0] D9 C8 SK S2 S7  > S2
 [1] D9 C8 SK H8 S7  > D9
 [2] SJ C8 SK H8 S7  > SJ
@@ -33058,7 +33014,7 @@
 [2] H9 C7 D6 C2 C5  > C2
 [3] H9 C7 D6 H4 C5 
 テイク素点 :   0
-トライ得点 :  12.00
+トライ得点 :  21.00
 [0] C1 DJ C3 C2 CQ  > DJ
 [1] C1 S7 C3 C2 CQ  > S7
 [2] C1 HJ C3 C2 CQ  > HJ
@@ -33388,13 +33344,13 @@
 テイク素点 :   0
 トライ得点 :  24.00
 [0] C2 D6 S6 CQ S4  > C2
-[1] C6 D6 S6 CQ S4  > C6
-[2] D2 D6 S6 CQ S4  > D2
-[3] D7 D6 S6 CQ S4  > D7
-[4] S2 D6 S6 CQ S4  > S2
-[5] D9 D6 S6 CQ S4  > D9
-[6] H2 D6 S6 CQ S4 
-テイク素点 :   1
+[1] C6 D6 S6 CQ S4  > CQ
+[2] C6 D6 S6 D2 S4  > D2
+[3] C6 D6 S6 D7 S4  > D7
+[4] C6 D6 S6 S2 S4  > S2
+[5] C6 D6 S6 D9 S4  > D9
+[6] C6 D6 S6 H2 S4 
+テイク素点 :   8
 [0] C3 C1 D3 S1 H3 
 テイク素点 :  16
 [0] C4 H7 ST HQ C7  > C4
@@ -33419,7 +33375,7 @@
 [5] CK SJ H9 C5 HT  > C5
 [6] CK SJ H9 DK HT 
 テイク素点 :   1
-トライ得点 :  45.50
+トライ得点 :  56.00
 [0] DT S8 S5 H9 D1  > D1
 [1] DT S8 S5 H9 C3  > DT
 [2] HK S8 S5 H9 C3  > HK
@@ -33946,12 +33902,12 @@
 トライ得点 :   9.00
 [0] C8 S1 S2 SQ HQ  > C8
 [1] DT S1 S2 SQ HQ  > DT
-[2] DQ S1 S2 SQ HQ  > DQ
-[3] H6 S1 S2 SQ HQ  > H6
-[4] C4 S1 S2 SQ HQ  > C4
-[5] C3 S1 S2 SQ HQ  > C3
-[6] S8 S1 S2 SQ HQ 
-テイク素点 :   1
+[2] DQ S1 S2 SQ HQ  > S1
+[3] DQ H6 S2 SQ HQ  > H6
+[4] DQ C4 S2 SQ HQ  > C4
+[5] DQ C3 S2 SQ HQ  > C3
+[6] DQ S8 S2 SQ HQ 
+テイク素点 :   8
 [0] H3 D2 D8 H5 S3  > D8
 [1] H3 D2 H2 H5 S3  > H5
 [2] H3 D2 H2 C6 S3  > C6
@@ -33981,7 +33937,7 @@
 [2] S9 S5 DJ CK C7  > S9
 [3] HJ S5 DJ CK C7 
 テイク素点 :   1
-トライ得点 :  11.50
+トライ得点 :  22.00
 [0] D4 H3 SQ H7 H2  > D4
 [1] HJ H3 SQ H7 H2  > SQ
 [2] HJ H3 SJ H7 H2  > SJ
@@ -34481,10 +34437,10 @@
 [1] DK D3 H7 H5 ST  > H7
 [2] DK D3 SK H5 ST  > ST
 [3] DK D3 SK H5 C6  > C6
-[4] DK D3 SK H5 CK  > DK
-[5] HJ D3 SK H5 CK  > HJ
-[6] CQ D3 SK H5 CK 
-テイク素点 :   1
+[4] DK D3 SK H5 CK  > D3
+[5] DK HJ SK H5 CK  > HJ
+[6] DK CQ SK H5 CK 
+テイク素点 :   8
 [0] H4 S2 D8 D5 D1  > D8
 [1] H4 S2 S1 D5 D1  > S1
 [2] H4 S2 S3 D5 D1 
@@ -34501,7 +34457,7 @@
 [3] C7 C9 SJ CT C5  > SJ
 [4] C7 C9 C1 CT C5 
 テイク素点 :  24
-トライ得点 : 145.50
+トライ得点 : 156.00
 [0] CT C1 H7 H8 D7  > CT
 [1] HK C1 H7 H8 D7  > HK
 [2] D6 C1 H7 H8 D7  > D6
@@ -34542,12 +34498,12 @@
 トライ得点 :  28.00
 [0] CJ H2 S6 DT S2  > CJ
 [1] C4 H2 S6 DT S2  > C4
-[2] D2 H2 S6 DT S2  > D2
-[3] S1 H2 S6 DT S2  > S1
-[4] C3 H2 S6 DT S2  > C3
-[5] S7 H2 S6 DT S2  > S7
-[6] C2 H2 S6 DT S2 
-テイク素点 :   8
+[2] D2 H2 S6 DT S2  > S6
+[3] D2 H2 S1 DT S2  > S1
+[4] D2 H2 C3 DT S2  > C3
+[5] D2 H2 S7 DT S2  > S7
+[6] D2 H2 C2 DT S2 
+テイク素点 :  64
 [0] H8 CT H7 C1 H4  > C1
 [1] H8 CT H7 C6 H4  > CT
 [2] H8 S9 H7 C6 H4  > H7
@@ -34577,15 +34533,15 @@
 [2] H6 D5 C5 HQ C9  > HQ
 [3] H6 D5 C5 D6 C9 
 テイク素点 :   2
-トライ得点 :  21.50
+トライ得点 : 105.50
 [0] S6 H8 SJ D2 H2  > S6
 [1] DQ H8 SJ D2 H2  > DQ
 [2] H6 H8 SJ D2 H2  > H6
-[3] C2 H8 SJ D2 H2  > C2
-[4] HQ H8 SJ D2 H2  > HQ
-[5] C9 H8 SJ D2 H2  > C9
-[6] S8 H8 SJ D2 H2 
-テイク素点 :   2
+[3] C2 H8 SJ D2 H2  > H8
+[4] C2 HQ SJ D2 H2  > HQ
+[5] C2 C9 SJ D2 H2  > C9
+[6] C2 S8 SJ D2 H2 
+テイク素点 :   8
 [0] C1 C5 HK S4 H4  > C1
 [1] D5 C5 HK S4 H4  > HK
 [2] D5 C5 DT S4 H4  > DT
@@ -34611,7 +34567,7 @@
 [5] C6 D3 H3 SQ D6  > SQ
 [6] C6 D3 H3 D4 D6 
 テイク素点 :   2
-トライ得点 :  79.00
+トライ得点 :  88.00
 [0] S4 C7 D7 DJ C5  > S4
 [1] S6 C7 D7 DJ C5  > S6
 [2] CK C7 D7 DJ C5  > CK
@@ -34622,12 +34578,12 @@
 テイク素点 :   2
 [0] H9 C3 S9 SK C9  > SK
 [1] H9 C3 S9 DT C9  > DT
-[2] H9 C3 S9 DQ C9  > H9
-[3] C8 C3 S9 DQ C9  > C8
-[4] H5 C3 S9 DQ C9  > H5
-[5] D4 C3 S9 DQ C9  > D4
-[6] S7 C3 S9 DQ C9 
-テイク素点 :   1
+[2] H9 C3 S9 DQ C9  > C3
+[3] H9 C8 S9 DQ C9  > C8
+[4] H9 H5 S9 DQ C9  > H5
+[5] H9 D4 S9 DQ C9  > D4
+[6] H9 S7 S9 DQ C9 
+テイク素点 :   8
 [0] D6 S1 CJ S3 S8  > D6
 [1] C2 S1 CJ S3 S8  > CJ
 [2] C2 S1 CQ S3 S8  > CQ
@@ -34649,7 +34605,7 @@
 [4] HQ D3 C1 D5 D2  > HQ
 [5] S2 D3 C1 D5 D2 
 テイク素点 :   1
-トライ得点 :  70.50
+トライ得点 :  81.00
 [0] D7 ST D1 S3 H3  > D7
 [1] S1 ST D1 S3 H3  > ST
 [2] S1 H1 D1 S3 H3 
@@ -34876,12 +34832,12 @@
 トライ得点 :  26.50
 [0] S8 S6 C3 DK C1  > S8
 [1] S3 S6 C3 DK C1  > S6
-[2] S3 D3 C3 DK C1  > S3
-[3] DJ D3 C3 DK C1  > DJ
-[4] H2 D3 C3 DK C1  > H2
-[5] HQ D3 C3 DK C1  > HQ
-[6] C5 D3 C3 DK C1 
-テイク素点 :   1
+[2] S3 D3 C3 DK C1  > DK
+[3] S3 D3 C3 DJ C1  > DJ
+[4] S3 D3 C3 H2 C1  > H2
+[5] S3 D3 C3 HQ C1  > HQ
+[6] S3 D3 C3 C5 C1 
+テイク素点 :   8
 [0] HT SK H9 D5 DQ  > D5
 [1] HT SK H9 CJ DQ 
 テイク素点 :  32
@@ -34909,7 +34865,7 @@
 [5] H6 D7 D6 C4 S5  > H6
 [6] S1 D7 D6 C4 S5 
 テイク素点 :   0
-トライ得点 :  49.50
+トライ得点 :  60.00
 [0] D8 H9 C4 H6 D1  > D1
 [1] D8 H9 C4 H6 H7  > D8
 [2] DJ H9 C4 H6 H7  > DJ
@@ -35425,9 +35381,9 @@
 [2] SK C8 H4 HJ HQ  > H4
 [3] SK C8 CJ HJ HQ  > HQ
 [4] SK C8 CJ HJ H6  > SK
-[5] DJ C8 CJ HJ H6  > DJ
-[6] HT C8 CJ HJ H6 
-テイク素点 :   1
+[5] DJ C8 CJ HJ H6  > C8
+[6] DJ HT CJ HJ H6 
+テイク素点 :   8
 [0] D9 CK S9 H5 S5  > CK
 [1] D9 C2 S9 H5 S5  > C2
 [2] D9 DQ S9 H5 S5  > DQ
@@ -35455,7 +35411,7 @@
 [5] S2 D6 ST D3 CT  > S2
 [6] DK D6 ST D3 CT 
 テイク素点 :   1
-トライ得点 :  40.50
+トライ得点 :  51.00
 [0] S6 S3 C6 SQ H8  > S6
 [1] H6 S3 C6 SQ H8  > S3
 [2] H6 CK C6 SQ H8  > CK
@@ -35505,11 +35461,11 @@
 [0] C1 H1 CJ S1 DK  > DK
 [1] C1 H1 CJ S1 C4  > C4
 [2] C1 H1 CJ S1 H7  > H7
-[3] C1 H1 CJ S1 S3  > C1
-[4] S7 H1 CJ S1 S3  > S7
-[5] HQ H1 CJ S1 S3  > HQ
-[6] CQ H1 CJ S1 S3 
-テイク素点 :   1
+[3] C1 H1 CJ S1 S3  > CJ
+[4] C1 H1 S7 S1 S3  > S7
+[5] C1 H1 HQ S1 S3  > HQ
+[6] C1 H1 CQ S1 S3 
+テイク素点 :   8
 [0] SJ DJ C8 H9 C5  > H9
 [1] SJ DJ C8 SK C5  > SK
 [2] SJ DJ C8 S4 C5  > S4
@@ -35528,7 +35484,7 @@
 [5] H8 H2 S5 S6 DT  > H2
 [6] H8 D1 S5 S6 DT 
 テイク素点 :   0
-トライ得点 :  83.00
+トライ得点 :  93.50
 [0] DT S3 H4 SK ST  > DT
 [1] D3 S3 H4 SK ST  > ST
 [2] D3 S3 H4 SK HQ  > H4
@@ -35795,12 +35751,12 @@
 テイク素点 :   1
 [0] DJ D2 C1 D3 CQ  > DJ
 [1] H1 D2 C1 D3 CQ  > CQ
-[2] H1 D2 C1 D3 S1  > H1
-[3] H2 D2 C1 D3 S1  > D3
-[4] H2 D2 C1 HT S1  > HT
-[5] H2 D2 C1 C9 S1  > C9
-[6] H2 D2 C1 H5 S1 
-テイク素点 :   2
+[2] H1 D2 C1 D3 S1  > D2
+[3] H1 H2 C1 D3 S1  > H2
+[4] H1 HT C1 D3 S1  > HT
+[5] H1 C9 C1 D3 S1  > C9
+[6] H1 H5 C1 D3 S1 
+テイク素点 :   8
 [0] H6 DK C7 CK SQ  > SQ
 [1] H6 DK C7 CK C4  > H6
 [2] C3 DK C7 CK C4  > DK
@@ -35822,7 +35778,7 @@
 [4] S7 HQ H7 S2 C2  > HQ
 [5] S7 D4 H7 S2 C2 
 テイク素点 :   2
-トライ得点 :  44.50
+トライ得点 :  53.50
 [0] D2 H7 CT C3 CK  > D2
 [1] S7 H7 CT C3 CK  > CT
 [2] S7 H7 C4 C3 CK  > C4
@@ -35835,10 +35791,10 @@
 [1] D5 S8 H1 H9 D9  > D5
 [2] D7 S8 H1 H9 D9  > D7
 [3] C5 S8 H1 H9 D9  > C5
-[4] C9 S8 H1 H9 D9  > C9
-[5] C2 S8 H1 H9 D9  > C2
-[6] H4 S8 H1 H9 D9 
-テイク素点 :   1
+[4] C9 S8 H1 H9 D9  > S8
+[5] C9 C2 H1 H9 D9  > C2
+[6] C9 H4 H1 H9 D9 
+テイク素点 :   8
 [0] D6 C8 H3 S6 CQ  > H3
 [1] D6 C8 C7 S6 CQ  > C7
 [2] D6 C8 S5 S6 CQ  > S5
@@ -35860,7 +35816,7 @@
 [2] DJ DT H6 S9 HK  > H6
 [3] DJ DT ST S9 HK 
 テイク素点 :   1
-トライ得点 :  26.50
+トライ得点 :  37.00
 [0] D9 C9 H7 SJ C6  > D9
 [1] S8 C9 H7 SJ C6  > C9
 [2] S8 C2 H7 SJ C6  > C2
@@ -36170,10 +36126,10 @@
 [1] S4 DK SK C5 D1  > S4
 [2] DT DK SK C5 D1  > DT
 [3] CK DK SK C5 D1  > D1
-[4] CK DK SK C5 S7  > CK
-[5] DQ DK SK C5 S7  > DQ
-[6] D7 DK SK C5 S7 
-テイク素点 :   2
+[4] CK DK SK C5 S7  > C5
+[5] CK DK SK DQ S7  > DQ
+[6] CK DK SK D7 S7 
+テイク素点 :  16
 [0] D5 D3 H8 D8 S8  > D5
 [1] H1 D3 H8 D8 S8  > H1
 [2] DJ D3 H8 D8 S8  > DJ
@@ -36195,7 +36151,7 @@
 [3] C2 C7 HT D9 H5  > C2
 [4] C6 C7 HT D9 H5 
 テイク素点 :   0
-トライ得点 :  36.50
+トライ得点 :  57.50
 [0] HJ D1 H2 HQ CK  > HJ
 [1] D5 D1 H2 HQ CK  > D5
 [2] S2 D1 H2 HQ CK  > D1
@@ -36495,43 +36451,41 @@
 テイク素点 :   0
 トライ得点 :  40.50
 [0] S2 D1 D9 SK DK  > S2
-[1] HK D1 D9 SK DK  > HK
-[2] C9 D1 D9 SK DK  > D1
-[3] C9 C3 D9 SK DK  > C3
-[4] C9 S9 D9 SK DK 
+[1] HK D1 D9 SK DK  > D1
+[2] HK C9 D9 SK DK 
 テイク素点 :  16
-[0] HJ S6 C8 H8 D6  > HJ
-[1] D5 S6 C8 H8 D6  > D5
-[2] H2 S6 C8 H8 D6  > H2
-[3] H4 S6 C8 H8 D6  > H4
-[4] HT S6 C8 H8 D6  > HT
-[5] SQ S6 C8 H8 D6  > SQ
-[6] S8 S6 C8 H8 D6 
-テイク素点 :  16
-[0] C5 H9 H3 DQ DT  > H9
-[1] C5 C4 H3 DQ DT  > C5
-[2] ST C4 H3 DQ DT  > C4
-[3] ST CK H3 DQ DT  > CK
-[4] ST H5 H3 DQ DT  > H5
-[5] ST D7 H3 DQ DT  > H3
-[6] ST D7 C1 DQ DT 
-テイク素点 :   1
-[0] HQ D8 CQ SJ S1  > D8
-[1] HQ S7 CQ SJ S1  > S1
-[2] HQ S7 CQ SJ CJ  > S7
-[3] HQ H7 CQ SJ CJ  > H7
-[4] HQ C6 CQ SJ CJ  > C6
-[5] HQ S5 CQ SJ CJ  > S5
-[6] HQ D2 CQ SJ CJ 
+[0] C3 S9 HJ S6 C8  > C3
+[1] H8 S9 HJ S6 C8  > H8
+[2] D6 S9 HJ S6 C8  > D6
+[3] D5 S9 HJ S6 C8  > S9
+[4] D5 H2 HJ S6 C8  > H2
+[5] D5 H4 HJ S6 C8  > HJ
+[6] D5 H4 HT S6 C8 
+テイク素点 :   0
+[0] SQ S8 C5 H9 H3  > H9
+[1] SQ S8 C5 DQ H3  > S8
+[2] SQ DT C5 DQ H3  > DT
+[3] SQ C4 C5 DQ H3  > C4
+[4] SQ ST C5 DQ H3  > ST
+[5] SQ CK C5 DQ H3  > CK
+[6] SQ H5 C5 DQ H3 
 テイク素点 :   2
-[0] S3 CT C7 DJ H1  > CT
-[1] S3 H6 C7 DJ H1  > H6
-[2] S3 D3 C7 DJ H1  > C7
-[3] S3 D3 S4 DJ H1  > DJ
-[4] S3 D3 S4 C2 H1  > S3
-[5] D4 D3 S4 C2 H1 
-テイク素点 :   1
-トライ得点 :  55.00
+[0] D7 C1 HQ D8 CQ  > D8
+[1] D7 C1 HQ SJ CQ  > C1
+[2] D7 S1 HQ SJ CQ  > S1
+[3] D7 S7 HQ SJ CQ  > SJ
+[4] D7 S7 HQ CJ CQ  > CJ
+[5] D7 S7 HQ H7 CQ 
+テイク素点 :  16
+[0] C6 S5 D2 S3 CT  > CT
+[1] C6 S5 D2 S3 C7  > S5
+[2] C6 DJ D2 S3 C7  > DJ
+[3] C6 H1 D2 S3 C7  > H1
+[4] C6 H6 D2 S3 C7  > C7
+[5] C6 H6 D2 S3 D3  > D2
+[6] C6 H6 S4 S3 D3 
+テイク素点 :   2
+トライ得点 :  62.00
 [0] DK SQ C5 C4 C3  > DK
 [1] CQ SQ C5 C4 C3  > SQ
 [2] CQ D5 C5 C4 C3  > D5
@@ -36548,27 +36502,26 @@
 テイク素点 :   0
 [0] DT D3 CT DQ H7  > D3
 [1] DT S2 CT DQ H7  > DQ
-[2] DT S2 CT ST H7  > DT
-[3] D7 S2 CT ST H7  > S2
-[4] D7 HJ CT ST H7  > HJ
-[5] D7 C7 CT ST H7 
+[2] DT S2 CT ST H7  > S2
+[3] DT D7 CT ST H7 
 テイク素点 :  16
-[0] H3 C1 S9 HK D1  > H3
-[1] S7 C1 S9 HK D1  > S7
-[2] S6 C1 S9 HK D1  > S6
-[3] C9 C1 S9 HK D1  > HK
-[4] C9 C1 S9 H4 D1  > H4
-[5] C9 C1 S9 S1 D1 
-テイク素点 :  16
-[0] H2 H1 D4 H6 D9  > D9
-[1] H2 H1 D4 H6 D2  > H2
-[2] C2 H1 D4 H6 D2  > C2
-[3] D8 H1 D4 H6 D2  > D8
-[4] HQ H1 D4 H6 D2  > HQ
-[5] S5 H1 D4 H6 D2  > S5
-[6] CK H1 D4 H6 D2 
+[0] HJ C7 H3 C1 S9  > H3
+[1] HJ C7 HK C1 S9  > C1
+[2] HJ C7 HK D1 S9  > D1
+[3] HJ C7 HK S7 S9  > C7
+[4] HJ S6 HK S7 S9  > S7
+[5] HJ S6 HK C9 S9  > HJ
+[6] H4 S6 HK C9 S9 
+テイク素点 :   1
+[0] S1 H2 H1 D4 H6  > S1
+[1] D9 H2 H1 D4 H6  > D9
+[2] D2 H2 H1 D4 H6  > D2
+[3] C2 H2 H1 D4 H6  > C2
+[4] D8 H2 H1 D4 H6  > D8
+[5] HQ H2 H1 D4 H6  > HQ
+[6] S5 H2 H1 D4 H6 
 テイク素点 :   0
-トライ得点 :  84.00
+トライ得点 :  54.00
 [0] C3 S8 C9 D6 SQ  > C3
 [1] H7 S8 C9 D6 SQ  > SQ
 [2] H7 S8 C9 D6 C7  > H7
@@ -36615,14 +36568,14 @@
 [5] SJ C5 DT H5 HJ  > DT
 [6] SJ C5 DJ H5 HJ 
 テイク素点 :  16
-[0] D3 H3 S4 S3 D1  > D3
-[1] DQ H3 S4 S3 D1  > DQ
-[2] S7 H3 S4 S3 D1  > S7
-[3] C6 H3 S4 S3 D1  > H3
-[4] C6 D8 S4 S3 D1  > S3
-[5] C6 D8 S4 H6 D1  > D8
-[6] C6 C4 S4 H6 D1 
-テイク素点 :   2
+[0] D3 H3 S4 S3 D1  > S4
+[1] D3 H3 DQ S3 D1  > DQ
+[2] D3 H3 S7 S3 D1  > S7
+[3] D3 H3 C6 S3 D1  > C6
+[4] D3 H3 D8 S3 D1  > D8
+[5] D3 H3 H6 S3 D1  > H6
+[6] D3 H3 C4 S3 D1 
+テイク素点 :   8
 [0] D4 C8 C2 H7 CQ  > D4
 [1] H8 C8 C2 H7 CQ  > H7
 [2] H8 C8 C2 H4 CQ  > H4
@@ -36644,7 +36597,7 @@
 [2] D7 C1 D9 S9 D5  > D7
 [3] S1 C1 D9 S9 D5 
 テイク素点 :   2
-トライ得点 :  48.00
+トライ得点 :  57.00
 [0] C4 H3 ST D7 C6  > ST
 [1] C4 H3 C8 D7 C6  > C4
 [2] HK H3 C8 D7 C6  > H3
@@ -36723,12 +36676,12 @@
 トライ得点 :  37.00
 [0] C3 DJ H4 ST H5  > C3
 [1] CJ DJ H4 ST H5  > H4
-[2] CJ DJ HJ ST H5  > CJ
-[3] C7 DJ HJ ST H5  > C7
-[4] S3 DJ HJ ST H5  > S3
-[5] HK DJ HJ ST H5  > HK
-[6] D4 DJ HJ ST H5 
-テイク素点 :   1
+[2] CJ DJ HJ ST H5  > ST
+[3] CJ DJ HJ C7 H5  > C7
+[4] CJ DJ HJ S3 H5  > S3
+[5] CJ DJ HJ HK H5  > HK
+[6] CJ DJ HJ D4 H5 
+テイク素点 :   8
 [0] S9 D5 S2 D1 H3  > S9
 [1] H6 D5 S2 D1 H3  > H3
 [2] H6 D5 S2 D1 H1  > D5
@@ -36758,15 +36711,15 @@
 [3] DT CT H8 C9 S7  > DT
 [4] D6 CT H8 C9 S7 
 テイク素点 :  32
-トライ得点 :  81.50
+トライ得点 :  92.00
 [0] CT D3 H3 CK HJ  > CT
 [1] H5 D3 H3 CK HJ  > H5
-[2] C3 D3 H3 CK HJ  > C3
-[3] H9 D3 H3 CK HJ  > H9
-[4] H6 D3 H3 CK HJ  > H6
-[5] DQ D3 H3 CK HJ  > DQ
-[6] DJ D3 H3 CK HJ 
-テイク素点 :   2
+[2] C3 D3 H3 CK HJ  > CK
+[3] C3 D3 H3 H9 HJ  > H9
+[4] C3 D3 H3 H6 HJ  > H6
+[5] C3 D3 H3 DQ HJ  > DQ
+[6] C3 D3 H3 DJ HJ 
+テイク素点 :  16
 [0] C7 CJ DT H4 HQ  > H4
 [1] C7 CJ DT H1 HQ  > H1
 [2] C7 CJ DT H7 HQ  > CJ
@@ -36794,7 +36747,7 @@
 [2] HT D6 S6 SQ C6  > HT
 [3] CQ D6 S6 SQ C6 
 テイク素点 :  16
-トライ得点 :  91.00
+トライ得点 : 112.00
 [0] C9 S7 SJ S4 S3  > C9
 [1] CQ S7 SJ S4 S3  > CQ
 [2] D3 S7 SJ S4 S3  > D3

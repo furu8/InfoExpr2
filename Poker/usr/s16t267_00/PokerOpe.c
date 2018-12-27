@@ -123,18 +123,10 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
     // arr_order(arr);
 
     // -- poker_pointで分類
-    if ( poker_point(myhd) == P9 || poker_point(myhd) == P7 || poker_point(myhd) == P6  ) {  // フォーカード、フルハウス
+    if ( poker_point(myhd) == P9 || poker_point(myhd) == P7 || poker_point(myhd) == P6  ) {  // ロイヤル、フォーカード、フルハウス
         the = -1;
     } else if ( poker_point(myhd) == P5 || poker_point(myhd) == P4 ) {  // フラッシュ、ストレート
         the = -1;
-    } else if ( poker_point(myhd) == P0 ) {     // ノーペア
-        the = no_straight(numCount, numSum);                    // -> ストレート
-        //printf("%d ", the);
-        if ( ( num = except_check(shdcSum, 4, 4) ) != -1 && the == -2 ) {
-            the = flash(shdcCount, shdcSum, num);    // -> フラッシュ
-        } else if ( the == -2 ) {
-            the = no_pair(ud, us, myhd, numSum);
-        }
     } else if ( poker_point(myhd) == P3 ) {        // スリーカード -> フルハウス、フォーカード
         the = three_card(ud, us, myhd, numSum);
     } else if ( poker_point(myhd) == P2 ) {         // ツーペア -> スリーカード、フルハウス
@@ -146,7 +138,14 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
         } else if ( the == -2 ) {
             the = one_pair(ud, us, myhd, numSum);
         }
-    } 
+    } else if ( poker_point(myhd) == P0 ) {     // ノーペア
+        the = no_straight(numCount, numSum);                    // -> ストレート
+        if ( ( num = except_check(shdcSum, 4, 4) ) != -1 && the == -2 ) {
+            the = flash(shdcCount, shdcSum, num);    // -> フラッシュ
+        } else if ( the == -2 ) {
+            the = no_pair(ud, us, myhd, numSum);
+        }
+    }
 
     // card_show(hd, HNUM);
     // printf(" %d\n", the);
@@ -187,8 +186,12 @@ int three_card(int ud[], int us, int hd[], int numSum[]) {
     //printf("%d ", num);
     for ( i = 0; i < us; i++ ) {
         for ( j = 0; j < HNUM; j++ ) {
-            if ( ud[i] % 13 == hd[j] % 13 && hd[j] % 13 != num ) {
-                sum[j]++;
+            if ( hd[j] % 13 == num ) {
+                sum[j]--;
+            } else {
+                if ( ud[i] % 13 == hd[j] % 13 ) {
+                    sum[j]++;
+                }
             }
         }
     }
