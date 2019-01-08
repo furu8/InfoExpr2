@@ -40,17 +40,20 @@
 //  関数宣言
 //--------------------------------------------------------------------
 
-int except_check(int sum[], int n, int num);                // 例外のときは-2を返す
-int three_card(int ud[], int us, int hd[], int numSum[]);   // スリーカードからフォーカードまたはフルハウス
-int two_pair(int numCount[5][13], int numSum[]);            // ツーペアからスリーカードまたはフルハウス
-int one_pair(int ud[], int us, int hd[], int numSum[]);     // ワンペアからツーペア
-int no_pair(int ud[], int us, int hd[]);                    // ノーペアからワンペア
-int no_straight(int numCount[5][13], int numSum[]);         // ノーペア時のストレートを狙う
-int one_straight(int numCount[5][13], int numSum[]);        // ワンペア時のストレートを狙う
-int ace_straight(int hd[], int myhd[]);                     // Aを含むストレートを狙う
-int flash(int shdcCount[5][4], int shdcSum[4], int n);      // フラッシュを狙う
-void arr_order(int arr[]);                                  // 配列の順番を降順にする
-int arr_max(int arr[5]);                                    // 最大値の配列の要素を返却
+void judge_value(int hd[], int arr[], int shdcCount[5][4], int numCount[5][13], int shdcSum[], int numSum[]);               // 判定値を計算
+int except_check(int sum[], int n, int num);                                                                                // 例外のときは-2を返す                                                                          // フラッシュを狙う
+int nopair(int ud[], int us, int hd[], int myhd[], int shdcCount[5][4], int shdcSum[], int numCount[5][13], int numSum[]);  // ノーペア時の呼び出し関数
+int onepair(int ud[], int us, int hd[], int myhd[], int shdcCount[5][4], int shdcSum[], int numCount[5][13], int numSum[]); // ワンペア時の呼び出し関数
+int three_card(int ud[], int us, int hd[], int numSum[]);                                                                   // スリーカードからフォーカードまたはフルハウス
+int two_pair(int numCount[5][13], int numSum[]);                                                                            // ツーペアからスリーカードまたはフルハウス
+int one_pair(int ud[], int us, int hd[], int numSum[]);                                                                     // ワンペアからツーペア
+int no_pair(int ud[], int us, int hd[]);                                                                                    // ノーペアからワンペア
+int no_straight(int numCount[5][13], int numSum[]);                                                                         // ノーペア時のストレートを狙う
+int one_straight(int numCount[5][13], int numSum[]);                                                                        // ワンペア時のストレートを狙う
+int ace_straight(int hd[], int myhd[]);                                                                                     // Aを含むストレートを狙う
+int flash(int shdcCount[5][4], int n);                                                                                      // フラッシュを狙う
+void arr_order(int arr[]);                                                                                                  // 配列の順番を降順にする
+int arr_max(int arr[5]);                                                                                                    // 最大値の配列の要素を返却
 
 
 
@@ -73,10 +76,10 @@ us : 捨札数
 
 --------------------------------------------------------------------*/
 
-int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
+int strategy( int hd[], int fd[], int cg, int tk,  int ud[], int us) {
     int myhd[HNUM];
     int the;
-    int k, i;
+    int k;
     int shdc;                       // スペード、ハート、ダイヤ、クラブ のどれか判断
     int num;                        // 手札の数字を判断
     int arr[5];                     // 手札の数字を配列に格納
@@ -112,39 +115,19 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
 
     // ---- 手札の判定
     // -- 判定値を計算
-    for ( k = 0; k < HNUM; k++ ) { 
-        shdc = myhd[k] / 13;
-        arr[k] = num = myhd[k] % 13;
-        shdcCount[k][shdc]++;
-        numCount[k][num]++;
-        shdcSum[shdc]++;
-        numSum[num]++;
-    }
+    judge_value(myhd, arr, shdcCount, numCount, shdcSum, numSum);
 
     // -- poker_pointで分類
-    if ( poker_point(myhd) == P9 || poker_point(myhd) == P7 || poker_point(myhd) == P6          // ロイヤル、フォーカード、フルハウス
-        || poker_point(myhd) == P8 || poker_point(myhd) == P5 || poker_point(myhd) == P4 ) {    // ストレートフラッシュ、フラッシュ、ストレート
+    if ( poker_point(myhd) > P3 ) {                                             // ロイヤル、フォーカード、フルハウス、ストレートフラッシュ、フラッシュ、ストレート
         the = -1;
-    } else if ( poker_point(myhd) == P3 ) {                                                     // スリーカード -> フルハウス、フォーカード
+    } else if ( poker_point(myhd) == P3 ) {                                     // スリーカード -> フルハウス、フォーカード
         the = three_card(ud, us, myhd, numSum);
-    } else if ( poker_point(myhd) == P2 ) {                                                     // ツーペア -> スリーカード、フルハウス
+    } else if ( poker_point(myhd) == P2 ) {                                     // ツーペア -> スリーカード、フルハウス
         the = two_pair(numCount, numSum); 
-    } else if ( poker_point(myhd) == P1 ) {                                                     // ワンペア -> ツーペア、フラッシュ、ストレート
-        if ( (num = except_check(shdcSum, 4, 4)) != -2 ) { 
-            the = flash(shdcCount, shdcSum, num);                                               // -> フラッシュ
-        } else if ( (the = one_straight(numCount, numSum)) == -2 ) {                            // -> ストレート
-            if ( (the = ace_straight(arr, myhd)) == -2 ) { 
-                the = one_pair(ud, us, myhd, numSum); 
-            }
-        }
-    } else if ( poker_point(myhd) == P0 ) {                                                     // ノーペア
-        if ( (num = except_check(shdcSum, 4, 4)) != -2 ) { 
-            the = flash(shdcCount, shdcSum, num);                                               // -> フラッシュ
-        } else if ( (the = no_straight(numCount, numSum)) == -2 ) {                             // -> ストレート
-            if ( (the = ace_straight(arr, myhd)) == -2 ) { 
-                the = no_pair(ud, us, myhd); 
-            }
-        }
+    } else if ( poker_point(myhd) == P1 ) {                                     // ワンペア -> ツーペア、フラッシュ、ストレート
+        the = onepair(ud, us, arr, myhd, shdcCount, shdcSum, numCount, numSum);
+    } else if ( poker_point(myhd) == P0 ) {                                     // ノーペア -> ワンペア、フラッシュ、ストレート
+        the = nopair(ud, us, arr, myhd, shdcCount, shdcSum, numCount, numSum);
     }
 
     // card_show(hd, HNUM);
@@ -164,12 +147,51 @@ int strategy( int hd[],  int fd[], int cg, int tk,  int ud[], int us) {
 //  補助関数
 //====================================================================
 
+ void judge_value(int hd[], int arr[], int shdcCount[5][4], int numCount[5][13], int shdcSum[], int numSum[]) {
+    int k, num, shdc;
+
+    for ( k = 0; k < HNUM; k++ ) { 
+        shdc = hd[k] / 13;
+        arr[k] = num = hd[k] % 13;
+        shdcCount[k][shdc]++;
+        numCount[k][num]++;
+        shdcSum[shdc]++;
+        numSum[num]++;
+    }
+}
+
 int except_check(int sum[], int n, int num) {
     int i;
+
     for ( i = 0; i < n; i++ ) {
         if ( sum[i] == num ) { return i; } 
     }
     return -2;
+}
+
+int nopair(int ud[], int us, int hd[], int myhd[], int shdcCount[5][4], int shdcSum[], int numCount[5][13], int numSum[]) {
+    int num, the;
+    if ( (num = except_check(shdcSum, 4, 4)) != -2 ) { 
+        the = flash(shdcCount, num);                                                        
+    } else if ( (the = no_straight(numCount, numSum)) == -2 ) {                             
+        if ( (the = ace_straight(hd, myhd)) == -2 ) { 
+            the = no_pair(ud, us, myhd); 
+        }
+    }
+    return the;
+}
+
+int onepair(int ud[], int us, int hd[], int myhd[], int shdcCount[5][4], int shdcSum[], int numCount[5][13], int numSum[]) {
+    int num, the;
+    
+    if ( (num = except_check(shdcSum, 4, 4)) != -2 ) { 
+        the = flash(shdcCount, num);                                                       
+    } else if ( (the = one_straight(numCount, numSum)) == -2 ) {                            
+        if ( (the = ace_straight(hd, myhd)) == -2 ) { 
+            the = one_pair(ud, us, myhd, numSum); 
+        }
+    }
+    return the;
 }
 
 int three_card(int ud[], int us, int hd[], int numSum[]) {
@@ -193,7 +215,6 @@ int two_pair(int numCount[5][13], int numSum[]) {
     int num, k;
 
     num = except_check(numSum, 13, 1);
-
     for ( k = 0; k < HNUM; k++ ) {
         if ( numCount[k][num] == 1 ) { return k; }
     }
@@ -314,7 +335,7 @@ int ace_straight(int hd[], int myhd[]) {
     }
 }
 
-int flash(int shdcCount[5][4], int shdcSum[4], int n) {
+int flash(int shdcCount[5][4], int n) {
     int i, j;
     
     for ( i = 0; i < HNUM; i++ ) {
